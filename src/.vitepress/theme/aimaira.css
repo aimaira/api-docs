@@ -1,0 +1,18 @@
+:root {
+  --vp-c-brand-3: #81dad7;
+  --vp-c-brand-2: #86eae6;
+  --vp-c-brand-1: #5cc1be;
+
+  --vp-sidebar-width: 18rem;
+}
+
+.warning.custom-block blockquote {
+  border-left-color: var(--vp-custom-block-warning-border);
+  opacity: .8;
+  filter: saturate(.7)
+}
+
+.warning.custom-block blockquote p {
+  color: var(--vp-custom-block-warning-text);
+  font-size: 14px;
+}

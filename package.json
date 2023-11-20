@@ -1,0 +1,21 @@
+{
+    "name": "api-docs",
+    "version": "1.0.0",
+    "description": "La documentation de l’API publique d’AIMAIRA",
+    "main": "README.md",
+    "license": "UNLICENSED",
+    "private": false,
+    "devDependencies": {
+        "flexsearch": "^0.7.31",
+        "vitepress": "^1.0.0-rc.25",
+        "vue": "^3.2.45"
+    },
+    "scripts": {
+        "dev": "vitepress dev src",
+        "build": "vitepress build src --outDir dist",
+        "serve": "vitepress serve src"
+    },
+    "dependencies": {
+        "mermaid": "^9.3.0"
+    }
+}
