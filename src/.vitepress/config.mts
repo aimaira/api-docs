@@ -5,7 +5,10 @@ import sidebar from './nav'
 const markdownOptions: MarkdownOptions = {
     config: async md => await Mermaid(md),
     lineNumbers: true,
-    theme: 'dracula',
+    theme: {
+        light: 'solarized-light',
+        dark: 'dracula-soft',
+    },
 }
 
 export default defineConfig({
