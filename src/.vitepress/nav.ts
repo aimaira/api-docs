@@ -269,6 +269,19 @@ const nav = [
                 text: 'Cas d’usage',
                 items: [
                     {
+                        text: 'Candidature',
+                        items: [
+                            {
+                                text: 'Créer une candidature',
+                                link: '/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature',
+                            },
+                            {
+                                text: 'Admettre un candidat',
+                                link: '/reference/cas-d-usage/admettre-un-candidat',
+                            },
+                        ],
+                    },
+                    {
                         text: 'Créer un utilisateur',
                         link: '/reference/cas-d-usage/creer-un-nouvel-utilisateur',
                     },
