@@ -34,6 +34,14 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Régime de l’apprenant](/reference/ressources/inscription/regime-de-l-apprenant)
 - [Voie d’entrée](/reference/ressources/inscription/voie-d-entree)
 
+## Correspondance des noms d’entités hérités
+
+À plusieurs occasions lors de l’interfaçage avec le logiciel, il vous sera nécessaire de pouvoir faire correspondre le
+nom hérité de l’entité, de la forme `univers.T_NOM_ENTITE` avec le point de terminaison correspondant dans l’API.
+
+Une [page de la présente documentation](/reference/correspondance-entites-noms-herites) liste les correspondances afin 
+de vous faciliter cette tâche.
+
 ## Cas d’usage
 
 ### Candidature
