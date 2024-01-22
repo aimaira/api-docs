@@ -6,6 +6,10 @@ const nav = [
                 text: 'Prise en main de l’API',
                 link: '/creer-votre-integration/prise-en-main-de-l-api',
             },
+            {
+                text: 'Mise en place d’un webhook',
+                link: '/creer-votre-integration/mise-en-place-d-un-webhook',
+            }
         ],
     },
     {
