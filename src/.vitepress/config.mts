@@ -1,9 +1,14 @@
 import Mermaid from './mermaid-plugin';
+import Attrs from 'markdown-it-attrs';
 import { defineConfig, MarkdownOptions } from 'vitepress'
 import sidebar from './nav'
 
 const markdownOptions: MarkdownOptions = {
-    config: async md => await Mermaid(md),
+    async config(md) {
+        md.use(Attrs);
+
+        await Mermaid(md);
+    },
     lineNumbers: true,
     theme: {
         light: 'solarized-light',

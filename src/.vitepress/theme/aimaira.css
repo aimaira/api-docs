@@ -16,3 +16,11 @@
   color: var(--vp-custom-block-warning-text);
   font-size: 14px;
 }
+
+img.center {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  display: block;
+}
