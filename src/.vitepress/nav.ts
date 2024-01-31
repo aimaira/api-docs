@@ -9,7 +9,7 @@ const nav = [
             {
                 text: 'Mise en place d’un webhook',
                 link: '/creer-votre-integration/mise-en-place-d-un-webhook',
-            }
+            },
         ],
     },
     {
@@ -25,6 +25,10 @@ const nav = [
                         collapsed: true,
                         text: 'Core',
                         items: [
+                            {
+                                text: 'Campus',
+                                link: '/reference/ressources/core/campus',
+                            },
                             {
                                 text: 'Civilité',
                                 link: '/reference/ressources/core/civilite',
@@ -95,6 +99,24 @@ const nav = [
                             },
                         ],
                     },
+                    {
+                        collapsed: true,
+                        text: 'Planification',
+                        items: [
+                            {
+                                text: 'Événement du calendrier',
+                                link: '/reference/ressources/planification/evenement-du-calendrier',
+                            },
+                            {
+                                text: 'Ressource d’événement',
+                                link: '/reference/ressources/planification/ressource-d-evenement',
+                            },
+                            {
+                                text: 'Type d’événement',
+                                link: '/reference/ressources/planification/type-d-evenement',
+                            },
+                        ],
+                    },
                 ],
             },
             {
@@ -108,7 +130,11 @@ const nav = [
                     {
                         text: 'Créer une inscription',
                         link: '/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription',
-                    }
+                    },
+                    {
+                        text: 'Modifier un événement du calendrier',
+                        link: '/reference/cas-d-usage/modifier-un-evenement-du-calendrier',
+                    },
                 ],
             }
         ],

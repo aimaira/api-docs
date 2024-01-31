@@ -13,6 +13,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 ### Core
 
+- [Campus](/reference/ressources/core/campus)
 - [Civilité](/reference/ressources/core/civilite)
 - [E-mail](/reference/ressources/core/e-mail)
 - [Période](/reference/ressources/core/periode)
@@ -22,7 +23,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 - [Candidat](/reference/ressources/admission/candidat)
 - [Dossier](/reference/ressources/admission/dossier)
-- [Etat de candidature](/reference/ressources/admission/etat-de-candidature)
+- [État de candidature](/reference/ressources/admission/etat-de-candidature)
 - [Voie d’admission](/reference/ressources/admission/voie-d-admission)
 
 ### Inscription
@@ -33,6 +34,12 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Parcours](/reference/ressources/inscription/parcours)
 - [Régime de l’apprenant](/reference/ressources/inscription/regime-de-l-apprenant)
 - [Voie d’entrée](/reference/ressources/inscription/voie-d-entree)
+
+### Planification
+
+- [Événement du calendrier](/reference/ressources/planification/evenement-du-calendrier)
+- [Ressource d’événement](/reference/ressources/planification/ressource-d-evenement)
+- [Type d’événement](/reference/ressources/planification/type-d-evenement)
 
 ## Correspondance des noms d’entités hérités
 
@@ -51,3 +58,7 @@ de vous faciliter cette tâche.
 ### Inscription
 
 - [Créer un nouveau dossier d’inscription](/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription)
+
+### Planification
+
+- [Modifier un événement du calendrier](/reference/cas-d-usage/modifier-un-evenement-du-calendrier)
