@@ -24,3 +24,7 @@ img.center {
   margin-bottom: 2rem;
   display: block;
 }
+
+img.w-96 {
+  max-width: 24rem;
+}
