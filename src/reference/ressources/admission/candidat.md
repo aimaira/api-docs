@@ -26,7 +26,8 @@ Un [Individu][individu] est automatiquement créé si aucun `IndividuId` n’est
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Candidat --request POST \
+curl https://myapi.aimaira.net/GraphV1/Candidat \
+  --request POST \
   --header 'Content-Type: application/json' \
   --data '{
   "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Candidat/$entity",
