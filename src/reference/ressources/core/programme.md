@@ -65,3 +65,73 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
 ```
 
 :::
+
+## Créer un programme
+
+### Données obligatoires
+
+- `Nom`
+- `Code`
+- `EntiteJuridiqueId` *(voir [Campus][campus])*
+- `CodeDroit`
+- `CodeAnalytique`
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Programme \
+    --request POST \
+    --header 'Content-Type: application/json' \
+    --data '{
+    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Programme/$entity",
+    "Nom": "Mon programme",
+    "Code": "MON_PROGRAMME",
+    "EntiteJuridiqueId": 2215156,
+    "CodeDroit": "MON_PROGRAMME",
+    "CodeAnalytique": "MON_PROGRAMME"
+}' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Programme/$entity",
+  "Id": 2253499,
+  "Nom": "Mon programme",
+  "Code": "MON_PROGRAMME",
+  "EntiteJuridiqueId": 2215156,
+  "EtablissementId": 0,
+  "EcoleId": 0,
+  "diplomeViseEJ20Id": 0,
+  "diplomeViseFA13Id": 0,
+  "IntitulePrecisDiplomeCERFA": "",
+  "CodeDroit": "MON_PROGRAMME",
+  "CodeAnalytique": "MON_PROGRAMME",
+  "Extension": "",
+  "Marque": "",
+  "Campus": null,
+  "SC": "",
+  "AgeMin": 0,
+  "AgeMax": 0,
+  "NbAnnee": 0,
+  "LibelleExterne": "",
+  "TemplateUserId": 0,
+  "NiveauViseLibelleExterne": "",
+  "LibelleRNCP": "",
+  "EnqueteSISE": false,
+  "EnqueteCTI": false,
+  "EnqueteSISEDiplom": "",
+  "EnqueteSISECompos": "",
+  "CodeRNCP": null
+}
+```
+
+:::
+
+[campus]: /reference/ressources/core/campus
