@@ -14,6 +14,16 @@ Cet identifiant est généré automatiquement lors de la création d’un nouvea
 
 Seuls les candidats qui disposent d’un [Dossier][dossier] complet sont listés sur ce point de terminaison.
 
+## Rechercher un candidat par e-mail
+
+Il est parfois nécessaire de retrouver un candidat avec son e-mail. Pour ce faire il est possible d’utiliser la requête
+OData ci-dessous :
+
+```bash [cURL]
+curl --location 'https://myapi.aimaira.net/GraphV1/Candidat?%24expand=Mail&%24filter=Mail%2FAdresse%20eq%20%27adresse.email%40test.fr%27' \
+	-u 'nomdutilisateur:motdepasse'
+```
+
 ## Création d’un Candidat
 
 Avant de créer un candidat, il faut créer son [E-mail][e-mail].
