@@ -147,7 +147,7 @@ MD5.HashData(encodedValue);
 
 :::
 
-Enfin, on encode la somme de contrôle en base 64
+Enfin, on encode la somme de contrôle en base64
 
 ::: code-group
 
@@ -159,5 +159,54 @@ Convert.ToBase64String(hash);
 
 Il suffit de comparer la somme de contrôle ainsi produite avec celle du message pour vérifier son intégrité.
 
+## Lister les webhooks configurés
+
+Il est possible de lister les webhooks configurés en utilisant la requête suivante :
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Webhook \
+	-u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Webhook/$entity",
+  "value": [
+        {
+            "Id": 9,
+            "Code": "WH_CODE",
+            "Nom": "Mon webhook",
+            "Actif": true,
+            "Url": "...",
+            "Configuration": "{ \"Entites\": [ \"recrutement.T_CANDIDAT\" ] }",
+            "AuthType": 2,
+            "AuthClientId": "...",
+            "AuthTokenEndpoint": "..."
+        }
+    ]
+}
+```
+
+:::
+
+| Paramètre         | Description                                                                                                                                            |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Code              | Code unique représentant le webhook                                                                                                                    |
+| Nom               | Nom descriptif pour le webhook                                                                                                                         |
+| Url               | URL à appeler lors du déclenchement du webhook                                                                                                         |
+| Configuration     | Objet JSON représentant la liste d'entités pour lesquelles déclencher le webhook (voir [ce paragraphe][noms-herites] de la documentation de référence) |
+| AuthType          | Le type d'authenfication à utiliser lors de l'appel au webhook <br/>*(None = 0, Basic = 1, OAuthClientCredentials = 2)*                                |
+| AuthClientId      | L'identifiant à utiliser pour l'authentification                                                                                                       |
+| AuthTokenEndpoint | L'endpoint d'authentification à utiliser pour l'authentification OAuth <br/>(utilisé uniquement si AuthType = 2)                                       |
+
 [reference]: /reference/
 [http-codes]: https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP#2xx_-_Succès
+[noms-herites]: /reference/#correspondance-des-noms-d-entites-herites
