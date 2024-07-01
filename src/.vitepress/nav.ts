@@ -101,6 +101,16 @@ const nav = [
                     },
                     {
                         collapsed: true,
+                        text: 'Finance',
+                        items: [
+                            {
+                                text: 'Lignes de balance client',
+                                link: '/reference/ressources/finance/balance-client',
+                            }
+                        ],
+                    },
+                    {
+                        collapsed: true,
                         text: 'Planification',
                         items: [
                             {
@@ -126,6 +136,10 @@ const nav = [
                     {
                         text: 'Créer une candidature',
                         link: '/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature',
+                    },
+                    {
+                        text: 'Récupérer les données financières du dossier de candidature',
+                        link: '/reference/cas-d-usage/recuperer-les-donnees-financieres-du-dossier-de-candidature',
                     },
                     {
                         text: 'Créer une inscription',

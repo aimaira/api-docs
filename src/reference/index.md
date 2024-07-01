@@ -54,6 +54,7 @@ de vous faciliter cette tâche.
 ### Candidature
 
 - [Créer un nouveau dossier de candidature](/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature)
+- [Récupérer les données financières du dossier de candidature](/reference/cas-d-usage/recuperer-les-donnees-financieres-du-dossier-de-candidature)
 
 ### Inscription
 

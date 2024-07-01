@@ -16,7 +16,7 @@ Seuls les candidats qui disposent d’un [Dossier][dossier] complet sont listés
 
 ## Rechercher un candidat par e-mail
 
-Il est parfois nécessaire de retrouver un candidat avec son e-mail. Pour ce faire il est possible d’utiliser la requête
+Il est parfois nécessaire de retrouver un candidat avec son e-mail. Pour ce faire, il est possible d’utiliser la requête
 OData ci-dessous :
 
 ```bash [cURL]
