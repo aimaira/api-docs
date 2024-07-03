@@ -11,8 +11,10 @@ pouvez également nous fournir la liste des types d’entités qui déclencheron
 Enfin, vous pouvez nous fournir un bref descriptif de votre webhook qui sera renvoyé avec le message.
 
 ::: warning Note
+
 Au moment de la rédaction de cette documentation, il n’est pas possible pour un utilisateur d’AIMAIRA de mettre en place
 un webhook par lui-même.
+
 :::
 
 Votre service doit retourner un code HTTP de succès ([2XX][http-codes]). En cas d’erreur, les messages pourront être 
