@@ -99,7 +99,7 @@ const nav = [
                         items: [
                             {
                                 text: 'Enseignant',
-                            }
+                            },
                         ]
                     },
                     {
@@ -185,7 +185,7 @@ const nav = [
                             {
                                 text: 'Société de facturation',
                                 link: '/reference/ressources/finance/societe-de-facturation',
-                            }
+                            },
                         ],
                     },
                     {
@@ -199,7 +199,7 @@ const nav = [
                             {
                                 text: 'Séquence',
                                 link: '/reference/ressources/pedagogie/sequence',
-                            }
+                            },
                         ],
                     },
                     {
@@ -259,7 +259,33 @@ const nav = [
                             {
                                 text: 'Type de frais de formation',
                                 link: '/reference/ressources/relation-entreprise/type-de-frais-de-formation',
-                            }
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Sélection',
+                        items: [
+                            {
+                                text: 'Candidat',
+                                link: '/reference/ressources/selection/candidat',
+                            },
+                            {
+                                text: 'Concours',
+                                link: '/reference/ressources/selection/concours',
+                            },
+                            {
+                                text: 'Convocation',
+                                link: '/reference/ressources/selection/convocation',
+                            },
+                            {
+                                text: 'Créneau',
+                                link: '/reference/ressources/selection/creneau',
+                            },
+                            {
+                                text: 'Résultat d’épreuve',
+                                link: '/reference/ressources/selection/resultat-epreuve',
+                            },
                         ],
                     }
                 ],
