@@ -101,6 +101,14 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Type de convention](/reference/ressources/relation-entreprise/type-de-convention)
 - [Type de frais de formation](/reference/ressources/relation-entreprise/type-de-frais-de-formation)
 
+#### Sélection
+
+- [Candidat](/reference/ressources/selection/candidat)
+- [Concours](/reference/ressources/selection/concours)
+- [Convocation](/reference/ressources/selection/convocation)
+- [Créneau](/reference/ressources/selection/creneau)
+- [Résultat d’épreuve](/reference/ressources/selection/resultat-epreuve)
+
 ## Correspondance des noms d’entités hérités
 
 À plusieurs occasions lors de l’interfaçage avec le logiciel, il vous sera nécessaire de pouvoir faire correspondre le

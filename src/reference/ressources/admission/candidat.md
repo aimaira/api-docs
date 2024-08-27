@@ -2,14 +2,8 @@
 
 ::: tip Sélection
 
-Si vous souhaitez créer, modifier, consulter ou supprimer des candidats de **Sélection**, veillez à utiliser les points
-d’entrée préfixés par `/selection`.
-
-**Exemple :** `/GraphV1/Candidat` devient `/GraphV1/selection/Candidat`
-
-> Bien qu’une attention particulière soit apportée à ce que la façon d’utiliser ces points d’entrée différents soit la 
-plus proche possible, il subsiste des différences d’usage. Dans ce cas, des encarts comme celui-ci décrivent les
-spécificités de **Sélection**.
+Si vous souhaitez créer, modifier, consulter ou supprimer des candidats de **Sélection**, référez-vous à la 
+documentation de [Sélection][selection].
 
 :::
 
