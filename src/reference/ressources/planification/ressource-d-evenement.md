@@ -10,7 +10,7 @@ Au même titre qu’un événement du calendrier, une ressource d’événement 
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/PlanificationRessource/2218769 \
+curl https://myapi.aimaira.net/GraphV1/PlanificationRessource/2218769 \
   --request GET \
   -u 'nomdutilisateur:motdepasse'
 ```
@@ -23,7 +23,7 @@ curl https://myapi.aimaira.net/PlanificationRessource/2218769 \
 
 ```json [JSON]
 {
-    "@odata.context": "https://myapi.aimaira.net/$metadata#PlanificationRessource/$entity",
+    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#PlanificationRessource/$entity",
     "Id": 2218769,
     "Nom": "Salle_01",
     "Code": "Salle_01",
@@ -63,11 +63,11 @@ obtenu comme suit :
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/PlanificationRessource/2218769 \
+curl https://myapi.aimaira.net/GraphV1/PlanificationRessource/2218769 \
     --request PUT \
     --header 'Content-Type: application/json' \
     --data '{
-    "@odata.context": "https://myapi.aimaira.net/$metadata#PlanificationRessource/$entity",
+    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#PlanificationRessource/$entity",
     "Id": 2218769,
     "Nom": "Salle_01",
     "Code": "Salle_01",
@@ -105,7 +105,7 @@ curl https://myapi.aimaira.net/PlanificationRessource/2218769 \
 
 ```json [JSON]
 {
-    "@odata.context": "https://myapi.aimaira.net/$metadata#PlanificationRessource/$entity",
+    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#PlanificationRessource/$entity",
     "Id": 2218769,
     "Nom": "Salle_01",
     "Code": "Salle_01",
