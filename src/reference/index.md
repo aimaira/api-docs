@@ -19,6 +19,12 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Période](/reference/ressources/core/periode)
 - [Programme](/reference/ressources/core/programme)
 
+### File
+
+- [Description](/reference/ressources/file/description)
+- [Directory](/reference/ressources/file/directory)
+- [File](/reference/ressources/file/file)
+
 ### Admission
 
 - [Candidat](/reference/ressources/admission/candidat)
@@ -50,6 +56,10 @@ Une [page de la présente documentation](/reference/correspondance-entites-noms-
 de vous faciliter cette tâche.
 
 ## Cas d’usage
+
+### Global
+
+- [Téléverser un document](/reference/cas-d-usage/televerser-un-document)
 
 ### Candidature
 
