@@ -49,6 +49,24 @@ const nav = [
                     },
                     {
                         collapsed: true,
+                        text: 'File',
+                        items: [
+                            {
+                                text: 'Description',
+                                link: '/reference/ressources/file/description'
+                            },
+                            {
+                                text: 'Directory',
+                                link: '/reference/ressources/file/directory'
+                            }, 
+                            {
+                                text: 'File',
+                                link: '/reference/ressources/file/file'
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
                         text: 'Admission',
                         items: [
                             {
@@ -149,6 +167,10 @@ const nav = [
                         text: 'Modifier un événement du calendrier',
                         link: '/reference/cas-d-usage/modifier-un-evenement-du-calendrier',
                     },
+                    { 
+                        text: 'Téléverser un document',
+                        link: '/reference/cas-d-usage/televerser-un-document',
+                    }
                 ],
             }
         ],
