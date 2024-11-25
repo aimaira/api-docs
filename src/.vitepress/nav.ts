@@ -45,6 +45,10 @@ const nav = [
                                 text: 'Programme',
                                 link: '/reference/ressources/core/programme',
                             },
+                            {
+                                text: 'Utilisateur',
+                                link: '/reference/ressources/core/utilisateur',
+                            },
                         ],
                     },
                     {
@@ -58,7 +62,7 @@ const nav = [
                             {
                                 text: 'Directory',
                                 link: '/reference/ressources/file/directory'
-                            }, 
+                            },
                             {
                                 text: 'File',
                                 link: '/reference/ressources/file/file'
@@ -152,25 +156,47 @@ const nav = [
                 text: 'Cas d’usage',
                 items: [
                     {
-                        text: 'Créer une candidature',
-                        link: '/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature',
+                        text: 'Créer un utilisateur',
+                        link: '/reference/cas-d-usage/creer-un-nouvel-utilisateur',
                     },
                     {
-                        text: 'Récupérer les données financières du dossier de candidature',
-                        link: '/reference/cas-d-usage/recuperer-les-donnees-financieres-du-dossier-de-candidature',
-                    },
-                    {
-                        text: 'Créer une inscription',
-                        link: '/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription',
-                    },
-                    {
-                        text: 'Modifier un événement du calendrier',
-                        link: '/reference/cas-d-usage/modifier-un-evenement-du-calendrier',
-                    },
-                    { 
                         text: 'Téléverser un document',
                         link: '/reference/cas-d-usage/televerser-un-document',
-                    }
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Admission',
+                        items: [
+                            {
+                                text: 'Créer une candidature',
+                                link: '/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature',
+                            },
+                            {
+                                text: 'Récupérer les données financières du dossier de candidature',
+                                link: '/reference/cas-d-usage/recuperer-les-donnees-financieres-du-dossier-de-candidature',
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Inscription',
+                        items: [
+                            {
+                                text: 'Créer une inscription',
+                                link: '/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription',
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Planification',
+                        items: [
+                            {
+                                text: 'Modifier un événement du calendrier',
+                                link: '/reference/cas-d-usage/modifier-un-evenement-du-calendrier',
+                            },
+                        ],
+                    },
                 ],
             }
         ],
