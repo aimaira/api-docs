@@ -18,6 +18,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [E-mail](/reference/ressources/core/e-mail)
 - [Période](/reference/ressources/core/periode)
 - [Programme](/reference/ressources/core/programme)
+- [Utilisateur](/reference/ressources/core/utilisateur)
 
 ### File
 
@@ -59,9 +60,10 @@ de vous faciliter cette tâche.
 
 ### Global
 
+- [Créer un nouvel utilisateur](/reference/cas-d-usage/creer-un-nouvel-utilisateur) 
 - [Téléverser un document](/reference/cas-d-usage/televerser-un-document)
 
-### Candidature
+### Admission
 
 - [Créer un nouveau dossier de candidature](/reference/cas-d-usage/creer-un-nouveau-dossier-de-candidature)
 - [Récupérer les données financières du dossier de candidature](/reference/cas-d-usage/recuperer-les-donnees-financieres-du-dossier-de-candidature)
