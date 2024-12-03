@@ -74,6 +74,18 @@ curl https://myapi.aimaira.net/GraphV1/Candidat \
 
 :::
 
+## Mise à jour des données
+
+::: danger ⚠️ Attention
+
+Lors d’une mise à jour de données depuis l’API, il n’est pas possible de mettre à jour des champs de façon unitaire.
+Tous les champs qui ne sont pas transmis lors d’une mise à jour sont remis à zéro.
+
+Afin de pouvoir mettre à jour une entité sans risque, il faut au préalable la récupérer via l’API, puis modifier les
+propriétés nécessaires, et pousser l’entité modifiée.
+
+:::
+
 ## OData
 
 L’API AIMAIRA implémente le protocole [OData][odata] (Open Data Protocol) : une norme qui défini un ensemble de bonnes 

@@ -69,6 +69,13 @@ Les messages envoyés à votre service sont au format JSON et conforme au JSON S
 Les messages ne contiennent pas la donnée modifiée. Afin de récupérer les propriétés de l’objet concerné, il vous faudra
 faire une requête via l’API.
 
+## Vérification du type de modification
+
+Afin de vérifier le type de modification à l’origine de l’appel au webhook, il peut être nécessaire de récupérer les
+métadonnées liées à l’entitée modifiée.
+
+Pour ce faire, il est nécessaire d’appeler [le point d’entrée Object][endpoint-object] avec l’identifiant de l’entité.
+
 ## Authentification lors du déclenchement du webhook
 
 Afin de permettre l’envoi de messages sur des URL qui nécessitent une authentification, il est possible d’utiliser la
@@ -212,3 +219,4 @@ curl https://myapi.aimaira.net/GraphV1/Webhook \
 [reference]: /reference/
 [http-codes]: https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP#2xx_-_Succès
 [noms-herites]: /reference/#correspondance-des-noms-d-entites-herites
+[endpoint-object]: /reference/ressources/core/object
