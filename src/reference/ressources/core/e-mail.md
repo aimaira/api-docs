@@ -34,3 +34,38 @@ curl https://myapi.aimaira.net/GraphV1/Mail \
 ```
 
 :::
+
+## Rechercher un e-mail existant
+
+Cet endpoint retourne la liste des e-mails correspondants à l’adresse passée en paramètre.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Mail?$filter=Adresse eq 'mon.adresse@email.fr' \
+    --header 'Content-Type: application/json' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "http://localhost:31766/$metadata#Mail",
+  "value": [
+    {
+      "Id": 12345678,
+      "Nom": "",
+      "Code": "",
+      "Adresse": "mon.adresse@email.fr",
+      "IsDuplicate": false
+    }
+  ]
+}
+```
+
+:::
