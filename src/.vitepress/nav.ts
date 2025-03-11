@@ -224,6 +224,14 @@ const nav = [
                         collapsed: true,
                         text: 'Relation entreprise',
                         items: [
+                        	{
+                                text: 'Compte',
+                                link: '/reference/ressources/relation-entreprise/compte',
+                            },
+                            {
+                                text: 'Contact',
+                                link: '/reference/ressources/relation-entreprise/contact',
+                            },
                             {
                                 text: 'Convention',
                                 link: '/reference/ressources/relation-entreprise/convention',
