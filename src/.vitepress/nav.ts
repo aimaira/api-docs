@@ -260,6 +260,14 @@ const nav = [
                         collapsed: true,
                         text: 'Relation entreprise',
                         items: [
+                        	{
+                                text: 'Compte',
+                                link: '/reference/ressources/relation-entreprise/compte',
+                            },
+                            {
+                                text: 'Contact',
+                                link: '/reference/ressources/relation-entreprise/contact',
+                            },
                             {
                                 text: 'Autre lieu de formation',
                                 link: '/reference/ressources/relation-entreprise/autre-lieu-de-formation',
