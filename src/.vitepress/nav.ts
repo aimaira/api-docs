@@ -38,6 +38,10 @@ const nav = [
                                 link: '/reference/ressources/core/e-mail',
                             },
                             {
+                                text: 'Note',
+                                link: '/reference/ressources/core/note',
+                            },
+                            {
                                 text: 'Période',
                                 link: '/reference/ressources/core/periode',
                             },
@@ -126,8 +130,24 @@ const nav = [
                         text: 'Finance',
                         items: [
                             {
+                                text: 'Affaire',
+                                link: '/reference/ressources/finance/affaire',
+                            },
+                            {
                                 text: 'Lignes de balance client',
                                 link: '/reference/ressources/finance/balance-client',
+                            },
+                            {
+                                text: 'Client',
+                                link: '/reference/ressources/finance/client',
+                            },
+                            {
+                                text: 'Nature du client',
+                                link: '/reference/ressources/finance/nature-client',
+                            },
+                            {
+                                text: 'Société de facturation',
+                                link: '/reference/ressources/finance/societe-de-facturation',
                             }
                         ],
                     },

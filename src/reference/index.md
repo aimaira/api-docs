@@ -16,6 +16,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Campus](/reference/ressources/core/campus)
 - [Civilité](/reference/ressources/core/civilite)
 - [E-mail](/reference/ressources/core/e-mail)
+- [Note](/reference/ressources/core/note)
 - [Période](/reference/ressources/core/periode)
 - [Programme](/reference/ressources/core/programme)
 - [Utilisateur](/reference/ressources/core/utilisateur)
@@ -32,6 +33,14 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Dossier](/reference/ressources/admission/dossier)
 - [État de candidature](/reference/ressources/admission/etat-de-candidature)
 - [Voie d’admission](/reference/ressources/admission/voie-d-admission)
+
+### Finance
+
+- [Affaire](/reference/ressources/finance/affaire)
+- [Lignes de balance client](/reference/ressources/finance/balance-client)
+- [Client](/reference/ressources/finance/client)
+- [Nature du client](/reference/ressources/finance/nature-client)
+- [Société de facturation](/reference/ressources/finance/societe-de-facturation)
 
 ### Inscription
 

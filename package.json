@@ -17,6 +17,6 @@
         "serve": "vitepress serve src"
     },
     "dependencies": {
-        "mermaid": "^10.9.3"
+        "mermaid": "^11.4.1"
     }
 }

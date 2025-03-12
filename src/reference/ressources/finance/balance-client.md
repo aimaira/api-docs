@@ -1,12 +1,11 @@
 # Balance client
 
-## Lister les balances client
+## Lister les lignes de balance d’un client
 
 ::: code-group
 
 ```bash [cURL]
 curl https://myapi.aimaira.net/GraphV1/BalanceClient \
-  --request GET \
   -u 'nomdutilisateur:motdepasse'
 ```
 
