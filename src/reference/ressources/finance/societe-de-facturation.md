@@ -1,8 +1,8 @@
-# Campus
+# Société de facturation
 
-Historiquement, AIMAIRA disposait d’une notion d’[entité juridique][entite-juridique] qui pouvait représenter tantôt 
-un campus tantôt une [société de facturation][societe-de-facturation]. Ces notions ont été séparées en deux entités 
-distinctes qui doivent maintenant être utilisées indépendamment.
+Historiquement, AIMAIRA disposait d’une notion d’[entité juridique][entite-juridique] qui pouvait représenter tantôt
+un [campus][campus] tantôt une société de facturation. Ces notions ont été séparées en deux entités distinctes qui 
+doivent maintenant être utilisées indépendamment.
 
 ::: warning Note
 
@@ -93,3 +93,6 @@ curl https://myapi.aimaira.net/GraphV1/Campus \
 
 [entite-juridique]: /reference/ressources/herite/entite-juridique
 [societe-de-facturation]: /reference/ressources/finance/societe-de-facturation
+
+[entite-juridique]: /reference/ressources/herite/entite-juridique
+[campus]: /reference/ressources/core/campus
