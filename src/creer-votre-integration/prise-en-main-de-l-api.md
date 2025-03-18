@@ -135,5 +135,35 @@ requête.
 Pour découvrir d’autres options de requêtes, consultez [la documentation en ligne de Microsoft][odata-query-options] à 
 ce sujet.
 
+## Description des entités
+
+Dans chaque réponse, le serveur OData inclut un contexte qui peut être utilisé pour décrire les champs de l’entité et
+les relations avec d’autres entités.
+
+### Exemple
+
+::: code-group
+
+```bash [Requête cURL]
+curl 'https://myapi.aimaira.net/GraphV1/GraphV1/$metadata#Civilite$entity' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+```xml [Réponse XML]
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="GraphV1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityType Name="Civilite" BaseType="GraphV1.Base">
+                <Property Name="NomLong" Type="Edm.String"/>
+                <Property Name="GenreMale" Type="Edm.Boolean"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
+```
+
+:::
+
 [odata]: https://learn.microsoft.com/fr-fr/odata/
 [odata-query-options]: https://learn.microsoft.com/fr-fr/odata/concepts/queryoptions-overview
