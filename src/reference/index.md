@@ -51,11 +51,21 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Régime de l’apprenant](/reference/ressources/inscription/regime-de-l-apprenant)
 - [Voie d’entrée](/reference/ressources/inscription/voie-d-entree)
 
+### Pédagogie
+
+- [Séquence](/reference/ressources/pedagogie/sequence)
+
 ### Planification
 
 - [Événement du calendrier](/reference/ressources/planification/evenement-du-calendrier)
 - [Ressource d’événement](/reference/ressources/planification/ressource-d-evenement)
 - [Type d’événement](/reference/ressources/planification/type-d-evenement)
+
+### Relation entreprise
+
+- [Convention](/reference/ressources/relation-entreprise/convention)
+- [État de convention](/reference/ressources/relation-entreprise/etat-de-convention)
+- [Type de convention](/reference/ressources/relation-entreprise/type-de-convention)
 
 ## Correspondance des noms d’entités hérités
 
@@ -84,3 +94,7 @@ de vous faciliter cette tâche.
 ### Planification
 
 - [Modifier un événement du calendrier](/reference/cas-d-usage/modifier-un-evenement-du-calendrier)
+
+### Relation entreprise
+
+- [Créer une nouvelle convention](/reference/cas-d-usage/creer-une-nouvelle-convention)
