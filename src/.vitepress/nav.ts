@@ -153,6 +153,16 @@ const nav = [
                     },
                     {
                         collapsed: true,
+                        text: 'Pédagogie',
+                        items: [
+                            {
+                                text: 'Séquence',
+                                link: '/reference/ressources/pedagogie/sequence',
+                            }
+                        ],
+                    },
+                    {
+                        collapsed: true,
                         text: 'Planification',
                         items: [
                             {
@@ -169,6 +179,24 @@ const nav = [
                             },
                         ],
                     },
+                    {
+                        collapsed: true,
+                        text: 'Relation entreprise',
+                        items: [
+                            {
+                                text: 'Convention',
+                                link: '/reference/ressources/relation-entreprise/convention',
+                            },
+                            {
+                                text: 'État de convention',
+                                link: '/reference/ressources/relation-entreprise/etat-de-convention',
+                            },
+                            {
+                                text: 'Type de convention',
+                                link: '/reference/ressources/relation-entreprise/type-de-convention',
+                            }
+                        ],
+                    }
                 ],
             },
             {
@@ -214,6 +242,16 @@ const nav = [
                             {
                                 text: 'Modifier un événement du calendrier',
                                 link: '/reference/cas-d-usage/modifier-un-evenement-du-calendrier',
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Relation entreprise',
+                        items: [
+                            {
+                                text: 'Créer une nouvelle convention',
+                                link: '/reference/cas-d-usage/creer-une-nouvelle-convention',
                             },
                         ],
                     },
