@@ -8,7 +8,7 @@ pouvez utiliser l’API publique.
 Avant de pouvoir créer une convention pour un apprenant, il vous est nécessaire d’avoir renseigné son dossier
 d’inscription.
 
-[Créer un nouveau dossier d’inscription][creer-un-dossier-d-inscription]
+[Créer un nouveau dossier d’inscription][creer-un-dossier-d-inscription]  
 [Retrouver un apprenant existant][retrouver-un-apprenant-existant]
 
 ## Choisir le type de convention
@@ -111,11 +111,6 @@ appropriée récupérés, vous pouvez créer la convention.
 
 [Créer une convention][creer-une-convention]
 
-### Contrat d’apprentissage
-
-Lors de la création d’une convention de type « contrat d’apprentissage », le premier mode contractuel disponible est
-automatiquement sélectionné.
-
 ### État de la convention
 
 Lors de sa création, la convention est placée dans le premier état de convention disponible.
@@ -125,31 +120,118 @@ la convention sont supprimés.
 
 [Lister les états de convention][lister-les-etats-de-convention]
 
-### Organisme financeur
+### Convention de stage
 
-Afin de renseigner un organisme financeur pour une convention, il vous faut au préalable récupérer son identifiant.
+#### Renseigner une entreprise
 
-[Lister les organismes financeurs][lister-les-organismes-financeurs]
-[Ajouter un organisme financeur à une convention][ajouter-un-organisme-financeur-a-une-convention]
+Avant de pouvoir renseigner une entreprise pour la convention, il est nécessaire de la créer.
+Il n’existe pas de référentiel d’entreprises dans AIMAIRA.
 
-### Entreprise
+::: warning Attention
 
-Avant de pouvoir renseigner une entreprise pour la convention, il est nécessaire de la créer. 
-Il n’existe pas de référentiel d’entreprises dans AIMAIRA. 
-
-Chaque convention dispose ainsi d’une entité entreprise qui lui est propre, même si deux conventions différentes ciblent 
-la même entreprise physique. Cela veut dire que deux conventions ne peuvent pas avoir la même valeur renseignée dans le
+Chaque convention dispose d’une entité entreprise qui lui est propre, même si deux conventions différentes ciblent la
+même entreprise physique. Cela veut dire que deux conventions ne peuvent pas avoir la même valeur renseignée dans le
 champ `EntrepriseId`.
+
+:::
 
 [Créer une entreprise][creer-une-entreprise]
 
+Il vous faudra ensuite [modifier la convention](#modifier-la-convention) en passant l’identifiant de l’entreprise
+nouvellement créée.
+
+#### Renseigner un enseignant
+
+Avant de renseigner un enseignant, il vous faudra retrouver son identifiant.
+
+[Lister les enseignants][lister-les-enseignants]
+
+Il vous faudra ensuite [modifier la convention](#modifier-la-convention) en passant l’identifiant de l’enseignant 
+choisi.
+
+#### Renseigner un tuteur, un signataire ou un autre contact
+
+Un tuteur, un signataire ou un autre contact est représenté par un professionnel. Avant de pouvoir ajouter un tuteur, un
+signataire ou un autre contact à la convention, il faut préalablement les créer.
+
+Le tuteur, le signataire et l’autre contact doivent être trois professionnels différents avec trois identifiants
+différents. Dans le cas où il s’agit de la même personne physique, il faudra créer plusieurs professionnels avec les
+mêmes informations.
+
+[Créer un professionnel][creer-un-professionnel]
+
+Il vous faudra ensuite [modifier la convention](#modifier-la-convention) en passant l’identifiant du professionnel
+nouvellement créé.
+
+Pour renseigner le tuteur, il faut modifier le champ `MaitreId`.
+Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
+
+### Contrat d’apprentissage
+
+Lors de la création d’une convention de type « contrat d’apprentissage », le premier mode contractuel disponible est
+automatiquement sélectionné.
+
+#### Renseigner une entreprise
+
+L’organisme financeur d’un contrat de professionnalisation peut être renseigné
+[comme pour une convention de stage](#renseigner-une-entreprise).
+
+#### Renseigner un organisme financeur
+
+Afin de renseigner un organisme financeur pour une convention, il vous faut au préalable récupérer son identifiant.
+
+[Lister les organismes financeurs][lister-les-organismes-financeurs]  
+[Ajouter un organisme financeur à une convention][ajouter-un-organisme-financeur-a-une-convention]
+
+#### Renseigner un signataire, un maître d’apprentissage ou un autre contact
+
+Voir [comment renseigner un professionnel pour une convention de stage](#renseigner-un-tuteur-un-signataire-ou-un-autre-contact).
+
+Pour renseigner le maître d’apprentissage 1, il faut modifier le champ `MaitreId`.
+Pour renseigner le maître d’apprentissage 2, il faut modifier le champ `MaitreBisId`.
+Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
+
+### Contrat de professionnalisation
+
+#### Renseigner une entreprise
+
+L’organisme financeur d’un contrat de professionnalisation peut être renseigné
+[comme pour une convention de stage](#renseigner-une-entreprise).
+
+#### Renseigner un organisme financeur
+
+L’organisme financeur d’un contrat de professionnalisation peut être renseigné 
+[comme pour un contrat d’apprentissage](#renseigner-un-organisme-financeur).
+
+## Modifier la convention
+
+Comme pour toute autre entité, il n’est pas possible de modifier seulement certaines propriétés d’une convention lors
+d’une modification *([voir la documentation de prise en main de l’API][prise-en-main-mise-a-jour])*.
+
+Avant toute modification, il est donc nécessaire de récupérer la convention choisie, de modifier les propriétés 
+appropriées et de mettre à jour intégralement l’entité.
+
+[Modifier une convention][modifier-une-convention]
+
+#### Renseigner un signataire, un tuteur (employeur), un tuteur (entreprise utilisatrice) ou un autre contact
+
+Voir [comment renseigner un professionnel pour une convention de stage](#renseigner-un-tuteur-un-signataire-ou-un-autre-contact).
+
+Pour renseigner le tuteur (employeur), il faut modifier le champ `MaitreId`.
+Pour renseigner le tuteur (entreprise utilisatrice), il faut modifier le champ `MaitreBisId`.
+Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
+
+[prise-en-main-mise-a-jour]: /creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees
 [creer-un-dossier-d-inscription]: /reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription
+[lister-les-enseignants]: /reference/ressources/academie/enseignant#lister-les-enseignants
 [retrouver-un-apprenant-existant]: /reference/ressources/inscription/apprenant#retrouver-un-apprenant
-[lister-les-types-de-convention]: /reference/ressources/relation-entreprise/type-de-convention
 [lister-dossiers-d-inscription-d-un-apprenant]: /reference/ressources/inscription/inscription
 [lister-les-sequences]: /reference/ressources/pedagogie/sequence#lister-les-sequences-d-une-inscription
-[creer-une-convention]: /reference/ressources/relation-entreprise/convention
-[lister-les-etats-de-convention]: /reference/ressources/relation-entreprise/etat-de-convention#lister-les-etats-de-convention
-[lister-les-organismes-financeurs]: /reference/ressources/relation-entreprise/organisme-financeur#lister-les-organismes-financeurs
+[creer-une-convention]: /reference/ressources/relation-entreprise/convention#creer-une-convention
+[modifier-une-convention]: /reference/ressources/relation-entreprise/convention#modifier-une-convention
 [ajouter-un-organisme-financeur-a-une-convention]: /reference/ressources/relation-entreprise/convention#ajouter-un-organisme-financeur
+[lister-les-etats-de-convention]: /reference/ressources/relation-entreprise/etat-de-convention#lister-les-etats-de-convention
 [creer-une-entreprise]: /reference/ressources/relation-entreprise/entreprise
+[lister-les-organismes-financeurs]: /reference/ressources/relation-entreprise/organisme-financeur#lister-les-organismes-financeurs
+[lister-les-types-de-convention]: /reference/ressources/relation-entreprise/type-de-convention
+[creer-un-professionnel]: /reference/ressources/relation-entreprise/professionnel#creer-un-professionnel

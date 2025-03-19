@@ -88,7 +88,6 @@ curl https://myapi.aimaira.net/GraphV1/Dossier
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Dossier/$entity",
   "SessionRecrutementId": 2253424,
   "CandidatId": 2253433,
   "EtatCandidatureId": 119058

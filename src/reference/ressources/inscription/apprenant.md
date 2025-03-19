@@ -282,7 +282,6 @@ curl https://myapi.aimaira.net/GraphV1/Candidat \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Apprenant/$entity",
   "Nom": "DUPONT",
   "Login": "jean.dupont@ecole.fr",
   "Prenoms": "Jean",

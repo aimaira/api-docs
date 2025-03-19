@@ -74,7 +74,6 @@ curl https://myapi.aimaira.net/GraphV1/SessionRecrutement \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#SessionRecrutement/$entity",
   "Nom": "Ma nouvelle voie d’admission",
   "Code": "VOIE",
   "Debut": "2023-09-01T00:00:00+02:00",
