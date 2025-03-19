@@ -48,7 +48,6 @@ curl https://myapi.aimaira.net/GraphV1/User \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-    "@odata.context": "https://graphskolae.aimaira.net/GraphV1/$metadata#User/$entity",
     "Nom": "DUPONT",
     "Login": "michel.dupont@monecole.fr",
     "Password": "g0nZymaAyTSR5p2AuGAeNeNio5lDg0sWpSNLSlHmOmoBbmmne6/dxAkzzYBKBwMWvqKPuxpfYuBNyiUdZCL9SWPsKJfDUh4Ll18e/pev9j0EyjUpGvLvRpY90fbvQ9bFWiC8QVmIAreHiIjFxBEIg4bJlEwl9P3Gb5tbFiIHNnw=",

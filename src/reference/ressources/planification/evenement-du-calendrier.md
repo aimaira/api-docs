@@ -29,7 +29,6 @@ curl https://myapi.aimaira.net/GraphV1/Planification \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Planification/$entity",
   "EntiteJuridiqueId": 2215111,
   "Debut": "2022-01-01T08:00:00+02:00",
   "Fin": "2022-01-01T09:00:00+02:00",

@@ -1,6 +1,6 @@
 # E-mail
 
-## Création d’un e-mail
+## Créer un e-mail
 
 ::: code-group
 
@@ -9,7 +9,6 @@ curl https://myapi.aimaira.net/GraphV1/Mail \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Mail/$entity",
   "Adresse": "jean.dupont@ecole.fr",
   "IsDuplicate": false
 }' \
@@ -55,7 +54,7 @@ curl https://myapi.aimaira.net/GraphV1/Mail?$filter=Adresse eq 'mon.adresse@emai
 
 ```json [JSON]
 {
-  "@odata.context": "http://localhost:31766/$metadata#Mail",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Mail",
   "value": [
     {
       "Id": 12345678,

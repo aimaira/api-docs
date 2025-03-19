@@ -83,7 +83,6 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Programme/$entity",
     "Nom": "Mon programme",
     "Code": "MON_PROGRAMME",
     "EntiteJuridiqueId": 2215156,
