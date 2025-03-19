@@ -100,12 +100,11 @@ curl https://myapi.aimaira.net/GraphV1/Inscription \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Inscription/$entity",
-    "ApprenantId": 0,
-    "ProgrammeId": 0,
-    "RegimeInscriptionId": 0,
-    "RecrutementId": 0,
-    "EtatInscriptionId": 0,
+    "ApprenantId": 2253466,
+    "ProgrammeId": 2253425,
+    "RegimeInscriptionId": 544,
+    "RecrutementId": 2215184,
+    "EtatInscriptionId": 78736,
     "DateInscription": "2023-11-20T12:00:00.000Z"
 }' \
     -u 'nomdutilisateur:motdepasse'
@@ -196,7 +195,6 @@ curl https://myapi.aimaira.net/GraphV1/InscriptionPeriode \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#InscriptionPeriode/$entity",
   "InscriptionId": 2253468,
   "PeriodeId": 1326,
   "LibellePeriode": "2023/2024",

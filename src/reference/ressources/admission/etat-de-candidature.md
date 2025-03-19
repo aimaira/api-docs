@@ -17,7 +17,7 @@ curl https://myapi.aimaira.net/GraphV1/EtatCandidature \
 
 ```json [JSON]
 {
-  "@odata.context": "http://localhost:31766/$metadata#EtatCandidature",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EtatCandidature",
   "value": [
     {
       "Id": 119058,

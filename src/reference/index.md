@@ -11,30 +11,38 @@ Elles sont organisées par univers, en respectant le menu de navigation présent
 
 L’univers `Core` est un univers virtuel qui contient toutes les ressources transverses à plusieurs Univers.
 
-### Core
+### Référence
 
+#### Core
+
+- [Adresse](/reference/ressources/core/adresse)
 - [Campus](/reference/ressources/core/campus)
 - [Civilité](/reference/ressources/core/civilite)
 - [E-mail](/reference/ressources/core/e-mail)
 - [Note](/reference/ressources/core/note)
 - [Période](/reference/ressources/core/periode)
 - [Programme](/reference/ressources/core/programme)
+- [Téléphone](/reference/ressources/core/telephone)
 - [Utilisateur](/reference/ressources/core/utilisateur)
 
-### File
+#### File
 
 - [Description](/reference/ressources/file/description)
 - [Directory](/reference/ressources/file/directory)
 - [File](/reference/ressources/file/file)
 
-### Admission
+#### Académie
+
+- [Enseignant](/reference/ressources/academie/enseignant)
+
+#### Admission
 
 - [Candidat](/reference/ressources/admission/candidat)
 - [Dossier](/reference/ressources/admission/dossier)
 - [État de candidature](/reference/ressources/admission/etat-de-candidature)
 - [Voie d’admission](/reference/ressources/admission/voie-d-admission)
 
-### Finance
+#### Finance
 
 - [Affaire](/reference/ressources/finance/affaire)
 - [Lignes de balance client](/reference/ressources/finance/balance-client)
@@ -42,7 +50,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Nature du client](/reference/ressources/finance/nature-client)
 - [Société de facturation](/reference/ressources/finance/societe-de-facturation)
 
-### Inscription
+#### Inscription
 
 - [Apprenant](/reference/ressources/inscription/apprenant)
 - [Inscription](/reference/ressources/inscription/inscription)
@@ -51,20 +59,22 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Régime de l’apprenant](/reference/ressources/inscription/regime-de-l-apprenant)
 - [Voie d’entrée](/reference/ressources/inscription/voie-d-entree)
 
-### Pédagogie
+#### Pédagogie
 
 - [Séquence](/reference/ressources/pedagogie/sequence)
 
-### Planification
+#### Planification
 
 - [Événement du calendrier](/reference/ressources/planification/evenement-du-calendrier)
 - [Ressource d’événement](/reference/ressources/planification/ressource-d-evenement)
 - [Type d’événement](/reference/ressources/planification/type-d-evenement)
 
-### Relation entreprise
+#### Relation entreprise
 
 - [Convention](/reference/ressources/relation-entreprise/convention)
+- [Entreprise](/reference/ressources/relation-entreprise/entreprise)
 - [État de convention](/reference/ressources/relation-entreprise/etat-de-convention)
+- [Organisme financeur](/reference/ressources/relation-entreprise/organisme-financeur)
 - [Type de convention](/reference/ressources/relation-entreprise/type-de-convention)
 
 ## Correspondance des noms d’entités hérités

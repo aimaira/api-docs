@@ -15,7 +15,6 @@ curl https://myapi.aimaira.net/GraphV1/Note \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
-    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Note/$entity",
     "NoteText": "Mon texte"
 }' \
     -u 'nomdutilisateur:motdepasse'

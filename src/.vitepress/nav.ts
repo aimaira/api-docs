@@ -26,6 +26,10 @@ const nav = [
                         text: 'Core',
                         items: [
                             {
+                                text: 'Adresse',
+                                link: '/reference/ressources/core/adresse',
+                            },
+                            {
                                 text: 'Campus',
                                 link: '/reference/ressources/core/campus',
                             },
@@ -42,12 +46,20 @@ const nav = [
                                 link: '/reference/ressources/core/note',
                             },
                             {
+                                text: 'Pays',
+                                link: '/reference/ressources/core/pays',
+                            },
+                            {
                                 text: 'Période',
                                 link: '/reference/ressources/core/periode',
                             },
                             {
                                 text: 'Programme',
                                 link: '/reference/ressources/core/programme',
+                            },
+                            {
+                                text: 'Téléphone',
+                                link: '/reference/ressources/core/telephone',
                             },
                             {
                                 text: 'Utilisateur',
@@ -72,6 +84,15 @@ const nav = [
                                 link: '/reference/ressources/file/file'
                             },
                         ],
+                    },
+                    {
+                        collapsed: true,
+                        text: 'Académie',
+                        items: [
+                            {
+                                text: 'Enseignant',
+                            }
+                        ]
                     },
                     {
                         collapsed: true,
@@ -188,8 +209,16 @@ const nav = [
                                 link: '/reference/ressources/relation-entreprise/convention',
                             },
                             {
+                                text: 'Entreprise',
+                                link: '/reference/ressources/relation-entreprise/entreprise',
+                            },
+                            {
                                 text: 'État de convention',
                                 link: '/reference/ressources/relation-entreprise/etat-de-convention',
+                            },
+                            {
+                                text: 'Organisme financeur',
+                                link: '/reference/ressources/relation-entreprise/organisme-financeur',
                             },
                             {
                                 text: 'Type de convention',
