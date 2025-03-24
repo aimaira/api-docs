@@ -30,40 +30,106 @@ curl https://myapi.aimaira.net/GraphV1/Dossier \
       "DateDebut": "2023-11-08T21:53:11.673+01:00",
       "DateFin": null,
       "DateEvaluation": null,
-      "DecisionId": 0,
+      "DecisionId": null,
       "DateDecision": null,
       "AnneeBac": "",
       "NoteBac": "",
       "SpecialiteBac": "",
-      "SpecialiteBaccalaureatGeneral1Id": 0,
-      "SpecialiteBaccalaureatGeneral2Id": 0,
+      "SpecialiteBaccalaureatGeneral1Id": null,
+      "SpecialiteBaccalaureatGeneral2Id": null,
       "EtablissementBac": "",
       "EtablissementVilleBac": "",
       "EtablissementNumeroUAIBac": "",
       "NumeroINEBac": "",
       "EnCoursBac": false,
-      "PaysIdBac": 0,
-      "BaccalaureatId": 0,
-      "MentionId": 0,
-      "InscriptionId": 0,
-      "CreneauId": 0,
-      "SituationActuelleId": 0,
-      "DernierDiplomeId": 0,
+      "PaysIdBac": null,
+      "BaccalaureatId": null,
+      "MentionId": null,
+      "InscriptionId": null,
+      "CreneauId": null,
+      "SituationActuelleId": null,
+      "DernierDiplomeId": null,
       "Numero": "C00001-1",
       "ReferenceCRM": "",
-      "Referent1Id": 0,
-      "Referent2Id": 0,
-      "SessionId": 0,
-      "ReponseQuestionnaireCandidatId": 0,
-      "ReponseQuestionnaireReferent1Id": 0,
-      "ReponseQuestionnaireReferent2Id": 0,
-      "ReponseQuestionnaireEvaluateurId": 0,
+      "Referent1Id": null,
+      "Referent2Id": null,
+      "SessionId": null,
+      "ReponseQuestionnaireCandidatId": null,
+      "ReponseQuestionnaireReferent1Id": null,
+      "ReponseQuestionnaireReferent2Id": null,
+      "ReponseQuestionnaireEvaluateurId": null,
       "CreneauLibre": null,
-      "AgentId": 0,
-      "NiveauEtudeId": 0,
-      "PourcentageAvancement": 0
+      "AgentId": null,
+      "NiveauEtudeId": null,
+      "PourcentageAvancement": 0,
+      "Parametres": []
     }
   ]
+}
+```
+
+:::
+
+## Récupérer un dossier avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Dossier/2253444 \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "Id": 2253444,
+  "Nom": "DUPONT",
+  "Code": "C00001",
+  "AffaireId": 2253443,
+  "CandidatId": 2253433,
+  "SessionRecrutementId": 2253424,
+  "EtatCandidatureId": 119058,
+  "DateDebut": "2023-11-08T21:53:11.673+01:00",
+  "DateFin": null,
+  "DateEvaluation": null,
+  "DecisionId": null,
+  "DateDecision": null,
+  "AnneeBac": "",
+  "NoteBac": "",
+  "SpecialiteBac": "",
+  "SpecialiteBaccalaureatGeneral1Id": null,
+  "SpecialiteBaccalaureatGeneral2Id": null,
+  "EtablissementBac": "",
+  "EtablissementVilleBac": "",
+  "EtablissementNumeroUAIBac": "",
+  "NumeroINEBac": "",
+  "EnCoursBac": false,
+  "PaysIdBac": null,
+  "BaccalaureatId": null,
+  "MentionId": null,
+  "InscriptionId": null,
+  "CreneauId": null,
+  "SituationActuelleId": null,
+  "DernierDiplomeId": null,
+  "Numero": "C00001-1",
+  "ReferenceCRM": "",
+  "Referent1Id": null,
+  "Referent2Id": null,
+  "SessionId": null,
+  "ReponseQuestionnaireCandidatId": null,
+  "ReponseQuestionnaireReferent1Id": null,
+  "ReponseQuestionnaireReferent2Id": null,
+  "ReponseQuestionnaireEvaluateurId": null,
+  "CreneauLibre": null,
+  "AgentId": null,
+  "NiveauEtudeId": null,
+  "PourcentageAvancement": 0,
+  "Parametres": []
 }
 ```
 
@@ -103,7 +169,6 @@ curl https://myapi.aimaira.net/GraphV1/Dossier
 
 ```json [JSON]
 {
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Dossier/$entity",
   "Id": 2253447,
   "Nom": "DUPONT",
   "Code": "C00001",
@@ -114,38 +179,200 @@ curl https://myapi.aimaira.net/GraphV1/Dossier
   "DateDebut": "2023-11-08T21:53:27.0844735+01:00",
   "DateFin": null,
   "DateEvaluation": null,
-  "DecisionId": 0,
+  "DecisionId": null,
   "DateDecision": null,
   "AnneeBac": "",
   "NoteBac": null,
   "SpecialiteBac": "",
-  "SpecialiteBaccalaureatGeneral1Id": 0,
-  "SpecialiteBaccalaureatGeneral2Id": 0,
+  "SpecialiteBaccalaureatGeneral1Id": null,
+  "SpecialiteBaccalaureatGeneral2Id": null,
   "EtablissementBac": "",
   "EtablissementVilleBac": "",
   "EtablissementNumeroUAIBac": "",
   "NumeroINEBac": "",
   "EnCoursBac": false,
-  "PaysIdBac": 0,
-  "BaccalaureatId": 0,
-  "MentionId": 0,
-  "InscriptionId": 0,
-  "CreneauId": 0,
-  "SituationActuelleId": 0,
-  "DernierDiplomeId": 0,
+  "PaysIdBac": null,
+  "BaccalaureatId": null,
+  "MentionId": null,
+  "InscriptionId": null,
+  "CreneauId": null,
+  "SituationActuelleId": null,
+  "DernierDiplomeId": null,
   "Numero": "C00001-2",
   "ReferenceCRM": "",
-  "Referent1Id": 0,
-  "Referent2Id": 0,
-  "SessionId": 0,
-  "ReponseQuestionnaireCandidatId": 0,
-  "ReponseQuestionnaireReferent1Id": 0,
-  "ReponseQuestionnaireReferent2Id": 0,
-  "ReponseQuestionnaireEvaluateurId": 0,
+  "Referent1Id": null,
+  "Referent2Id": null,
+  "SessionId": null,
+  "ReponseQuestionnaireCandidatId": null,
+  "ReponseQuestionnaireReferent1Id": null,
+  "ReponseQuestionnaireReferent2Id": null,
+  "ReponseQuestionnaireEvaluateurId": null,
   "CreneauLibre": null,
-  "AgentId": 0,
-  "NiveauEtudeId": 0,
-  "PourcentageAvancement": 0
+  "AgentId": null,
+  "NiveauEtudeId": null,
+  "PourcentageAvancement": 0,
+  "Parametres": []
+}
+```
+
+:::
+
+## Modifier un dossier
+
+Avant toute modification des propriétés d’un dossier, et pour éviter d’écraser des données, il faut au préalable 
+[récupérer le dossier actuel](#récupérer-un-dossier-avec-son-identifiant).
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Dossier/2253447 
+    --request POST \
+    --header 'Content-Type: application/json' \
+    --data '{
+  "Nom": "DUPONT",
+  "Code": "C00001",
+  "AffaireId": 2253446,
+  "CandidatId": 2253433,
+  "SessionRecrutementId": 2253424,
+  "EtatCandidatureId": 119058,
+  "DateDebut": "2023-11-08T21:53:27.0844735+01:00",
+  "DateFin": null,
+  "DateEvaluation": null,
+  "DecisionId": null,
+  "DateDecision": null,
+  "AnneeBac": "",
+  "NoteBac": null,
+  "SpecialiteBac": "",
+  "SpecialiteBaccalaureatGeneral1Id": null,
+  "SpecialiteBaccalaureatGeneral2Id": null,
+  "EtablissementBac": "",
+  "EtablissementVilleBac": "",
+  "EtablissementNumeroUAIBac": "",
+  "NumeroINEBac": "",
+  "EnCoursBac": false,
+  "PaysIdBac": null,
+  "BaccalaureatId": null,
+  "MentionId": null,
+  "InscriptionId": null,
+  "CreneauId": null,
+  "SituationActuelleId": null,
+  "DernierDiplomeId": null,
+  "Numero": "C00001-2",
+  "ReferenceCRM": "",
+  "Referent1Id": null,
+  "Referent2Id": null,
+  "SessionId": null,
+  "ReponseQuestionnaireCandidatId": null,
+  "ReponseQuestionnaireReferent1Id": null,
+  "ReponseQuestionnaireReferent2Id": null,
+  "ReponseQuestionnaireEvaluateurId": null,
+  "CreneauLibre": null,
+  "AgentId": null,
+  "NiveauEtudeId": null,
+  "PourcentageAvancement": 0,
+  "Parametres": []
+}' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "Id": 2253447,
+  "Nom": "DUPONT",
+  "Code": "C00001",
+  "AffaireId": 2253446,
+  "CandidatId": 2253433,
+  "SessionRecrutementId": 2253424,
+  "EtatCandidatureId": 119058,
+  "DateDebut": "2023-11-08T21:53:27.0844735+01:00",
+  "DateFin": null,
+  "DateEvaluation": null,
+  "DecisionId": null,
+  "DateDecision": null,
+  "AnneeBac": "",
+  "NoteBac": null,
+  "SpecialiteBac": "",
+  "SpecialiteBaccalaureatGeneral1Id": null,
+  "SpecialiteBaccalaureatGeneral2Id": null,
+  "EtablissementBac": "",
+  "EtablissementVilleBac": "",
+  "EtablissementNumeroUAIBac": "",
+  "NumeroINEBac": "",
+  "EnCoursBac": false,
+  "PaysIdBac": null,
+  "BaccalaureatId": null,
+  "MentionId": null,
+  "InscriptionId": null,
+  "CreneauId": null,
+  "SituationActuelleId": null,
+  "DernierDiplomeId": null,
+  "Numero": "C00001-2",
+  "ReferenceCRM": "",
+  "Referent1Id": null,
+  "Referent2Id": null,
+  "SessionId": null,
+  "ReponseQuestionnaireCandidatId": null,
+  "ReponseQuestionnaireReferent1Id": null,
+  "ReponseQuestionnaireReferent2Id": null,
+  "ReponseQuestionnaireEvaluateurId": null,
+  "CreneauLibre": null,
+  "AgentId": null,
+  "NiveauEtudeId": null,
+  "PourcentageAvancement": 0,
+  "Parametres": []
+}
+```
+
+:::
+
+## Modifier les champs personnalisés
+
+Les champs personnalisés du dossier sont disponibles dans la propriété `Parametres` de l’entité `Dossier`.
+
+Lors de la [modification d’un dossier](#modifier-un-dossier), il est possible de passer des champs personnalisés comme
+suit :
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Dossier/2253447 
+    --request POST \
+    --header 'Content-Type: application/json' \
+    --data '{
+  ...
+  "Parametres": [
+    {
+      "Code": "MonChampPersonnalisé",
+      "Valeur": "lavaleurdemonchamp"
+    }
+  ]
+}' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "Id": 2253447,
+  ...
+  "Parametres": [
+    {
+      "Id": 0,
+      "Code": "MonChampPersonnalisé",
+      "Valeur": "lavaleurdemonchamp"
+    }
+  ]
 }
 ```
 
