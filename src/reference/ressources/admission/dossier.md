@@ -220,7 +220,7 @@ curl https://myapi.aimaira.net/GraphV1/Dossier
 ## Modifier un dossier
 
 Avant toute modification des propriétés d’un dossier, et pour éviter d’écraser des données, il faut au préalable 
-[récupérer le dossier actuel](#récupérer-un-dossier-avec-son-identifiant).
+[récupérer le dossier actuel](#recuperer-un-dossier-avec-son-identifiant).
 
 ::: code-group
 
