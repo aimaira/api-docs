@@ -557,3 +557,28 @@ curl https://myapi.aimaira.net/GraphV1/ConventionOrganismeFinanceur \
 ```
 
 :::
+
+## Créer les données de facturation
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Convention/2410937/SynchronisationAffaire \
+  --request POST
+```
+
+:::
+
+Si la synchronisation a fonctionné, le point d’entrée répond avec le code `HTTP 200`.
+
+
+## Récupérer les informations de facturation
+
+Pour récupérer les informations de facturation, il faut retrouver le client créé pour la convention.
+Il peut exister plusieurs clients avec différentes natures. Par exemple : une entreprise et un organisme financeur.
+
+[Retrouver un client avec une référence][client-par-reference]  
+[Lister les natures de clients][nature-client]
+
+[client-par-reference]: /reference/ressources/finance/client#recuperer-un-client-avec-une-reference
+[nature-client]: /reference/ressources/finance/nature-client#lister-les-natures-de-clients

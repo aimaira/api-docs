@@ -120,9 +120,7 @@ la convention sont supprimés.
 
 [Lister les états de convention][lister-les-etats-de-convention]
 
-### Convention de stage
-
-#### Renseigner une entreprise
+### Renseigner une entreprise
 
 Avant de pouvoir renseigner une entreprise pour la convention, il est nécessaire de la créer.
 Il n’existe pas de référentiel d’entreprises dans AIMAIRA.
@@ -139,6 +137,15 @@ champ `EntrepriseId`.
 
 Il vous faudra ensuite [modifier la convention](#modifier-la-convention) en passant l’identifiant de l’entreprise
 nouvellement créée.
+
+### Renseigner la partie facturation
+
+Afin de créer la structure de données nécessaire pour pouvoir renseigner les informations de facturation, il faut au
+préalable appeler le point d’entrée `SynchronisationAffaire`.
+
+[Créer les données de facturation de la convention][creer-les-donnees-de-facturation]
+
+### Convention de stage
 
 #### Renseigner un enseignant
 
@@ -171,11 +178,6 @@ Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
 Lors de la création d’une convention de type « contrat d’apprentissage », le premier mode contractuel disponible est
 automatiquement sélectionné.
 
-#### Renseigner une entreprise
-
-L’organisme financeur d’un contrat de professionnalisation peut être renseigné
-[comme pour une convention de stage](#renseigner-une-entreprise).
-
 #### Renseigner un organisme financeur
 
 Afin de renseigner un organisme financeur pour une convention, il vous faut au préalable récupérer son identifiant.
@@ -193,15 +195,18 @@ Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
 
 ### Contrat de professionnalisation
 
-#### Renseigner une entreprise
-
-L’organisme financeur d’un contrat de professionnalisation peut être renseigné
-[comme pour une convention de stage](#renseigner-une-entreprise).
-
 #### Renseigner un organisme financeur
 
 L’organisme financeur d’un contrat de professionnalisation peut être renseigné 
 [comme pour un contrat d’apprentissage](#renseigner-un-organisme-financeur).
+
+#### Renseigner un signataire, un tuteur (employeur), un tuteur (entreprise utilisatrice) ou un autre contact
+
+Voir [comment renseigner un professionnel pour une convention de stage](#renseigner-un-tuteur-un-signataire-ou-un-autre-contact).
+
+Pour renseigner le tuteur (employeur), il faut modifier le champ `MaitreId`.
+Pour renseigner le tuteur (entreprise utilisatrice), il faut modifier le champ `MaitreBisId`.
+Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
 
 ## Modifier la convention
 
@@ -212,14 +217,6 @@ Avant toute modification, il est donc nécessaire de récupérer la convention c
 appropriées et de mettre à jour intégralement l’entité.
 
 [Modifier une convention][modifier-une-convention]
-
-#### Renseigner un signataire, un tuteur (employeur), un tuteur (entreprise utilisatrice) ou un autre contact
-
-Voir [comment renseigner un professionnel pour une convention de stage](#renseigner-un-tuteur-un-signataire-ou-un-autre-contact).
-
-Pour renseigner le tuteur (employeur), il faut modifier le champ `MaitreId`.
-Pour renseigner le tuteur (entreprise utilisatrice), il faut modifier le champ `MaitreBisId`.
-Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
 
 [prise-en-main-mise-a-jour]: /creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees
 [creer-un-dossier-d-inscription]: /reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription
@@ -235,3 +232,4 @@ Pour renseigner l’autre contact, il faut modifier le champ `ReferentId`.
 [lister-les-organismes-financeurs]: /reference/ressources/relation-entreprise/organisme-financeur#lister-les-organismes-financeurs
 [lister-les-types-de-convention]: /reference/ressources/relation-entreprise/type-de-convention
 [creer-un-professionnel]: /reference/ressources/relation-entreprise/professionnel#creer-un-professionnel
+[creer-les-donnees-de-facturation]: /reference/ressources/relation-entreprise/convention#creer-les-donnees-de-facturation
