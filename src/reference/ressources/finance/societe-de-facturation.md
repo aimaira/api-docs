@@ -10,13 +10,12 @@ Cette séparation des entités n’est implémentée que partiellement sur la ve
 
 :::
 
-## Récupérer les données d'un Campus avec son id
+## Récupérer les données d’une société de facturation avec son identifiant
 
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Campus/1234567 \
-  --request GET \
+curl https://myapi.aimaira.net/GraphV1/SocieteFacturation/1234567 \
   -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -28,28 +27,21 @@ curl https://myapi.aimaira.net/GraphV1/Campus/1234567 \
 
 ```json [JSON]
 {
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Campus/$entity",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#SocieteFacturation/$entity",
   "Id": 1234567,
-  "Code": "CAMPUS_1",
-  "Nom": "Mon campus",
-  "Adresse": {
-    "Voie": "10 rue Henri Barbusse",
-    "CodePostal": "57000",
-    "Ville": "Mulhouse",
-    "Pays": null
-  }
+  "Code": "SOC_FACTU_1",
+  "Nom": "Ma société de facturation"
 }
 ```
 
 :::
 
-## Lister tous les Campus
+## Lister toutes les sociétés de facturation
 
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Campus \
-  --request GET \
+curl https://myapi.aimaira.net/GraphV1/SocieteFacturation \
   -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -61,29 +53,17 @@ curl https://myapi.aimaira.net/GraphV1/Campus \
 
 ```json [JSON]
 {
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Campus/$entity",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#SocieteFacturation/$entity",
   "value": [
     {
       "Id": 1234567,
-      "Code": "CAMPUS_1",
-      "Nom": "Mon campus",
-      "Adresse": {
-        "Voie": "10 rue Henri Barbusse",
-        "CodePostal": "57000",
-        "Ville": "Mulhouse",
-        "Pays": null
-      }
+      "Code": "SOC_FACTU_1",
+      "Nom": "Ma société de facturation"
     },
     {
       "Id": 1234569,
-      "Code": "CAMPUS_2",
-      "Nom": "Mon deuxième campus",
-      "Adresse": {
-        "Voie": "6 rue Linus Carl Pauling",
-        "CodePostal": "76000",
-        "Ville": "Rouen",
-        "Pays": null
-      }
+      "Code": "SOC_FACTU_2",
+      "Nom": "Ma deuxième société de facturation"
     }
   ]
 }

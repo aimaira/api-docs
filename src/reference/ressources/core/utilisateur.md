@@ -1,6 +1,6 @@
 # Utilisateur
 
-## Chiffrement du mot de passe
+## Chiffrer un mot de passe
 
 Avant toute création d’utilisateur, veillez à bien chiffrer le mot de passe en utilisant la clé publique comme indiqué
 [ici][creation-nouvel-utilisateur].
@@ -39,7 +39,7 @@ Le type d’authentification dépend de l’usage et de la nature de l’utilisa
 - `LDAP`
 - `CAS`
 
-## Création d’un utilisateur
+## Créer un utilisateur
 
 ::: code-group
 
@@ -86,4 +86,91 @@ curl https://myapi.aimaira.net/GraphV1/User \
 
 :::
 
+## Lister les permissions d’un utilisateur
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/User/37/Permissions
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Collection(Edm.Int64)",
+  "value": [
+    1234567,
+    2215530,
+    2215158,
+    3280313,
+    1234569
+  ]
+}
+```
+
+:::
+
+## Ajouter des permissions à un utilisateur
+
+Il est possible de rajouter des permissions à un utilisateur, en passant les identifiants des entités auxquelles il doit
+avoir accès.
+
+Il est possible d’ajouter des droits sur les entités suivantes :
+
+- [Campus][campus]
+- [Département][departement]
+- [Marque][marque]
+- [Programme][programme]
+- [Société de facturation][societe-de-facturation]
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/User/37/AddPermissions \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "ids": [
+    1234567,
+    2215530,
+    2215158,
+    3280313,
+    1234569
+  ]
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Collection(Edm.Int64)",
+  "value": [
+    1234567,
+    2215530,
+    2215158,
+    3280313,
+    1234569
+  ]
+}
+```
+
+:::
+
 [creation-nouvel-utilisateur]: "/reference/cas-d-usage/creer-un-nouvel-utilisateur"
+[campus]: /reference/ressources/core/campus#lister-les-campus
+[departement]: /reference/ressources/pedagogie/departement#lister-les-departements
+[marque]: /reference/ressources/core/marque#lister-les-marques
+[programme]: /reference/ressources/core/programme#lister-les-programmes
+[societe-de-facturation]: /reference/ressources/finance/societe-de-facturation#lister-les-societes-de-facturation
