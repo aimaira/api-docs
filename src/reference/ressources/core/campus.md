@@ -10,13 +10,12 @@ Cette séparation des entités n’est implémentée que partiellement sur la ve
 
 :::
 
-## Récupérer les données d'un Campus avec son id
+## Récupérer les données d’un campus avec son identifiant
 
 ::: code-group
 
 ```bash [cURL]
 curl https://myapi.aimaira.net/GraphV1/Campus/1234567 \
-  --request GET \
   -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -49,7 +48,6 @@ curl https://myapi.aimaira.net/GraphV1/Campus/1234567 \
 
 ```bash [cURL]
 curl https://myapi.aimaira.net/GraphV1/Campus \
-  --request GET \
   -u 'nomdutilisateur:motdepasse'
 ```
 

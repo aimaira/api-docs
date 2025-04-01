@@ -42,6 +42,10 @@ const nav = [
                                 link: '/reference/ressources/core/e-mail',
                             },
                             {
+                                text: 'Marque',
+                                link: '/reference/ressources/core/marque',
+                            },
+                            {
                                 text: 'Note',
                                 link: '/reference/ressources/core/note',
                             },
@@ -176,6 +180,10 @@ const nav = [
                         collapsed: true,
                         text: 'Pédagogie',
                         items: [
+                            {
+                                text: 'Département',
+                                link: '/reference/ressources/pedagogie/departement',
+                            },
                             {
                                 text: 'Séquence',
                                 link: '/reference/ressources/pedagogie/sequence',
