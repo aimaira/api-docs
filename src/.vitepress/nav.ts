@@ -145,12 +145,12 @@ const nav = [
                                 link: '/reference/ressources/inscription/regime-de-l-apprenant',
                             },
                             {
-                                text: 'Voie d’entrée',
-                                link: '/reference/ressources/inscription/voie-d-entree',
-                            },
-                            {
                                 text: 'Tuteur',
                                 link: '/reference/ressources/inscription/tuteur',
+                            },
+                            {
+                                text: 'Voie d’entrée',
+                                link: '/reference/ressources/inscription/voie-d-entree',
                             },
                         ],
                     },
