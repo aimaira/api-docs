@@ -99,6 +99,42 @@ curl 'https://myapi.aimaira.net/GraphV1/Client?%24filter=ReferenceId+eq+2410937'
 
 ## Créer un client
 
+::: warning Note
+
+Lors de la création du client qui représente un `Apprenant` ou un `Candidat`, aucune donnée n’est copiée. Il est donc
+important de copier les coordonnées dans l’entité client.
+
+Les données suivantes doivent être dupliquées. Réutiliser les identifiants utilisés dans la source engendre des
+effets de bords :
+
+- `AdresseId`, voir [comment créer une adresse][creer-une-adresse]
+- `MailId`, voir [comment créer un e-mail][creer-un-e-mail]
+- `TelephoneId`, voir [comment créer un téléphone][creer-un-telephone]
+- `MobileId`, voir ci-dessus
+
+En plus des données obligatoires et des données à copier, les données suivantes peuvent être utilisée telles quelles :
+
+- `Prenom2`
+- `Prenom3`
+- `NomJeuneFille`
+- `Fonction`
+- `VilleNaissance`
+- `DepartementNaissance`
+- `CodeCommuneNaissance`
+- `CiviliteId`
+- `Nationalite1Id`
+- `Nationalite2Id`
+- `PaysNaissanceId`
+- `DateNaissance`
+- `GenreMale`
+- `Handicap`
+- `RefSysteme`
+- `AutoriseCRM`
+- `HasChosenRGPD`
+- `HasChosenMarketing`
+
+:::
+
 ### Données obligatoires
 
 - `Nom`
@@ -108,7 +144,31 @@ curl 'https://myapi.aimaira.net/GraphV1/Client?%24filter=ReferenceId+eq+2410937'
 
 ::: code-group
 
-```bash [cURL]
+```bash [Création depuis un Apprenant]
+curl https://myapi.aimaira.net/GraphV1/Apprenant/1234567/Client \
+  --request POST
+  --data '{
+  "Nom": "ARTHURO",  
+  "Prenoms": "Valentin",
+  "EntiteJuridiqueId": 2215501,
+  "NatureClientId": 2214750
+}'
+  -u 'nomdutilisateur:motdepasse'
+```
+
+```bash [Création depuis un Candidat]
+curl https://myapi.aimaira.net/GraphV1/Candidat/1234568/Client \
+  --request POST
+  --data '{
+  "Nom": "ARTHURO",  
+  "Prenoms": "Valentin",
+  "EntiteJuridiqueId": 2215501,
+  "NatureClientId": 2214750
+}'
+  -u 'nomdutilisateur:motdepasse'
+```
+
+```bash [Création générique]
 curl https://myapi.aimaira.net/GraphV1/Client \
   --request POST
   --data '{
@@ -178,3 +238,6 @@ Afin de lier un `Client` et une `Affaire`, il faut créer un [`ClientPourAffaire
 [client-pour-affaire]: /reference/ressources/finance/client-pour-affaire
 [societe-de-facturation]: /reference/ressources/finance/societe-de-facturation
 [nature-du-client]: /reference/ressources/finance/nature-client
+[creer-une-adresse]: /reference/ressources/core/adresse
+[creer-un-e-mail]: /reference/ressources/core/e-mail
+[creer-un-telephone]: /reference/ressources/core/telephone
