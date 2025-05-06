@@ -346,5 +346,12 @@ curl https://myapi.aimaira.net/GraphV1/Candidat \
 
 :::
 
+## Création d’un représentant légal
+
+Un représentant légal est obligatoire si l'apprenant est âgé de moins de 18 ans révolu.  
+Pour identifier le représentant légal d'un apprenant, utilisez la propriété `Tuteur1Id` afin d'[accéder à ses informations][retrouver-un-tuteur].
+
+
 [civilite]: /reference/ressources/core/civilite
 [e-mail]: /reference/ressources/core/e-mail
+[retrouver-un-tuteur]: /reference/ressources/inscription/tuteur
