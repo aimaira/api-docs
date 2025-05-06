@@ -148,6 +148,10 @@ const nav = [
                                 text: 'Voie d’entrée',
                                 link: '/reference/ressources/inscription/voie-d-entree',
                             },
+                            {
+                                text: 'Tuteur',
+                                link: '/reference/ressources/inscription/tuteur',
+                            },
                         ],
                     },
                     {
