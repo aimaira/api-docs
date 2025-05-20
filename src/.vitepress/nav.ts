@@ -42,6 +42,10 @@ const nav = [
                                 link: '/reference/ressources/core/e-mail',
                             },
                             {
+                                text: 'Instance',
+                                link: '/reference/ressources/core/instance',
+                            },
+                            {
                                 text: 'Marque',
                                 link: '/reference/ressources/core/marque',
                             },

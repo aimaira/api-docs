@@ -2,10 +2,10 @@
 
 ## Afficher les informations d’un dossier à partir d’un chemin
 
-### Obtenir le `FileSystemRoot`
+### Obtenir le `FileSystemShareName`
 
-Chaque dossier est lié à une racine de système de fichiers. Cette information est disponible dans l’entité `Campus` et
-récupérable via un appel au [point d’entrée Campus][campus].
+Chaque dossier est lié à un système de fichiers. Le nom de ce partage de fichier est disponible dans l’entité `Instance`
+et récupérable via un appel au [point d’entrée Instance][instance].
 
 ### Récupérer un dossier de l’arborescence
 
@@ -22,18 +22,18 @@ vide.
 ::: code-group
 
 ```bash [cURL]
-curl 'https://myapi.aimaira.net/GraphV1/Directory?$filter=path eq {FileSystemRoot}\{FilePath}'  \
+curl 'https://myapi.aimaira.net/GraphV1/Directory?$filter=path eq {FileSystemShareName}\{FilePath}'  \
   -u 'nomdutilisateur:motdepasse'
 ```
 
 ### Dossier racine
 
-Le dossier racine est récupérable en passant uniquement le `FileSystemRoot` comme suit.
+Le dossier racine est récupérable en passant uniquement le `FileSystemShareName` comme suit.
 
 ::: code-group
 
 ```bash [cURL]
-curl 'https://myapi.aimaira.net/GraphV1/Directory?$filter=path eq {FileSystemRoot}'  \
+curl 'https://myapi.aimaira.net/GraphV1/Directory?$filter=path eq {FileSystemShareName}'  \
   -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -103,4 +103,4 @@ curl https://myapi.aimaira.net/GraphV1/Directory  \
 
 `value` correspond à l’id du dossier créé.
 
-[campus]: /reference/ressources/core/campus#afficher-les-donnees-d-un-campus
+[instance]: /reference/ressources/core/instance
