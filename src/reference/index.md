@@ -19,6 +19,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Campus](/reference/ressources/core/campus)
 - [Civilité](/reference/ressources/core/civilite)
 - [E-mail](/reference/ressources/core/e-mail)
+- [Instance](/reference/ressources/core/instance)
 - [Marque](/reference/ressources/core/marque)
 - [Note](/reference/ressources/core/note)
 - [Période](/reference/ressources/core/periode)
