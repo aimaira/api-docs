@@ -142,6 +142,16 @@ En plus des données obligatoires et des données à copier, les données suivan
 - `EntiteJuridiqueId`, l’identifiant de la [société de facturation][societe-de-facturation] souhaitée
 - `NatureClientId`, l’identifiant de la [nature du client][nature-du-client] souhaitée
 
+::: error Note
+
+Bien que non-obligatoire pour la création ou la modification d’un client, le `Code` peut être obligatoire pour certaines
+fonctionnalités (ex. *les exports comptables*).
+
+Le `Code` est automatiquement dérivé de l’entité source lors de l’utilisation des points d’entrées dédiés à la création
+depuis un `Apprenant` ou un `Candidat`.
+
+:::
+
 ::: code-group
 
 ```bash [Création depuis un Apprenant]
