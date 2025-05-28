@@ -141,6 +141,10 @@ const nav = [
                                 link: '/reference/ressources/inscription/issue-etat-d-inscription',
                             },
                             {
+                                text: 'Origine',
+                                link: '/reference/ressources/inscription/origine',
+                            },
+                            {
                                 text: 'Parcours',
                                 link: '/reference/ressources/inscription/parcours',
                             },

@@ -57,6 +57,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Apprenant](/reference/ressources/inscription/apprenant)
 - [Inscription](/reference/ressources/inscription/inscription)
 - [Issue / État d’inscription](/reference/ressources/inscription/issue-etat-d-inscription)
+- [Origine](/reference/ressources/inscription/origine)
 - [Parcours](/reference/ressources/inscription/parcours)
 - [Régime de l’apprenant](/reference/ressources/inscription/regime-de-l-apprenant)
 - [Tuteur](/reference/ressources/inscription/tuteur)
