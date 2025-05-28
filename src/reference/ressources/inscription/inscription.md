@@ -93,6 +93,15 @@ curl https://myapi.aimaira.net/GraphV1/Inscription?$filter=ApprenantId eq 225346
 
 ## Créer une inscription
 
+### Données obligatoires
+
+- `ApprenantId`
+- `ProgrammeId`
+- `RegimeInscriptionId` *(voir [régime de l’apprenant][regime])*
+- `RecrutementId` *(voir [voie d’entrée][voie-entree])*
+- `EtatInscriptionId` *(voir [issue / état d’inscription][etat-inscription])*
+- `DateInscription`, la date d’inscription effective de l’apprenant
+
 ::: code-group
 
 ```bash [cURL]
@@ -101,6 +110,7 @@ curl https://myapi.aimaira.net/GraphV1/Inscription \
     --header 'Content-Type: application/json' \
     --data '{
     "ApprenantId": 2253466,
+    "OrigineId": 1234567
     "ProgrammeId": 2253425,
     "RegimeInscriptionId": 544,
     "RecrutementId": 2215184,
@@ -260,3 +270,7 @@ curl https://myapi.aimaira.net/GraphV1/InscriptionPeriode \
 ```
 
 :::
+
+[etat-inscription]: /reference/ressources/inscription/issue-etat-d-inscription
+[regime]: /reference/ressources/inscription/regime-de-l-apprenant
+[voie-entree]: /reference/ressources/inscription/voie-d-entree
