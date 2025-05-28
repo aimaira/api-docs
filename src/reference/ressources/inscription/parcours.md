@@ -32,7 +32,7 @@ curl https://myapi.aimaira.net/GraphV1/Parcours/2215168
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Parcours/2215168?$expand=ParcoursPeriode
+curl https://myapi.aimaira.net/GraphV1/Parcours/2215168?$expand=ParcoursPeriodes
     -u 'nomdutilisateur:motdepasse'
 ```
 
