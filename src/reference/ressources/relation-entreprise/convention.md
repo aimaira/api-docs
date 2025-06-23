@@ -127,6 +127,23 @@ curl https://myapi.aimaira.net/GraphV1/Convention/1234567
 
 ## Créer une convention
 
+### Propriétés spécifiques
+
+#### Rémunération de l’apprenant
+
+##### `Remuneration`
+
+Cette propriété correspond à la rémunération brute mensuelle à l’embauche, sous la forme d’un nombre décimal au format 
+international.
+
+- `CaisseRetraite` : cette propriété correspond à la caisse de retraite complémentaire pour le contrat au format chaîne de caractères.
+- `AvantageNourriture` : cette propriété correspond aux avantages repas, en euros par repas, sous la forme d’un nombre décimal au format
+international.
+- `AvantageLogement` : cette propriété correspond aux avantages en nature relatif au logement, en euros par mois, sous la forme d’un nombre 
+décimal au format international.
+- `AvantageAutre` : cette propriété correspond à un champ libre permettant de décrire les autres avantages en nature à destination de 
+l’apprenant.
+
 ### Données obligatoires
 
 - `ApprenantId`
