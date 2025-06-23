@@ -237,12 +237,28 @@ const nav = [
                                 link: '/reference/ressources/relation-entreprise/etat-de-convention',
                             },
                             {
+                                text: 'Frais de formation',
+                                link: '/reference/ressources/relation-entreprise/frais-de-formation',
+                            },
+                            {
                                 text: 'Organisme financeur',
                                 link: '/reference/ressources/relation-entreprise/organisme-financeur',
                             },
                             {
+                                text: 'Professionnel',
+                                link: '/reference/ressources/relation-entreprise/professionnel',
+                            },
+                            {
+                                text: 'Rémunération de l’apprenant',
+                                link: '/reference/ressources/relation-entreprise/remuneration',
+                            },
+                            {
                                 text: 'Type de convention',
                                 link: '/reference/ressources/relation-entreprise/type-de-convention',
+                            },
+                            {
+                                text: 'Type de frais de formation',
+                                link: '/reference/ressources/relation-entreprise/type-de-frais-de-formation',
                             }
                         ],
                     }

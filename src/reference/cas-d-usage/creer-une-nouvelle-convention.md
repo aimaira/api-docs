@@ -138,6 +138,26 @@ champ `EntrepriseId`.
 Il vous faudra ensuite [modifier la convention](#modifier-la-convention) en passant l’identifiant de l’entreprise
 nouvellement créée.
 
+### Renseigner les informations du contrat
+
+Certaines informations du contrat s’appuient sur des entités distinctes de la convention. Il est nécessaire de créer ou 
+de modifier ces entités pour pouvoir renseigner ces informations.
+
+#### Renseigner les informations de rémunération
+
+Certaines informations de rémunération sont directement portées par la convention. Voir la section 
+[propriétés spécifiques][convention-proprietes-specifiques] de la convention.
+
+Les autres informations peuvent être renseignées en utilisant l’entité `Remuneration`.
+
+[Créer les informations de rémunération de l’apprenant][creer-remuneration]
+
+#### Renseigner les frais de formation
+
+Les frais de formation peuvent être renseignés en utilisant l’entité `FraisFormation`.
+
+[Créer les frais de formation][creer-frais-formation]
+
 ### Renseigner la partie facturation
 
 Afin de créer la structure de données nécessaire pour pouvoir renseigner les informations de facturation, il faut au
@@ -233,3 +253,6 @@ appropriées et de mettre à jour intégralement l’entité.
 [lister-les-types-de-convention]: /reference/ressources/relation-entreprise/type-de-convention
 [creer-un-professionnel]: /reference/ressources/relation-entreprise/professionnel#creer-un-professionnel
 [creer-les-donnees-de-facturation]: /reference/ressources/relation-entreprise/convention#creer-les-donnees-de-facturation
+[convention-proprietes-specifiques]: /reference/ressources/relation-entreprise/convention#remuneration-de-l-apprenant
+[creer-remuneration]: /reference/ressources/relation-entreprise/remuneration#creer-les-informations-de-remuneration-d-une-convention
+[creer-frais-formation]: /reference/ressources/relation-entreprise/frais-de-formation#creer-les-frais-de-formation-d-une-convention
