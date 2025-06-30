@@ -246,7 +246,7 @@ appropriées et de mettre à jour intégralement l’entité.
 [lister-les-sequences]: /reference/ressources/pedagogie/sequence#lister-les-sequences-d-une-inscription
 [creer-une-convention]: /reference/ressources/relation-entreprise/convention#creer-une-convention
 [modifier-une-convention]: /reference/ressources/relation-entreprise/convention#modifier-une-convention
-[ajouter-un-organisme-financeur-a-une-convention]: /reference/ressources/relation-entreprise/convention#ajouter-un-organisme-financeur
+[ajouter-un-organisme-financeur-a-une-convention]: /reference/ressources/relation-entreprise/convention#ajouter-un-organisme-financeur-a-la-convention
 [lister-les-etats-de-convention]: /reference/ressources/relation-entreprise/etat-de-convention#lister-les-etats-de-convention
 [creer-une-entreprise]: /reference/ressources/relation-entreprise/entreprise
 [lister-les-organismes-financeurs]: /reference/ressources/relation-entreprise/organisme-financeur#lister-les-organismes-financeurs
