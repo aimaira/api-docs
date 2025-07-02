@@ -312,6 +312,16 @@ const nav = [
                     },
                     {
                         collapsed: true,
+                        text: 'Référentiel',
+                        items: [
+                            {
+                                text: 'Modèle d’utilisateur',
+                                link: '/reference/ressources/referentiel/modele-utilisateur',
+                            }
+                        ]
+                    },
+                    {
+                        collapsed: true,
                         text: 'Relation entreprise',
                         items: [
                             {

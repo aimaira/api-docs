@@ -74,6 +74,10 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Ressource d’événement](/reference/ressources/planification/ressource-d-evenement)
 - [Type d’événement](/reference/ressources/planification/type-d-evenement)
 
+#### Référentiel
+
+- [Modèle d’utilisateur](/reference/ressources/referentiel/modele-utilisateur)
+
 #### Relation entreprise
 
 - [Convention](/reference/ressources/relation-entreprise/convention)
