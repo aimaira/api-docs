@@ -168,6 +168,49 @@ curl https://myapi.aimaira.net/GraphV1/User/37/AddPermissions \
 
 :::
 
+## Appliquer un modèle à un utilisateur
+
+Appliquer un modèle à un utilisateur permet de réinitialiser les permissions d’un utilisateur sur la base de celles
+définies dans le modèle. La réponse contient les identifiants des entités auxquelles l’utilisateur peut accéder.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/User/1234567/ApplyTemplate \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "templateId": 1
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Collection(Edm.Int64)",
+  "value": [
+    2215039,
+    2221358,
+    2221359,
+    2221360,
+    2215594,
+    2215593,
+    2215044,
+    2215043,
+    2215040,
+    2215038
+  ]
+}
+```
+
+:::
+
 [creation-nouvel-utilisateur]: "/reference/cas-d-usage/creer-un-nouvel-utilisateur"
 [campus]: /reference/ressources/core/campus#lister-les-campus
 [departement]: /reference/ressources/pedagogie/departement#lister-les-departements
