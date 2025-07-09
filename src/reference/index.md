@@ -80,6 +80,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 #### Relation entreprise
 
+- [Autre lieu de formation](/reference/ressources/relation-entreprise/autre-lieu-de-formation)
 - [Convention](/reference/ressources/relation-entreprise/convention)
 - [Entreprise](/reference/ressources/relation-entreprise/entreprise)
 - [État de convention](/reference/ressources/relation-entreprise/etat-de-convention)
