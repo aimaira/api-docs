@@ -121,7 +121,7 @@ Les propriétés suivantes sont désuètes et ne doivent plus être utilisées :
 ::: code-group
 
 ```bash [cURL]
-curl "https://myapi.aimaira.net/GraphV1/DispositionFinanciere" \
+curl https://myapi.aimaira.net/GraphV1/DispositionFinanciere \
     --request POST \
     --header "Content-Type: application/json" \
     --data '{

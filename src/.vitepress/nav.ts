@@ -225,6 +225,10 @@ const nav = [
                         text: 'Relation entreprise',
                         items: [
                             {
+                                text: 'Autre lieu de formation',
+                                link: '/reference/ressources/relation-entreprise/autre-lieu-de-formation',
+                            },
+                            {
                                 text: 'Convention',
                                 link: '/reference/ressources/relation-entreprise/convention',
                             },
