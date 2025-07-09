@@ -7,7 +7,7 @@ L’origine (historiquement appellée « origine du recrutement ») est une enti
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Origin
+curl https://myapi.aimaira.net/GraphV1/Origine
   -u 'nomdutilisateur:motdepasse'
 ```
 
