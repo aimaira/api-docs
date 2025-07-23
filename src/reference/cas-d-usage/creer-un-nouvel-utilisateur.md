@@ -59,7 +59,7 @@ class Program
         using (RSA rsa = RSA.Create())
         {
             rsa.ImportFromPem(publicKeyPem);
-            byte[] encryptedData = rsa.Encrypt(Encoding.UTF8.GetBytes(data), RSAEncryptionPadding.OaepSHA256);
+            byte[] encryptedData = rsa.Encrypt(Encoding.UTF8.GetBytes(data), RSAEncryptionPadding.OaepSHA1);
 
             Console.WriteLine(Convert.ToBase64String(encryptedData));
         }
@@ -73,7 +73,7 @@ package main
 import (
 	"crypto/rand"
 	"crypto/rsa"
-	"crypto/sha256"
+	"crypto/sha1"
 	"encoding/base64"
 	"fmt"
 	"os"
@@ -104,7 +104,7 @@ func main() {
 	}
 
 	// Encrypt with OAEP
-	encryptedData, err := rsa.EncryptOAEP(sha256.New(), rand.Reader, publicKey.(*rsa.PublicKey), data, nil)
+	encryptedData, err := rsa.EncryptOAEP(sha1.New(), rand.Reader, publicKey.(*rsa.PublicKey), data, nil)
 	if err != nil {
 		fmt.Println("Encryption failed:", err)
 		return
@@ -126,7 +126,7 @@ const encryptedData = crypto.publicEncrypt(
     {
         key: publicKey,
         padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
-        oaepHash: "sha256",
+        oaepHash: "sha1",
     },
     Buffer.from(data)
 );
@@ -147,7 +147,7 @@ echo base64_encode($encryptedData);
 
 ```Python
 from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives.hashes import SHA256
+from cryptography.hazmat.primitives.hashes import SHA1
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.serialization import load_pem_public_key
 
@@ -160,8 +160,8 @@ data = b"My_p@ssw0rd"
 encrypted_data = public_key.encrypt(
     data,
     padding.OAEP(
-        mgf=padding.MGF1(algorithm=SHA256()),
-        algorithm=SHA256(),
+        mgf=padding.MGF1(algorithm=SHA1()),
+        algorithm=SHA1(),
         label=None
     )
 )
