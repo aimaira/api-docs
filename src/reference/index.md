@@ -49,6 +49,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Affaire](/reference/ressources/finance/affaire)
 - [Lignes de balance client](/reference/ressources/finance/balance-client)
 - [Client](/reference/ressources/finance/client)
+- [Mandat SEPA](/reference/ressources/finance/mandat-sepa)
 - [Nature du client](/reference/ressources/finance/nature-client)
 - [Société de facturation](/reference/ressources/finance/societe-de-facturation)
 
