@@ -179,6 +179,10 @@ const nav = [
                                 link: '/reference/ressources/finance/client',
                             },
                             {
+                                text: 'Mandat SEPA',
+                                link: '/reference/ressources/finance/mandat-sepa',
+                            },
+                            {
                                 text: 'Nature du client',
                                 link: '/reference/ressources/finance/nature-client',
                             },
