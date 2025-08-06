@@ -149,6 +149,10 @@ const nav = [
                                 link: '/reference/ressources/inscription/parcours',
                             },
                             {
+                                text: 'Liaison entre un programme et un régime',
+                                link: '/reference/ressources/inscription/programme-regime',
+                            },
+                            {
                                 text: 'Régime de l’apprenant',
                                 link: '/reference/ressources/inscription/regime-de-l-apprenant',
                             },
