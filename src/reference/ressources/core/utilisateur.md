@@ -86,12 +86,12 @@ curl https://myapi.aimaira.net/GraphV1/User \
 
 :::
 
-## Lister les permissions d’un utilisateur
+## Lister les autorisations d’un utilisateur
 
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/User/37/Permissions
+curl https://myapi.aimaira.net/GraphV1/User/37/Authorizations \
   -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -116,12 +116,12 @@ curl https://myapi.aimaira.net/GraphV1/User/37/Permissions
 
 :::
 
-## Ajouter des permissions à un utilisateur
+## Ajouter des autorisations à un utilisateur
 
-Il est possible de rajouter des permissions à un utilisateur, en passant les identifiants des entités auxquelles il doit
-avoir accès.
+Il est possible de rajouter des autorisations à un utilisateur, en passant les identifiants des entités auxquelles il 
+doit avoir accès.
 
-Il est possible d’ajouter des droits sur les entités suivantes :
+Il est possible d’ajouter des autorisations sur les entités suivantes :
 
 - [Campus][campus]
 - [Département][departement]
@@ -132,7 +132,7 @@ Il est possible d’ajouter des droits sur les entités suivantes :
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/User/37/AddPermissions \
+curl https://myapi.aimaira.net/GraphV1/User/37/AddAuthorizations \
   --request POST \
   --header 'Content-Type: application/json' \
   --data '{
