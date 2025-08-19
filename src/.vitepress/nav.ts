@@ -66,6 +66,10 @@ const nav = [
                                 link: '/reference/ressources/core/programme',
                             },
                             {
+                                text: 'Référence extene',
+                                link: '/reference/ressources/core/reference-externe',
+                            },
+                            {
                                 text: 'Téléphone',
                                 link: '/reference/ressources/core/telephone',
                             },
