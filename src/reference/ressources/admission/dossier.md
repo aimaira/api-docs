@@ -141,6 +141,13 @@ Afin de créer un dossier depuis l’API AIMAIRA, il est nécessaire de passer a
 [Voie d'admission][voie-d-admission], l’id d'un [Candidat][candidat] et l’id d'un 
 [Etat de candidature][etat-de-candidature].
 
+### Champs particuliers
+
+#### `CreneauLibre`
+
+Le champ `CreneauLibre` correspond à la date d’entretien du dossier de candidature. Elle est à renseigner uniquement si
+applicable.
+
 ### Données obligatoires
 
 - `CandidatId` *(voir [Candidat][candidat])*
