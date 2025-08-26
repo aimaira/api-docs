@@ -53,6 +53,15 @@ propriété `Nom` et renseignez la propriété `Numero` pour permettre la créat
 
 Un [Individu][individu] est automatiquement créé si aucun `IndividuId` n’est passé lors de la création du candidat.
 
+### Champs particuliers
+
+#### `CanalAcquisitionId`
+
+Le canal d’acquisition correspond à la provenance du candidat, telle que définie dans l’interface d’administration, dans
+l’univers Référentiel / Paramètre / Admission / Canal d’acquisition.
+
+Voir [Canal d’acquisition du candidat][canal-acquisition]
+
 ::: code-group
 
 ```bash [cURL]
@@ -127,3 +136,4 @@ le lister depuis l’API et de l’afficher dans Manage.
 [individu]: /reference/ressources/core/individu
 [programme]: docs/api/reference/ressources/core/programme
 [voie-d-admission]: /reference/ressources/admission/voie-d-admission
+[canal-acquisition]: /reference/ressources/admission/canal-acquisition
