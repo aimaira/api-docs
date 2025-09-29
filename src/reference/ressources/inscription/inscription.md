@@ -271,6 +271,74 @@ curl https://myapi.aimaira.net/GraphV1/InscriptionPeriode \
 
 :::
 
+## Récupérer les périodes liées à une inscription
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Inscription/2253468/InscriptionPeriode \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#InscriptionPeriode/$entity",
+  "value": [
+    {
+      "Id": 2253469,
+      "Nom": "",
+      "Code": "",
+      "InscriptionId": 2253468,
+      "DecisionJuryId": 0,
+      "PeriodeId": 1326,
+      "RegimeInscriptionId": 544,
+      "DateInscriptionMutuelle": null,
+      "EchelonBourseId": 0,
+      "MutuelleId": 0,
+      "Issue": "",
+      "MotifExonerationMutuelle": "",
+      "Boursier": false,
+      "AttestationBourse": false,
+      "AttestationExonerationSS": false,
+      "Cesure": false,
+      "Redoublant": false,
+      "AnneeScolaire": 1,
+      "DateEnvoiCertificat": null,
+      "DateEnvoiBulletin": null,
+      "DateFinResponsabiliteCivile": null,
+      "EtatInscriptionId": 78736,
+      "RecrutementId": 0,
+      "SpecialiteId": 0,
+      "DateReinscription": null,
+      "LibellePeriode": "2023/2024",
+      "Debut": "2023-09-01T00:00:00+02:00",
+      "Fin": "2024-08-31T00:00:00+02:00",
+      "DisplayLibellePeriode": "",
+      "LibellePeriodeSpecifique": "",
+      "CVEC": "",
+      "CVECnomrenseigne": "",
+      "CVECNumeroINE": null,
+      "ModalitePaiementId": 0,
+      "TypePaiementAcompteId": 0,
+      "TypePaiementId": 0,
+      "AlternanceSouhaitee": false,
+      "FraisValider": false,
+      "Acompte": null,
+      "DatePremiereConnexionReinscriptionIntranet": null
+    }
+  ]
+}
+
+```
+
+:::
+
 [etat-inscription]: /reference/ressources/inscription/issue-etat-d-inscription
 [regime]: /reference/ressources/inscription/regime-de-l-apprenant
 [voie-entree]: /reference/ressources/inscription/voie-d-entree
