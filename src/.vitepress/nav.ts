@@ -66,7 +66,7 @@ const nav = [
                                 link: '/reference/ressources/core/programme',
                             },
                             {
-                                text: 'Référence extene',
+                                text: 'Référence externe',
                                 link: '/reference/ressources/core/reference-externe',
                             },
                             {
