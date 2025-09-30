@@ -95,3 +95,45 @@ curl https://myapi.aimaira.net/GraphV1/ReferenceExterne?$filter=Type eq 'pedagog
 ```
 
 :::
+
+## Ajouter une référence externe à une entité
+
+Afin de lier une valeur externe à une entité, il est possible d’ajouter une référence externe pour celle-ci.
+Une entité ne peut porter qu’une seule référence externe. Pour certaines entités, les références externes ne sont pas 
+affichées dans l’interface d’administration et sont accessibles uniquement depuis l’API.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/ReferenceExterne \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Reference": "09bb611f-b088-f011-b4cc-6045bddd270d",
+  "Type": "recrutement.T_AGENT",
+  "IdObjet": 2214939
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#ReferenceExterne/$entity",
+  "Id": 20790960,
+  "Nom": "",
+  "Code": "",
+  "DateMAJ": null,
+  "Reference": "09bb611f-b088-f011-b4cc-6045bddd270d",
+  "Type": "recrutement.T_AGENT",
+  "IdObjet": 2214939,
+  "CRC": ""
+}
+```
+
+:::
