@@ -69,7 +69,9 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 #### Pédagogie
 
+- [Cours](/reference/ressources/pedagogie/cours)
 - [Département](/reference/ressources/pedagogie/departement)
+- [Évaluation](/reference/ressources/pedagogie/evaluation)
 - [Séquence](/reference/ressources/pedagogie/sequence)
 
 #### Planification
@@ -114,6 +116,7 @@ de vous faciliter cette tâche.
 ### Inscription
 
 - [Créer un nouveau dossier d’inscription](/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription)
+- [Récupérer les notes d’un apprenant](/reference/cas-d-usage/recuperer-les-notes-d-un-apprenant)
 
 ### Planification
 
