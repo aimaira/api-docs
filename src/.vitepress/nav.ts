@@ -209,8 +209,16 @@ const nav = [
                         text: 'Pédagogie',
                         items: [
                             {
+                                text: 'Cours',
+                                link: '/reference/ressources/pedagogie/cours',
+                            },
+                            {
                                 text: 'Département',
                                 link: '/reference/ressources/pedagogie/departement',
+                            },
+                            {
+                                text: 'Évaluation',
+                                link: '/reference/ressources/pedagogie/evaluation',
                             },
                             {
                                 text: 'Séquence',
@@ -317,6 +325,10 @@ const nav = [
                             {
                                 text: 'Créer une inscription',
                                 link: '/reference/cas-d-usage/creer-un-nouveau-dossier-d-inscription',
+                            },
+                            {
+                                text: 'Récupérer les notes d’un apprenant',
+                                link: '/reference/cas-d-usage/recuperer-les-notes-d-un-apprenant',
                             },
                         ],
                     },

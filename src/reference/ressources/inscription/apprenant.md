@@ -467,6 +467,124 @@ Comme pour toute autre mise à jour de données, [cette mise en garde][disclaime
 Une fois [l’utilisateur créé][utilisateur], il faut [modifier l’apprenant](#modifier-un-apprenant-existant) afin de 
 renseigner la `RefSysteme` avec l’identifiant de l’utilisateur créé.
 
+## Récupérer les séquences auxquelles un apprenant est inscrit
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/InscriptionSequence?$filter=ApprenantId eq 2253465 \
+    --header 'Content-Type: application/json' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#InscriptionSequence",
+  "value": [
+    {
+      "Id": 9054736,
+      "Nom": "",
+      "Code": "",
+      "ApprenantId": 2253465,
+      "SequenceId": 6026533,
+      "RedoublementPartiel": false,
+      "PourcentageCorrectionNote": 0.0,
+      "PointsCorrectionNote": null,
+      "CreditBonus": null,
+      "CreditJury": 0.0,
+      "Precision": "",
+      "AppreciationId": 0,
+      "EtatCandidatureParcoursId": 0,
+      "ReponseSurveyCandidatureId": 0,
+      "ValidationInfosPerso": null,
+      "ValidationGlobale": null,
+      "DateDesinscription": null,
+      "RelanceApprenant": false,
+      "ContentieuxApprenant": false,
+      "Note": null,
+      "NoteAvantRattrapage": null,
+      "Valide": false,
+      "Rattrape": false,
+      "NbCredits": null,
+      "DetailValidation": "",
+      "SommePonderation": null,
+      "NoteFinale": null,
+      "CreditFinal": null,
+      "NoteSurcharge": null,
+      "CreditAvantRattrapage": null,
+      "CreditSurcharge": null,
+      "NoteRetenu": null,
+      "CreditRetenu": null,
+      "DecisionJuryId": 0,
+      "CreditMax": 0.0
+    },
+    ...
+  ]
+}
+```
+
+:::
+
+## Récupérer les cours auxquels un apprenant est inscrit
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/InscriptionCours?$filter=ApprenantId eq 2253465 \
+    --header 'Content-Type: application/json' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#InscriptionCours",
+  "value": [
+    {
+      "Id": 9054737,
+      "Nom": "DUPONT Jean",
+      "Code": "A00294",
+      "ApprenantId": 2253465,
+      "CoursId": 6026547,
+      "AppreciationId": 0,
+      "Valide": false,
+      "Rattrape": false,
+      "Note": null,
+      "Bonus": null,
+      "NoteAvantRattrapage": null,
+      "NbAbsencesJustifiees": 0,
+      "NbAbsencesInjustifiees": 0,
+      "NoteECTS": "",
+      "Ponderation": 0.0,
+      "CreditAvantRattrapage": null,
+      "NbCredits": null,
+      "CreditSurcharge": null,
+      "CreditFinal": null,
+      "DateDesinscription": null,
+      "Precision": "",
+      "DetailValidation": "",
+      "NoteFinale": null,
+      "NoteRetenu": null,
+      "CreditRetenu": null
+    },
+    ...
+  ]
+}
+```
+
+:::
+
 [civilite]: /reference/ressources/core/civilite
 [e-mail]: /reference/ressources/core/e-mail
 [retrouver-un-tuteur]: /reference/ressources/inscription/tuteur
