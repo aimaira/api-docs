@@ -134,3 +134,53 @@ curl https://myapi.aimaira.net/GraphV1/PlanificationRessource/2218769 \
 ```
 
 :::
+
+## Lister les types de ressources
+
+::: code-group
+
+```bash [cURL]
+curl  https://myapi.aimaira.net/GraphV1/TypeRessource \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+    "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#TypeRessource",
+    "value": [
+        {
+            "Id": 334210,
+            "Nom": "Salle",
+            "Code": "SALLE"
+        },
+        {
+            "Id": 334211,
+            "Nom": "Matériel",
+            "Code": "MATERIEL"
+        },
+        {
+            "Id": 334212,
+            "Nom": "Apprenant",
+            "Code": "APPRENANT"
+        },
+        {
+            "Id": 334213,
+            "Nom": "Enseignant",
+            "Code": "PROF"
+        },
+        {
+            "Id": 2527950,
+            "Nom": "Groupe",
+            "Code": "GROUPE"
+        }
+    ]
+}
+```
+
+:::
