@@ -121,7 +121,8 @@ curl https://myapi.aimaira.net/GraphV1/Convention/1234567
   "AttesteEnsembleDoc": false,
   "LanId": 0,
   "IdClasseAnneeDerniere": null,
-  "IdDepartement": 0
+  "IdDepartement": 0,
+  "DateConclusion": "2025-09-01T00:00:00+02:00",
 }
 ```
 
