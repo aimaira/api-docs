@@ -148,6 +148,13 @@ Afin de créer un dossier depuis l’API AIMAIRA, il est nécessaire de passer a
 Le champ `CreneauLibre` correspond à la date d’entretien du dossier de candidature. Elle est à renseigner uniquement si
 applicable.
 
+#### `AgentId`
+
+Le champ `AgentId` correspond à l’id de l’agent choisi pour cette candidature. Il est impératif de s’assurer que l’agent
+choisi est lié au même campus que le programme de la voie d’admission.
+
+- [Lister les agents d’un campus][lister-agent-campus]
+
 ### Données obligatoires
 
 - `CandidatId` *(voir [Candidat][candidat])*
@@ -388,3 +395,4 @@ curl https://myapi.aimaira.net/GraphV1/Dossier/2253447
 [candidat]: /reference/ressources/admission/candidat
 [etat-de-candidature]: /reference/ressources/admission/etat-de-candidature
 [voie-d-admission]: /reference/ressources/admission/voie-d-admission
+[lister-agent-campus]: /reference/ressources/admission/agent#lister-les-agents-d-un-campus-specifique
