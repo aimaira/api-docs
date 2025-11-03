@@ -40,6 +40,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 #### Admission
 
+- [Agent](/reference/ressources/admission/agent)
 - [Canal d’acquisition](/reference/ressources/admission/canal-acquisition)
 - [Candidat](/reference/ressources/admission/candidat)
 - [Dossier](/reference/ressources/admission/dossier)

@@ -51,7 +51,7 @@ propriété `Nom` et renseignez la propriété `Numero` pour permettre la créat
 
 :::
 
-Un [Individu][individu] est automatiquement créé si aucun `IndividuId` n’est passé lors de la création du candidat.
+Un `Individu` est automatiquement créé si aucun `IndividuId` n’est passé lors de la création du candidat.
 
 ### Champs particuliers
 
@@ -61,6 +61,12 @@ Le canal d’acquisition correspond à la provenance du candidat, telle que déf
 l’univers Référentiel / Paramètre / Admission / Canal d’acquisition.
 
 Voir [Canal d’acquisition du candidat][canal-acquisition]
+
+#### `RefSysteme`
+
+Ce champ contient l’identifiant de l’utilisateur lié au candidat. Pour définir les identifiants du compte lié au 
+candidat, il vous faudra au préalable [créer un utilisateur][creer-utilisateur], récupérer son identifiant et le passer
+dans ce champ.
 
 ::: code-group
 
@@ -133,7 +139,7 @@ le lister depuis l’API et de l’afficher dans Manage.
 
 [dossier]: /reference/ressources/admission/dossier
 [e-mail]: /reference/ressources/core/e-mail
-[individu]: /reference/ressources/core/individu
 [programme]: docs/api/reference/ressources/core/programme
 [voie-d-admission]: /reference/ressources/admission/voie-d-admission
 [canal-acquisition]: /reference/ressources/admission/canal-acquisition
+[creer-utilisateur]: /reference/ressources/core/utilisateur 
