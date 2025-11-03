@@ -111,6 +111,10 @@ const nav = [
                         text: 'Admission',
                         items: [
                             {
+                                text: 'Agent',
+                                link: '/reference/ressources/admission/agent'
+                            },
+                            {
                                 text: 'Canal d’acquisition',
                                 link: '/reference/ressources/admission/canal-acquisition',
                             },
