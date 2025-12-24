@@ -73,6 +73,7 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
 - `Nom`
 - `Code`
 - `EntiteJuridiqueId` *(voir [Campus][campus])*
+- `EcoleId` *(voir [Marque][marque])*
 - `CodeDroit`
 - `CodeAnalytique`
 
@@ -86,6 +87,7 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
     "Nom": "Mon programme",
     "Code": "MON_PROGRAMME",
     "EntiteJuridiqueId": 2215156,
+    "EcoleId": 2215157,
     "CodeDroit": "MON_PROGRAMME",
     "CodeAnalytique": "MON_PROGRAMME"
 }' \
@@ -106,7 +108,7 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
   "Code": "MON_PROGRAMME",
   "EntiteJuridiqueId": 2215156,
   "EtablissementId": 0,
-  "EcoleId": 0,
+  "EcoleId": 2215157,
   "diplomeViseEJ20Id": 0,
   "diplomeViseFA13Id": 0,
   "IntitulePrecisDiplomeCERFA": "",
@@ -134,3 +136,4 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
 :::
 
 [campus]: /reference/ressources/core/campus
+[marque]: /reference/ressources/core/marque
