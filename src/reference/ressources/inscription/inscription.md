@@ -276,7 +276,7 @@ curl https://myapi.aimaira.net/GraphV1/InscriptionPeriode \
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Inscription/2253468/InscriptionPeriode \
+curl https://myapi.aimaira.net/GraphV1/Inscription/2253468/InscriptionPeriodes \
     -u 'nomdutilisateur:motdepasse'
 ```
 
