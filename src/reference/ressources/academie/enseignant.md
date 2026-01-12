@@ -74,3 +74,40 @@ curl https://myapi.aimaira.net/GraphV1/Enseignant \
 ```
 
 :::
+
+## Récupérer les catégories d’un enseignant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Enseignant/2291254/EnseignantsTypes \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Enseignant(2291254)/EnseignantsTypes",
+  "value": [
+    {
+      "Id": 6975051,
+      "Nom": "Intervenant",
+      "Code": "INTER",
+      "EnseignantId": 2291254,
+      "TypeEnseignantId": 4979451
+    },
+    {
+      "Id": 6975052,
+      "Nom": "Adresse mail",
+      "Code": "MAIL",
+      "EnseignantId": 2291254,
+      "TypeEnseignantId": 6974632
+    }
+  ]
+}
+```
