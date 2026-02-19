@@ -77,6 +77,10 @@ const nav = [
                                 text: 'Utilisateur',
                                 link: '/reference/ressources/core/utilisateur',
                             },
+                            {
+                                text: 'Commentaire',
+                                link: '/reference/ressources/core/commentaire',
+                            },
                         ],
                     },
                     {
