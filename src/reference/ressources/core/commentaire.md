@@ -2,7 +2,28 @@
 
 L’entité `Commentaire` contient une référence à un objet, sur lequel est stocké ce commentaire
 
-## Récupérer les commentaire d'une référence
+Une référence peut être l'ID d'un objet de type:
+
+* Adresse
+* Affaire
+* BalanceClient
+* Candidat
+* Candidature
+* Convention
+* DemarcheTitreSejour
+* Entité juridique
+* Entreprise
+* Evaluateur
+* Facture
+* Individu
+* Inscription
+* LAN
+* Mail
+* Professionnel
+* ResponseSurvey
+* Telephone
+
+## Récupérer les commentaires d'une référence
 
 ::: code-group
 
