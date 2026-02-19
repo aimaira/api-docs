@@ -27,6 +27,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Référence externe](/reference/ressources/core/reference-externe)
 - [Téléphone](/reference/ressources/core/telephone)
 - [Utilisateur](/reference/ressources/core/utilisateur)
+- [Commentaire](/reference/ressources/core/commentaire)
 
 #### File
 
