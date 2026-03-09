@@ -231,6 +231,10 @@ const nav = [
                             {
                                 text: 'Séquence',
                                 link: '/reference/ressources/pedagogie/sequence',
+                            },
+                            {
+                                text: 'Type de séquence',
+                                link: '/reference/ressources/pedagogie/type-de-sequence',
                             }
                         ],
                     },
@@ -263,6 +267,10 @@ const nav = [
                             {
                                 text: 'Convention',
                                 link: '/reference/ressources/relation-entreprise/convention',
+                            },
+                            {
+                                text: 'Échéancier de facturation',
+                                link: '/reference/ressources/relation-entreprise/echeancier-de-facturation',
                             },
                             {
                                 text: 'Entreprise',
@@ -367,6 +375,10 @@ const nav = [
                             {
                                 text: 'Créer une nouvelle convention',
                                 link: '/reference/cas-d-usage/creer-une-nouvelle-convention',
+                            },
+                            {
+                                text: 'Appliquer un échéancier à une convention',
+                                link: '/reference/cas-d-usage/appliquer-un-echeancier-a-une-convention',
                             },
                         ],
                     },

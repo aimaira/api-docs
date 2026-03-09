@@ -6,10 +6,10 @@
     "license": "UNLICENSED",
     "private": false,
     "devDependencies": {
-        "flexsearch": "^0.7.43",
+        "flexsearch": "^0.8.212",
         "markdown-it-attrs": "^4.2.0",
-        "vitepress": "^1.6.3",
-        "vue": "^3.5.13"
+        "vitepress": "^1.6.4",
+        "vue": "^3.5.30"
     },
     "scripts": {
         "dev": "vitepress dev src",
@@ -17,6 +17,6 @@
         "serve": "vitepress serve src"
     },
     "dependencies": {
-        "mermaid": "^11.4.1"
+        "mermaid": "^11.13.0"
     }
 }
