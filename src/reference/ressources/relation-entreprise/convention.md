@@ -5,12 +5,18 @@ professionnalisation.
 
 ## Récupérer une convention avec son identifiant
 
+::: code-group
+
 ```bash [cURL]
 curl https://myapi.aimaira.net/GraphV1/Convention/1234567
   -u 'nomdutilisateur:motdepasse'
 ```
 
+:::
+
 ### Réponse
+
+::: code-group
 
 ```json [JSON]
 {
@@ -125,6 +131,8 @@ curl https://myapi.aimaira.net/GraphV1/Convention/1234567
   "DateConclusion": "2025-09-01T00:00:00+02:00",
 }
 ```
+
+:::
 
 ## Créer une convention
 
@@ -537,7 +545,8 @@ curl https://myapi.aimaira.net/GraphV1/ConventionOrganismeFinanceur \
   --data '{
   "ConventionId": 2410937,
   "OrganismeFinanceurId": 2217200
-}'
+}' \
+  -u 'nomdutilisateur:motdepasse'
 ```
 
 :::
@@ -582,7 +591,8 @@ curl https://myapi.aimaira.net/GraphV1/ConventionOrganismeFinanceur \
 
 ```bash [cURL]
 curl https://myapi.aimaira.net/GraphV1/Convention/2410937/SynchronisationAffaire \
-  --request POST
+  --request POST \
+  -u 'nomdutilisateur:motdepasse'
 ```
 
 :::
@@ -597,6 +607,417 @@ Il peut exister plusieurs clients avec différentes natures. Par exemple : une e
 
 [Retrouver un client avec une référence][client-par-reference]  
 [Lister les natures de clients][nature-client]
+
+## Échéances de la convention
+
+### Convention d’apprentissage
+
+#### Lister les échéances de la convention
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EcheanceApprentissageConvention?$filter=ConventionId eq 4405973 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+##### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceApprentissageConvention",
+  "value": [
+    {
+      "Id": 11028949,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405973,
+      "EntrepriseId": 0,
+      "OPCAId": 3272001,
+      "Montant": 1234.5,
+      "Pourcentage": 0.0,
+      "Libelle": "Echeance23076",
+      "NumeroFacture": "F-2304-001",
+      "Date": "2023-04-11T00:00:00+02:00",
+      "NoteId": 20942404,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068110",
+      "CodeAnalytique": "",
+      "LibelleExterne": "Échéance OPCO",
+      "CategoriePrestationId": 3560733,
+      "PeriodeNom": "2022/2023",
+      "Source": "Aimaira",
+      "Codification": "1",
+      "Numero": 1,
+      "Nature": "Pedagogie",
+      "RefEcheanceLiee": null
+    },
+    {
+      "Id": 11028952,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405973,
+      "EntrepriseId": 0,
+      "OPCAId": 3272001,
+      "Montant": 4567.8,
+      "Pourcentage": 0.0,
+      "Libelle": "Echeance23077",
+      "NumeroFacture": "F-2311-001",
+      "Date": "2023-11-01T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068110",
+      "CodeAnalytique": "",
+      "LibelleExterne": "Échéance OPCO",
+      "CategoriePrestationId": 3560733,
+      "PeriodeNom": "2023/2024",
+      "Source": "Aimaira",
+      "Codification": "2",
+      "Numero": 2,
+      "Nature": "Pedagogie",
+      "RefEcheanceLiee": null
+    },
+    {
+      "Id": 12612553,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405973,
+      "EntrepriseId": 0,
+      "OPCAId": 3272001,
+      "Montant": 123.4,
+      "Pourcentage": null,
+      "Libelle": "SOLDE RUPTURE",
+      "NumeroFacture": "F-2402-001",
+      "Date": "2024-02-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068110",
+      "CodeAnalytique": "",
+      "LibelleExterne": "SOLDE RUPTURE",
+      "CategoriePrestationId": 3560733,
+      "PeriodeNom": "2023/2024",
+      "Source": "Aimaira",
+      "Codification": "2",
+      "Numero": 2,
+      "Nature": "Pedagogie",
+      "RefEcheanceLiee": null
+    }
+  ]
+}
+```
+
+:::
+
+#### Créer une nouvelle échéance de la convention
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EcheanceApprentissageConvention \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "",
+  "Code": "",
+  "ConventionId": 4405973,
+  "EntrepriseId": 0,
+  "OPCAId": 3272001,
+  "Montant": 1234.5,
+  "Pourcentage": 0.0,
+  "Libelle": "Echeance",
+  "NumeroFacture": "F-2603-001",
+  "Date": "2026-03-01T00:00:00+02:00",
+  "NoteId": 20942404,
+  "RefPrestationId": null,
+  "RefPaiementId": null,
+  "Compte": "7068110",
+  "CodeAnalytique": "",
+  "LibelleExterne": "Échéance OPCO",
+  "CategoriePrestationId": 3560733,
+  "PeriodeNom": "2025/2026",
+  "Source": "Aimaira",
+  "Codification": "1",
+  "Numero": 1,
+  "Nature": "Pedagogie",
+  "RefEcheanceLiee": null
+}' \
+  -u 'nomdutilisateur:motdepasse'
+   
+```
+
+:::
+
+##### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceConvention",
+  "Id": 11028949,
+  "Nom": "",
+  "Code": "",
+  "ConventionId": 4405973,
+  "EntrepriseId": 0,
+  "OPCAId": 3272001,
+  "Montant": 1234.5,
+  "Pourcentage": 0.0,
+  "Libelle": "Echeance",
+  "NumeroFacture": "F-2603-001",
+  "Date": "2026-03-01T00:00:00+02:00",
+  "NoteId": 20942404,
+  "RefPrestationId": null,
+  "RefPaiementId": null,
+  "Compte": "7068110",
+  "CodeAnalytique": "",
+  "LibelleExterne": "Échéance OPCO",
+  "CategoriePrestationId": 3560733,
+  "PeriodeNom": "2025/2026",
+  "Source": "Aimaira",
+  "Codification": "1",
+  "Numero": 1,
+  "Nature": "Pedagogie",
+  "RefEcheanceLiee": null
+}
+```
+
+:::
+
+### Convention de professionnalisation
+
+#### Lister les échéances de la convention
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EcheanceConvention?$filter=ConventionId eq 4405042 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+##### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceConvention",
+  "value": [
+    {
+      "Id": 23908807,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405042,
+      "EntrepriseId": 0,
+      "OPCAId": 17067068,
+      "NbHeureTheorique": 3.0,
+      "NbHeureReelle": 1.0,
+      "Taux": 1234.0,
+      "Date": "2026-02-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068500",
+      "CodeAnalytique": "",
+      "DureeAbsence": 0.0,
+      "TauxAbsence": 0.0,
+      "FactureAbsence": "",
+      "RefPrestationAbsenceId": 0,
+      "RefPaiementAbsenceId": 0,
+      "CompteAbsence": "",
+      "CodeAnalytiqueAbsence": "",
+      "NoteAbsenceId": 0,
+      "Libelle": "",
+      "LibelleExterne": "",
+      "CategoriePrestationId": 3560712,
+      "PeriodeNom": "2025/2026",
+      "RefEcheanceLiee": null
+    },
+    {
+      "Id": 23908923,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405042,
+      "EntrepriseId": 23907806,
+      "OPCAId": 0,
+      "NbHeureTheorique": 4.0,
+      "NbHeureReelle": 3.8,
+      "Taux": 150.0,
+      "Date": "2026-02-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068500",
+      "CodeAnalytique": "",
+      "DureeAbsence": 0.0,
+      "TauxAbsence": 0.0,
+      "FactureAbsence": "",
+      "RefPrestationAbsenceId": 0,
+      "RefPaiementAbsenceId": 0,
+      "CompteAbsence": "",
+      "CodeAnalytiqueAbsence": "",
+      "NoteAbsenceId": 0,
+      "Libelle": "",
+      "LibelleExterne": "",
+      "CategoriePrestationId": 3560712,
+      "PeriodeNom": "2025/2026",
+      "RefEcheanceLiee": null
+    },
+    {
+      "Id": 23910227,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405042,
+      "EntrepriseId": 23907806,
+      "OPCAId": 0,
+      "NbHeureTheorique": -4.0,
+      "NbHeureReelle": -3.8,
+      "Taux": 150.0,
+      "Date": "2026-02-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068500",
+      "CodeAnalytique": "",
+      "DureeAbsence": 0.0,
+      "TauxAbsence": 0.0,
+      "FactureAbsence": "",
+      "RefPrestationAbsenceId": 0,
+      "RefPaiementAbsenceId": 0,
+      "CompteAbsence": "",
+      "CodeAnalytiqueAbsence": "",
+      "NoteAbsenceId": 0,
+      "Libelle": "",
+      "LibelleExterne": "",
+      "CategoriePrestationId": 3560712,
+      "PeriodeNom": "2025/2026",
+      "RefEcheanceLiee": null
+    },
+    {
+      "Id": 23910240,
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 4405042,
+      "EntrepriseId": 23907806,
+      "OPCAId": 0,
+      "NbHeureTheorique": 4.0,
+      "NbHeureReelle": 3.79,
+      "Taux": 150.0,
+      "Date": "2026-02-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068500",
+      "CodeAnalytique": "",
+      "DureeAbsence": 0.0,
+      "TauxAbsence": 0.0,
+      "FactureAbsence": "",
+      "RefPrestationAbsenceId": 0,
+      "RefPaiementAbsenceId": 0,
+      "CompteAbsence": "",
+      "CodeAnalytiqueAbsence": "",
+      "NoteAbsenceId": 0,
+      "Libelle": "",
+      "LibelleExterne": "",
+      "CategoriePrestationId": 3560712,
+      "PeriodeNom": "2025/2026",
+      "RefEcheanceLiee": null
+    }
+  ]
+}
+```
+
+:::
+
+#### Créer une nouvelle échéance de la convention
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EcheanceConvention \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+      "Nom": "",
+      "Code": "",
+      "ConventionId": 23907787,
+      "EntrepriseId": 0,
+      "OPCAId": 17067068,
+      "NbHeureTheorique": 3.0,
+      "NbHeureReelle": 1.0,
+      "Taux": 1234.0,
+      "Date": "2026-03-10T00:00:00+01:00",
+      "NoteId": 0,
+      "RefPrestationId": null,
+      "RefPaiementId": null,
+      "Compte": "7068500",
+      "CodeAnalytique": "",
+      "DureeAbsence": 0.0,
+      "TauxAbsence": 0.0,
+      "FactureAbsence": "",
+      "RefPrestationAbsenceId": 0,
+      "RefPaiementAbsenceId": 0,
+      "CompteAbsence": "",
+      "CodeAnalytiqueAbsence": "",
+      "NoteAbsenceId": 0,
+      "Libelle": "Financement VAE",
+      "LibelleExterne": "Financement VAE",
+      "CategoriePrestationId": 3560712,
+      "PeriodeNom": "2025/2026",
+      "RefEcheanceLiee": null
+}' \
+  -u 'nomdutilisateur:motdepasse' 
+```
+
+:::
+
+##### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceConvention",
+  "Id": 23908807,
+  "Nom": "",
+  "Code": "",
+  "ConventionId": 23907787,
+  "EntrepriseId": 0,
+  "OPCAId": 17067068,
+  "NbHeureTheorique": 3.0,
+  "NbHeureReelle": 1.0,
+  "Taux": 1234.0,
+  "Date": "2026-03-10T00:00:00+01:00",
+  "NoteId": 0,
+  "RefPrestationId": null,
+  "RefPaiementId": null,
+  "Compte": "7068500",
+  "CodeAnalytique": "",
+  "DureeAbsence": 0.0,
+  "TauxAbsence": 0.0,
+  "FactureAbsence": "",
+  "RefPrestationAbsenceId": 0,
+  "RefPaiementAbsenceId": 0,
+  "CompteAbsence": "",
+  "CodeAnalytiqueAbsence": "",
+  "NoteAbsenceId": 0,
+  "Libelle": "Financement VAE",
+  "LibelleExterne": "Financement VAE",
+  "CategoriePrestationId": 3560712,
+  "PeriodeNom": "2025/2026",
+  "RefEcheanceLiee": null
+}
+```
+
+:::
 
 [client-par-reference]: /reference/ressources/finance/client#recuperer-un-client-avec-une-reference
 [nature-client]: /reference/ressources/finance/nature-client#lister-les-natures-de-clients

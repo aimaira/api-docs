@@ -165,6 +165,18 @@ préalable appeler le point d’entrée `SynchronisationAffaire`.
 
 [Créer les données de facturation de la convention][creer-les-donnees-de-facturation]
 
+### Renseigner un échéancier de facturation
+
+Lors de la création d’une convention via l’API, certaines actions métier doivent être réalisées, pour reproduire le
+comportement de l’interface d’administration. Par exemple, si un échéancier est renseigné sur la séquence de la 
+convention, il n’est pas automatiquement repris lors d’une création via l'API. Cela vous permet de construire vos 
+propres règles métier dans les applications et automatisations qui utilisent l’API.
+
+L'API permet d’ajouter un échéancier de facturation à une convention en fonction de son type. 
+Il est également possible de récupérer les informations provenant de la séquence de la convention.
+
+[Appliquer un échéancier à une convention][appliquer-un-echeancier-a-une-convention]
+
 ### Convention de stage
 
 #### Renseigner un enseignant
@@ -256,3 +268,4 @@ appropriées et de mettre à jour intégralement l’entité.
 [convention-proprietes-specifiques]: /reference/ressources/relation-entreprise/convention#remuneration-de-l-apprenant
 [creer-remuneration]: /reference/ressources/relation-entreprise/remuneration#creer-les-informations-de-remuneration-d-une-convention
 [creer-frais-formation]: /reference/ressources/relation-entreprise/frais-de-formation#creer-les-frais-de-formation-d-une-convention
+[appliquer-un-echeancier-a-une-convention]: /reference/cas-d-usage/appliquer-un-echeancier-a-une-convention

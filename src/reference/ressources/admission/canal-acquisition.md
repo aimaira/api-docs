@@ -5,7 +5,7 @@
 ::: code-group
 
 ``` bash [cURL]
-curl https://myapi.aimaira.com/GraphV1/CanalAcquisition \
+curl https://myapi.aimaira.net/GraphV1/CanalAcquisition \
     -u 'nomdutilisateur:motdepasse'
 ```
 
@@ -17,7 +17,7 @@ curl https://myapi.aimaira.com/GraphV1/CanalAcquisition \
 
 ```json [JSON]
 {
-  "@odata.context": "https://myapi.aimaira.com/GraphV1/$metadata#CanalAcquisition",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#CanalAcquisition",
   "value": [
     {
       "Id": 2216608,

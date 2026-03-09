@@ -75,6 +75,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Département](/reference/ressources/pedagogie/departement)
 - [Évaluation](/reference/ressources/pedagogie/evaluation)
 - [Séquence](/reference/ressources/pedagogie/sequence)
+- [Type de séquence](/reference/ressources/pedagogie/type-de-sequence)
 
 #### Planification
 
@@ -90,10 +91,15 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 
 - [Autre lieu de formation](/reference/ressources/relation-entreprise/autre-lieu-de-formation)
 - [Convention](/reference/ressources/relation-entreprise/convention)
+- [Échéancier de facturation](/reference/ressources/relation-entreprise/echeancier-de-facturation)
 - [Entreprise](/reference/ressources/relation-entreprise/entreprise)
 - [État de convention](/reference/ressources/relation-entreprise/etat-de-convention)
+- [Frais de formation](/reference/ressources/relation-entreprise/frais-de-formation)
 - [Organisme financeur](/reference/ressources/relation-entreprise/organisme-financeur)
+- [Professionnel](/reference/ressources/relation-entreprise/professionnel)
+- [Rémunération de l’apprenant](/reference/ressources/relation-entreprise/remuneration)
 - [Type de convention](/reference/ressources/relation-entreprise/type-de-convention)
+- [Type de frais de formation](/reference/ressources/relation-entreprise/type-de-frais-de-formation)
 
 ## Correspondance des noms d’entités hérités
 
