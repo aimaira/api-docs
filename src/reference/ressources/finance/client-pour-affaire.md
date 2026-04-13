@@ -4,6 +4,13 @@
 
 Afin d’indiquer qu’un `Client` est le répondant financier pour une `Affaire`, il faut utiliser le champ `Principal`.
 
+## Récupérer l’identifiant de l’affaire
+
+Afin de créer un `ClientPourAffaire`, il vous faudra un `AffaireId` et un `ClientId`.
+
+Dans la plupart des cas, l’`AffaireId` sera récupéré depuis une [`Inscription`][inscription] ou un [`Dossier`][dossier].
+Ces deux entités portent un champ `AffaireId` avec la valeur nécessaire. 
+
 ## Créer un `ClientPourAffaire`
 
 ### Données obligatoires
@@ -53,3 +60,6 @@ curl https://myapi.aimaira.net/GraphV1/ClientPourAffaire \
 ```
 
 :::
+
+[inscription]: /reference/ressources/inscription/inscription
+[dossier]: /reference/ressources/admission/dossier
