@@ -80,7 +80,7 @@ Si ce dossier doit être à la racine, le `Streamid` correspond au dossier racin
 curl https://myapi.aimaira.net/GraphV1/Directory  \
   --request POST \
   --data '{
-  "Nom": "A00001",
+  "Name": "A00001",
   "Streamid": "4ad48217-bd62-43bb-82ac-91187c7994ef"
 }' \
   -u 'nomdutilisateur:motdepasse'
