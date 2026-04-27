@@ -103,4 +103,49 @@ curl https://myapi.aimaira.net/GraphV1/Directory  \
 
 `value` correspond à l’id du dossier créé.
 
+## Lister les dossiers et fichiers d’un dossier
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Directory/e41f31cf-faaa-4afe-a12f-5ec61cc5beaa \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+### Réponse
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Directory",
+  "value": [
+    {
+      "Streamid": "d967ef6f-0b68-42a6-8c30-3f95101e141d",
+      "Name": "A00550.jpg",
+      "Creation_time": "2026-02-16T17:34:16.14Z",
+      "Update_time": "2026-02-16T17:34:16.14Z",
+      "Delete_time": null,
+      "Last_access_time": "2026-02-16T17:34:16.14Z",
+      "Isdirectory": false,
+      "File_extension": ".jpg",
+      "Path": null,
+      "Size": 0,
+      "stream": "",
+      "Id": 133018
+    },
+    {
+      "Streamid": "213de897-28cd-4471-bcd7-e0dea2cbc5d4",
+      "Name": "DossierA",
+      "Creation_time": "2026-02-16T17:34:16.2433333Z",
+      "Update_time": "2026-02-16T17:34:16.2433333Z",
+      "Delete_time": null,
+      "Last_access_time": "2026-02-16T17:34:16.2433333Z",
+      "Isdirectory": true,
+      "File_extension": "",
+      "Path": null,
+      "Size": 0,
+      "stream": "",
+      "Id": 133019
+    }
+  ]
+}
+```
+
 [instance]: /reference/ressources/core/instance
