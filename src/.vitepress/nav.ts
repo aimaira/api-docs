@@ -370,6 +370,16 @@ const nav = [
                     },
                     {
                         collapsed: true,
+                        text: 'Pédagogie',
+                        items: [
+                            {
+                                text: 'Créer un référentiel de compétences opérationnel',
+                                link: '/reference/cas-d-usage/creer-un-referentiel-de-competences-operationnel',
+                            },
+                        ],
+                    },
+                    {
+                        collapsed: true,
                         text: 'Relation entreprise',
                         items: [
                             {
