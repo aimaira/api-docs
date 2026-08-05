@@ -107,6 +107,7 @@ const nav = [
                         items: [
                             {
                                 text: 'Enseignant',
+                                link: '/reference/ressources/academie/enseignant'
                             }
                         ]
                     },
