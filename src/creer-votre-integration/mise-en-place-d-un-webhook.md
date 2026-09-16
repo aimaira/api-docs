@@ -115,7 +115,7 @@ Compte tenu du message suivant envoyé lors du déclenchement du webhook
 {
   "CustomerName": "CONTOSO",
   "Date": "2023-12-04T12:19:03.5885615+01:00",
-  "Hash": "UH6lnG50Dmk3jJ8uMvqedQ==",
+  "Hash": "jk+3RKtT06K9O0sWTJD5yw==",
   "ObjectId": 2273857,
   "ObjectType": "recrutement.T_SESSION_RECRUTEMENT",
   "TriggerName": "Webhook"
@@ -132,6 +132,23 @@ On concatène les entrées du message dans l’ordre suivant
 
 ```csharp [C#]
 $"{TriggerName}{ObjectId}{ObjectType}{Date}{TriggerName}{CustomerName}"
+```
+
+:::
+
+::: warning Attention
+
+L’entrée `Date` est concaténée sous la forme `jj/MM/aaaa HH:mm:ss`, et non sous la forme ISO 8601 présente dans le
+message JSON. Les fractions de seconde et le décalage horaire ne sont pas repris dans le calcul.
+
+:::
+
+Pour l’exemple ci-dessus, la chaîne à hacher est donc la suivante
+
+::: code-group
+
+```text [Chaîne concaténée]
+Webhook2273857recrutement.T_SESSION_RECRUTEMENT04/12/2023 12:19:03WebhookCONTOSO
 ```
 
 :::

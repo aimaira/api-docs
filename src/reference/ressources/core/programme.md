@@ -68,13 +68,30 @@ curl https://myapi.aimaira.net/GraphV1/Programme \
 
 ## Créer un programme
 
+### Champs particuliers
+
+#### `Marque` et `Campus`
+
+Ces deux champs sont historiques et ne sont plus utilisés. Le rattachement se fait par les champs relationnels
+`EcoleId` et `EntiteJuridiqueId`.
+
+- [Marque][marque]
+- [Campus][campus]
+
+#### `Parametres`
+
+Les champs personnalisés du programme sont accessibles en lecture seule.
+
 ### Données obligatoires
 
 - `Nom`
 - `Code`
 - `EntiteJuridiqueId` *(voir [Campus][campus])*
-- `EcoleId` *(voir [Marque][marque])*
 - `CodeDroit`
+
+Fortement recommandées, sans être rejetées si elles sont absentes :
+
+- `EcoleId` *(voir [Marque][marque])*
 - `CodeAnalytique`
 
 ::: code-group
