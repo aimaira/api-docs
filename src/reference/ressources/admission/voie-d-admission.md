@@ -57,15 +57,32 @@ curl https://myapi.aimaira.net/GraphV1/SessionRecrutement \
 
 ## Créer une voie d'admission
 
+### Champs particuliers
+
+#### `CodesPieces` et `CodesPiecesOptionnelles`
+
+Ces deux champs listent les pièces justificatives demandées au candidat, respectivement obligatoires et facultatives.
+
+Les valeurs attendues sont les **codes** des types de pièce, et non leurs identifiants. Ils sont séparés par le
+caractère `/`, par exemple `NOTES/CV/`. Un code inconnu est ignoré silencieusement : la pièce correspondante n’est
+alors pas demandée au candidat.
+
+#### `Parametres`
+
+Les champs personnalisés de la voie d’admission sont accessibles en lecture seule.
+
 ### Données obligatoires
 
-- `ProgrammeId` *(voir [Programme][programme])*
-- `PeriodeRentreeId` *(voir [Période][periode])*
-- `LibelleExterne`
 - `Nom`
-- `Code`
+- `ProgrammeId` *(voir [Programme][programme])*
 - `Debut`
 - `Fin`
+
+Fortement recommandées, sans être rejetées si elles sont absentes :
+
+- `Code`
+- `LibelleExterne`
+- `PeriodeRentreeId` *(voir [Période][periode])*
 
 ::: code-group
 

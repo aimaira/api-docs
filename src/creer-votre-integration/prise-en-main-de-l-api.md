@@ -86,6 +86,28 @@ propriétés nécessaires, et pousser l’entité modifiée.
 
 :::
 
+## Contrôle du résultat d’une écriture
+
+Lorsqu’une donnée obligatoire manque ou qu’un identifiant transmis n’existe pas, l’écriture n’a pas lieu mais la
+réponse HTTP reste `200`. Le refus se reconnaît au champ `Id` de l’entité renvoyée, qui vaut `-1`.
+
+Après chaque création ou modification, **contrôler la valeur de `Id` dans la réponse** plutôt que le seul code HTTP.
+Un `Id` positif est le seul indicateur fiable de réussite.
+
+::: code-group
+
+```json [Écriture refusée]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Programme/$entity",
+  "Id": -1,
+  "Nom": "Mon programme"
+}
+```
+
+:::
+
+Les données obligatoires de chaque ressource sont indiquées dans la section « Champs » de sa page de référence.
+
 ## OData
 
 L’API AIMAIRA implémente le protocole [OData][odata] (Open Data Protocol) : une norme qui défini un ensemble de bonnes 

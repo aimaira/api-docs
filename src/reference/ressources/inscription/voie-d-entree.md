@@ -86,3 +86,51 @@ curl https://myapi.aimaira.net/GraphV1/Recrutement
 ```
 
 :::
+
+## Créer une voie d’entrée
+
+### Champs particuliers
+
+#### `CodesPieces` et `CodesPiecesOptionnelles`
+
+Ces deux champs listent les pièces justificatives demandées au candidat, respectivement obligatoires et facultatives.
+
+Les valeurs attendues sont les **codes** des types de pièce, et non leurs identifiants. Ils sont séparés par le
+caractère `/`, par exemple `NOTES/CV/`. Un code inconnu est ignoré silencieusement : la pièce correspondante n’est
+alors pas demandée au candidat.
+
+#### `Parametres`
+
+Les champs personnalisés de la voie d’entrée sont accessibles en lecture seule.
+
+### Données obligatoires
+
+- `Nom`
+- `ProgrammeId` *(voir [Programme][programme])*
+- `Debut`
+- `Fin`
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Recrutement \
+    --request POST \
+    --header 'Content-Type: application/json' \
+    --data '{
+  "Nom": "Ma nouvelle voie d’entrée",
+  "ProgrammeId": 2215158,
+  "Debut": "2023-04-01T00:00:00+02:00",
+  "Fin": "2023-12-01T00:00:00+01:00",
+  "ParcoursId": 2215168,
+  "LibelleExterne": "Inscription Rentrée 2023",
+  "Rentree": "2023-10-02T00:00:00+02:00",
+  "Diplomant": true,
+  "CodesPieces": "NOTES/",
+  "CodesPiecesOptionnelles": "RQTH/"
+}' \
+    -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+[programme]: /reference/ressources/core/programme
