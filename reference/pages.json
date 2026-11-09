@@ -1,0 +1,398 @@
+{
+  "baseUrl": "https://myapi.aimaira.net/GraphV1",
+  "auth": "-u 'nomdutilisateur:motdepasse'",
+  "sections": {
+    "core": "Core",
+    "file": "Fichiers",
+    "academie": "Académie",
+    "admission": "Admission",
+    "inscription": "Inscription",
+    "finance": "Finance",
+    "pedagogie": "Pédagogie",
+    "planification": "Planification",
+    "relation-entreprise": "Relation entreprise",
+    "herite": "Hérité",
+    "referentiel": "Référentiel"
+  },
+  "pages": {
+    "Enseignant": {
+      "page": "academie/enseignant",
+      "nom": "enseignant",
+      "un": "un enseignant",
+      "les": "les enseignants"
+    },
+    "Agent": {
+      "page": "admission/agent",
+      "nom": "agent",
+      "un": "un agent",
+      "les": "les agents"
+    },
+    "CanalAcquisition": {
+      "page": "admission/canal-acquisition",
+      "nom": "canal d’acquisition",
+      "un": "un canal d’acquisition",
+      "les": "les canaux d’acquisition"
+    },
+    "Candidat": {
+      "page": "admission/candidat",
+      "nom": "candidat",
+      "un": "un candidat",
+      "les": "les candidats"
+    },
+    "Dossier": {
+      "page": "admission/dossier",
+      "nom": "dossier de candidature",
+      "un": "un dossier de candidature",
+      "les": "les dossiers de candidature",
+      "verifierNomTechnique": false
+    },
+    "EtatCandidature": {
+      "page": "admission/etat-de-candidature",
+      "nom": "état de candidature",
+      "un": "un état de candidature",
+      "les": "les états de candidature"
+    },
+    "SessionRecrutement": {
+      "page": "admission/voie-d-admission",
+      "nom": "voie d’admission",
+      "un": "une voie d’admission",
+      "les": "les voies d’admission"
+    },
+    "Adresse": {
+      "page": "core/adresse",
+      "nom": "adresse",
+      "un": "une adresse",
+      "les": "les adresses"
+    },
+    "Campus": {
+      "page": "core/campus",
+      "nom": "campus",
+      "un": "un campus",
+      "les": "les campus"
+    },
+    "Civilite": {
+      "page": "core/civilite",
+      "nom": "civilité",
+      "un": "une civilité",
+      "les": "les civilités"
+    },
+    "Commentaire": {
+      "page": "core/commentaire",
+      "nom": "commentaire",
+      "un": "un commentaire",
+      "les": "les commentaires"
+    },
+    "Mail": {
+      "page": "core/e-mail",
+      "nom": "e-mail",
+      "un": "un e-mail",
+      "les": "les e-mails"
+    },
+    "Instance": {
+      "page": "core/instance",
+      "nom": "instance",
+      "un": "une instance",
+      "les": "les instances"
+    },
+    "Ecole": {
+      "page": "core/marque",
+      "nom": "marque",
+      "un": "une marque",
+      "les": "les marques"
+    },
+    "Note": {
+      "page": "core/note",
+      "nom": "note",
+      "un": "une note",
+      "les": "les notes"
+    },
+    "Object": {
+      "page": "core/object",
+      "nav": false,
+      "nom": "objet",
+      "un": "un objet",
+      "les": "les objets"
+    },
+    "Pays": {
+      "page": "core/pays",
+      "nom": "pays",
+      "un": "un pays",
+      "les": "les pays"
+    },
+    "Periode": {
+      "page": "core/periode",
+      "nom": "période",
+      "un": "une période",
+      "les": "les périodes"
+    },
+    "Programme": {
+      "page": "core/programme",
+      "nom": "programme",
+      "un": "un programme",
+      "les": "les programmes"
+    },
+    "ReferenceExterne": {
+      "page": "core/reference-externe",
+      "nom": "référence externe",
+      "un": "une référence externe",
+      "les": "les références externes"
+    },
+    "Telephone": {
+      "page": "core/telephone",
+      "nom": "téléphone",
+      "un": "un téléphone",
+      "les": "les téléphones"
+    },
+    "User": {
+      "page": "core/utilisateur",
+      "nom": "utilisateur",
+      "un": "un utilisateur",
+      "les": "les utilisateurs"
+    },
+    "Description": {
+      "page": "file/description",
+      "nom": "description",
+      "un": "une description",
+      "les": "les descriptions"
+    },
+    "Directory": {
+      "page": "file/directory",
+      "nom": "dossier",
+      "un": "un dossier",
+      "les": "les dossiers"
+    },
+    "File": {
+      "page": "file/file",
+      "nom": "fichier",
+      "un": "un fichier",
+      "les": "les fichiers"
+    },
+    "Affaire": {
+      "page": "finance/affaire",
+      "nom": "affaire",
+      "un": "une affaire",
+      "les": "les affaires"
+    },
+    "BalanceClient": {
+      "page": "finance/balance-client",
+      "nom": "ligne de balance client",
+      "un": "une ligne de balance client",
+      "les": "les lignes de balance client"
+    },
+    "Client": {
+      "page": "finance/client",
+      "nom": "client",
+      "un": "un client",
+      "les": "les clients"
+    },
+    "ClientPourAffaire": {
+      "page": "finance/client-pour-affaire",
+      "nom": "lien entre un client et une affaire",
+      "un": "un lien entre un client et une affaire",
+      "les": "les liens entre un client et une affaire"
+    },
+    "MandatSEPA": {
+      "page": "finance/mandat-sepa",
+      "nom": "mandat SEPA",
+      "un": "un mandat SEPA",
+      "les": "les mandats SEPA"
+    },
+    "NatureClient": {
+      "page": "finance/nature-client",
+      "nom": "nature du client",
+      "un": "une nature du client",
+      "les": "les natures de clients"
+    },
+    "SocieteFacturation": {
+      "page": "finance/societe-de-facturation",
+      "nom": "société de facturation",
+      "un": "une société de facturation",
+      "les": "les sociétés de facturation"
+    },
+    "EntiteJuridique": {
+      "page": "herite/entite-juridique",
+      "nav": false,
+      "nom": "entité juridique",
+      "un": "une entité juridique",
+      "les": "les entités juridiques"
+    },
+    "Apprenant": {
+      "page": "inscription/apprenant",
+      "nom": "apprenant",
+      "un": "un apprenant",
+      "les": "les apprenants"
+    },
+    "Inscription": {
+      "page": "inscription/inscription",
+      "nom": "inscription",
+      "un": "une inscription",
+      "les": "les inscriptions"
+    },
+    "EtatInscription": {
+      "page": "inscription/issue-etat-d-inscription",
+      "nom": "issue - état d’inscription",
+      "un": "une issue - état d’inscription",
+      "les": "les issues - états d’inscription"
+    },
+    "Origine": {
+      "page": "inscription/origine",
+      "nom": "origine",
+      "un": "une origine",
+      "les": "les origines"
+    },
+    "Parcours": {
+      "page": "inscription/parcours",
+      "nom": "parcours",
+      "un": "un parcours",
+      "les": "les parcours"
+    },
+    "ProgrammeRegime": {
+      "page": "inscription/programme-regime",
+      "nom": "liaison entre un programme et un régime",
+      "un": "une liaison entre un programme et un régime",
+      "les": "les liaisons entre un programme et un régime"
+    },
+    "RegimeInscription": {
+      "page": "inscription/regime-de-l-apprenant",
+      "nom": "régime de l’apprenant",
+      "un": "un régime de l’apprenant",
+      "les": "les régimes de l’apprenant"
+    },
+    "Tuteur": {
+      "page": "inscription/tuteur",
+      "nom": "tuteur",
+      "un": "un tuteur",
+      "les": "les tuteurs"
+    },
+    "Recrutement": {
+      "page": "inscription/voie-d-entree",
+      "nom": "voie d’entrée ou de réinscription",
+      "un": "une voie d’entrée ou de réinscription",
+      "les": "les voies d’entrée ou de réinscription"
+    },
+    "Cours": {
+      "page": "pedagogie/cours",
+      "nom": "cours",
+      "un": "un cours",
+      "les": "les cours"
+    },
+    "Departement": {
+      "page": "pedagogie/departement",
+      "nom": "département",
+      "un": "un département",
+      "les": "les départements"
+    },
+    "Evaluation": {
+      "page": "pedagogie/evaluation",
+      "nom": "évaluation",
+      "un": "une évaluation",
+      "les": "les évaluations"
+    },
+    "Sequence": {
+      "page": "pedagogie/sequence",
+      "nom": "séquence",
+      "un": "une séquence",
+      "les": "les séquences"
+    },
+    "TypeSequence": {
+      "page": "pedagogie/type-de-sequence",
+      "nom": "type de séquence",
+      "un": "un type de séquence",
+      "les": "les types de séquences"
+    },
+    "Planification": {
+      "page": "planification/evenement-du-calendrier",
+      "nom": "événement du calendrier",
+      "un": "un événement du calendrier",
+      "les": "les événements du calendrier",
+      "verifierNomTechnique": false
+    },
+    "PlanificationRessource": {
+      "page": "planification/ressource-d-evenement",
+      "nom": "ressource d’événement",
+      "un": "une ressource d’événement",
+      "les": "les ressources d’événement"
+    },
+    "TypePlanification": {
+      "page": "planification/type-d-evenement",
+      "nom": "type d’événement du calendrier",
+      "un": "un type d’événement du calendrier",
+      "les": "les types d’événements du calendrier"
+    },
+    "UserTemplate": {
+      "page": "referentiel/modele-utilisateur",
+      "nom": "modèle d’utilisateur",
+      "un": "un modèle d’utilisateur",
+      "les": "les modèles d’utilisateur"
+    },
+    "AutreLieuFormation": {
+      "page": "relation-entreprise/autre-lieu-de-formation",
+      "nom": "autre lieu de formation",
+      "un": "un autre lieu de formation",
+      "les": "les autres lieux de formation"
+    },
+    "Convention": {
+      "page": "relation-entreprise/convention",
+      "nom": "convention",
+      "un": "une convention",
+      "les": "les conventions"
+    },
+    "EcheancierFacturation": {
+      "page": "relation-entreprise/echeancier-de-facturation",
+      "nom": "échéancier de facturation",
+      "un": "un échéancier de facturation",
+      "les": "les échéanciers de facturation"
+    },
+    "Entreprise": {
+      "page": "relation-entreprise/entreprise",
+      "nom": "entreprise",
+      "un": "une entreprise",
+      "les": "les entreprises"
+    },
+    "EtatConvention": {
+      "page": "relation-entreprise/etat-de-convention",
+      "nom": "état de convention",
+      "un": "un état de convention",
+      "les": "les états de convention"
+    },
+    "DispositionFinanciere": {
+      "page": "relation-entreprise/frais-de-formation",
+      "nom": "frais de formation",
+      "un": "des frais de formation",
+      "les": "les frais de formation",
+      "possessif": "leur"
+    },
+    "OPCA": {
+      "page": "relation-entreprise/organisme-financeur",
+      "nom": "organisme financeur",
+      "un": "un organisme financeur",
+      "les": "les organismes financeurs",
+      "verifierNomTechnique": false
+    },
+    "Professionnel": {
+      "page": "relation-entreprise/professionnel",
+      "nom": "professionnel",
+      "un": "un professionnel",
+      "les": "les professionnels"
+    },
+    "Remuneration": {
+      "page": "relation-entreprise/remuneration",
+      "nom": "rémunération de l’apprenant",
+      "un": "une rémunération de l’apprenant",
+      "les": "les rémunérations de l’apprenant"
+    },
+    "TypeConvention": {
+      "page": "relation-entreprise/type-de-convention",
+      "nom": "type de convention",
+      "un": "un type de convention",
+      "les": "les types de convention"
+    },
+    "TypeFraisFormation": {
+      "page": "relation-entreprise/type-de-frais-de-formation",
+      "nom": "type de frais de formation",
+      "un": "un type de frais de formation",
+      "les": "les types de frais de formation"
+    }
+  },
+  "ignore": []
+}

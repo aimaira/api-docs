@@ -51,3 +51,39 @@ curl https://myapi.aimaira.net/GraphV1/Description  \
 ```
 
 :::
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer une description avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Description/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Description/$entity",
+  "Streamid": "00000000-0000-0000-0000-000000000000",
+  "DateCreation": null,
+  "DateValidation": null,
+  "Contexte": "",
+  "Regroupement": "",
+  "DossierTemp": "",
+  "DossierCible": "",
+  "Statut": 0,
+  "Valideur": ""
+}
+```
+
+:::
+
+<!-- graphv1:end -->

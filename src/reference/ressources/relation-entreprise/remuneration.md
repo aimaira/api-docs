@@ -193,3 +193,59 @@ curl https://myapi.aimaira.net/GraphV1/Remuneration/4394565 \
 ```
 
 :::
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer une rémunération de l’apprenant avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Remuneration/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Remuneration/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "Debut1": null,
+  "Fin1": null,
+  "Pourcentage1": 0,
+  "SalaireMin1": "",
+  "Debut2": null,
+  "Fin2": null,
+  "Pourcentage2": 0,
+  "SalaireMin2": "",
+  "Annee": 0,
+  "ConventionId": 0
+}
+```
+
+:::
+
+## Supprimer une rémunération de l’apprenant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Remuneration/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

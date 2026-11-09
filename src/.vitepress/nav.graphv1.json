@@ -1,0 +1,317 @@
+{
+  "sections": {
+    "core": "Core",
+    "file": "Fichiers",
+    "academie": "Académie",
+    "admission": "Admission",
+    "inscription": "Inscription",
+    "finance": "Finance",
+    "pedagogie": "Pédagogie",
+    "planification": "Planification",
+    "relation-entreprise": "Relation entreprise",
+    "herite": "Hérité",
+    "referentiel": "Référentiel"
+  },
+  "pages": [
+    {
+      "section": "academie",
+      "text": "Enseignant",
+      "link": "/reference/ressources/academie/enseignant"
+    },
+    {
+      "section": "admission",
+      "text": "Agent",
+      "link": "/reference/ressources/admission/agent"
+    },
+    {
+      "section": "admission",
+      "text": "Canal d’acquisition du candidat",
+      "link": "/reference/ressources/admission/canal-acquisition"
+    },
+    {
+      "section": "admission",
+      "text": "Candidat",
+      "link": "/reference/ressources/admission/candidat"
+    },
+    {
+      "section": "admission",
+      "text": "Dossier de candidature",
+      "link": "/reference/ressources/admission/dossier"
+    },
+    {
+      "section": "admission",
+      "text": "Etat de candidature",
+      "link": "/reference/ressources/admission/etat-de-candidature"
+    },
+    {
+      "section": "admission",
+      "text": "Voie d’admission",
+      "link": "/reference/ressources/admission/voie-d-admission"
+    },
+    {
+      "section": "core",
+      "text": "Adresse",
+      "link": "/reference/ressources/core/adresse"
+    },
+    {
+      "section": "core",
+      "text": "Campus",
+      "link": "/reference/ressources/core/campus"
+    },
+    {
+      "section": "core",
+      "text": "Civilité",
+      "link": "/reference/ressources/core/civilite"
+    },
+    {
+      "section": "core",
+      "text": "Commentaire",
+      "link": "/reference/ressources/core/commentaire"
+    },
+    {
+      "section": "core",
+      "text": "E-mail",
+      "link": "/reference/ressources/core/e-mail"
+    },
+    {
+      "section": "core",
+      "text": "Instance",
+      "link": "/reference/ressources/core/instance"
+    },
+    {
+      "section": "core",
+      "text": "Marque",
+      "link": "/reference/ressources/core/marque"
+    },
+    {
+      "section": "core",
+      "text": "Note",
+      "link": "/reference/ressources/core/note"
+    },
+    {
+      "section": "core",
+      "text": "Pays",
+      "link": "/reference/ressources/core/pays"
+    },
+    {
+      "section": "core",
+      "text": "Période",
+      "link": "/reference/ressources/core/periode"
+    },
+    {
+      "section": "core",
+      "text": "Programme",
+      "link": "/reference/ressources/core/programme"
+    },
+    {
+      "section": "core",
+      "text": "Référence externe",
+      "link": "/reference/ressources/core/reference-externe"
+    },
+    {
+      "section": "core",
+      "text": "Téléphone",
+      "link": "/reference/ressources/core/telephone"
+    },
+    {
+      "section": "core",
+      "text": "Utilisateur",
+      "link": "/reference/ressources/core/utilisateur"
+    },
+    {
+      "section": "file",
+      "text": "Description",
+      "link": "/reference/ressources/file/description"
+    },
+    {
+      "section": "file",
+      "text": "Dossier",
+      "link": "/reference/ressources/file/directory"
+    },
+    {
+      "section": "file",
+      "text": "Fichier",
+      "link": "/reference/ressources/file/file"
+    },
+    {
+      "section": "finance",
+      "text": "Affaire",
+      "link": "/reference/ressources/finance/affaire"
+    },
+    {
+      "section": "finance",
+      "text": "Balance client",
+      "link": "/reference/ressources/finance/balance-client"
+    },
+    {
+      "section": "finance",
+      "text": "Client",
+      "link": "/reference/ressources/finance/client"
+    },
+    {
+      "section": "finance",
+      "text": "Lien entre un Client et une Affaire",
+      "link": "/reference/ressources/finance/client-pour-affaire"
+    },
+    {
+      "section": "finance",
+      "text": "Mandat SEPA",
+      "link": "/reference/ressources/finance/mandat-sepa"
+    },
+    {
+      "section": "finance",
+      "text": "Nature du client",
+      "link": "/reference/ressources/finance/nature-client"
+    },
+    {
+      "section": "finance",
+      "text": "Société de facturation",
+      "link": "/reference/ressources/finance/societe-de-facturation"
+    },
+    {
+      "section": "inscription",
+      "text": "Apprenant",
+      "link": "/reference/ressources/inscription/apprenant"
+    },
+    {
+      "section": "inscription",
+      "text": "Inscription",
+      "link": "/reference/ressources/inscription/inscription"
+    },
+    {
+      "section": "inscription",
+      "text": "Issue - État d’inscription",
+      "link": "/reference/ressources/inscription/issue-etat-d-inscription"
+    },
+    {
+      "section": "inscription",
+      "text": "Liaison entre un programme et le régime de l’apprenant",
+      "link": "/reference/ressources/inscription/programme-regime"
+    },
+    {
+      "section": "inscription",
+      "text": "Origine",
+      "link": "/reference/ressources/inscription/origine"
+    },
+    {
+      "section": "inscription",
+      "text": "Parcours",
+      "link": "/reference/ressources/inscription/parcours"
+    },
+    {
+      "section": "inscription",
+      "text": "Régime de l’apprenant",
+      "link": "/reference/ressources/inscription/regime-de-l-apprenant"
+    },
+    {
+      "section": "inscription",
+      "text": "Tuteur",
+      "link": "/reference/ressources/inscription/tuteur"
+    },
+    {
+      "section": "inscription",
+      "text": "Voie d’entrée",
+      "link": "/reference/ressources/inscription/voie-d-entree"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Cours",
+      "link": "/reference/ressources/pedagogie/cours"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Département",
+      "link": "/reference/ressources/pedagogie/departement"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Évaluation",
+      "link": "/reference/ressources/pedagogie/evaluation"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Séquence",
+      "link": "/reference/ressources/pedagogie/sequence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Type de séquence",
+      "link": "/reference/ressources/pedagogie/type-de-sequence"
+    },
+    {
+      "section": "planification",
+      "text": "Événement du calendrier",
+      "link": "/reference/ressources/planification/evenement-du-calendrier"
+    },
+    {
+      "section": "planification",
+      "text": "Ressource d’événement du calendrier",
+      "link": "/reference/ressources/planification/ressource-d-evenement"
+    },
+    {
+      "section": "planification",
+      "text": "Type d’événement du calendrier",
+      "link": "/reference/ressources/planification/type-d-evenement"
+    },
+    {
+      "section": "referentiel",
+      "text": "Modèle d’utilisateur",
+      "link": "/reference/ressources/referentiel/modele-utilisateur"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Autre lieu de formation",
+      "link": "/reference/ressources/relation-entreprise/autre-lieu-de-formation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Convention",
+      "link": "/reference/ressources/relation-entreprise/convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéancier de facturation",
+      "link": "/reference/ressources/relation-entreprise/echeancier-de-facturation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Entreprise",
+      "link": "/reference/ressources/relation-entreprise/entreprise"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "État de convention",
+      "link": "/reference/ressources/relation-entreprise/etat-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Frais de formation",
+      "link": "/reference/ressources/relation-entreprise/frais-de-formation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Organisme financeur",
+      "link": "/reference/ressources/relation-entreprise/organisme-financeur"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Professionnel",
+      "link": "/reference/ressources/relation-entreprise/professionnel"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Rémunération de l’apprenant",
+      "link": "/reference/ressources/relation-entreprise/remuneration"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de convention",
+      "link": "/reference/ressources/relation-entreprise/type-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de frais de formation",
+      "link": "/reference/ressources/relation-entreprise/type-de-frais-de-formation"
+    }
+  ]
+}

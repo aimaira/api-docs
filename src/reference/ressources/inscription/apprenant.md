@@ -281,7 +281,7 @@ identifiant d’utilisateur [créé au préalable][utilisateur].
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Candidat \
+curl https://myapi.aimaira.net/GraphV1/Apprenant \
     --request POST \
     --header 'Content-Type: application/json' \
     --data '{
@@ -356,7 +356,7 @@ Comme pour toute autre mise à jour de données, [cette mise en garde][disclaime
 ::: code-group
 
 ```bash [cURL]
-curl https://myapi.aimaira.net/GraphV1/Candidat/1234567 \
+curl https://myapi.aimaira.net/GraphV1/Apprenant/1234567 \
     --request PUT \
     --header 'Content-Type: application/json' \
     --data '{
@@ -590,3 +590,23 @@ curl https://myapi.aimaira.net/GraphV1/InscriptionCours?$filter=ApprenantId eq 2
 [retrouver-un-tuteur]: /reference/ressources/inscription/tuteur
 [utilisateur]: /reference/ressources/core/utilisateur#creer-un-utilisateur
 [disclaimer]: /creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Supprimer un apprenant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Apprenant/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

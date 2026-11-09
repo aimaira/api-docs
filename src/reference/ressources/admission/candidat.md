@@ -25,7 +25,7 @@ Cet identifiant est généré automatiquement lors de la création d’un nouvea
 
 ## Lister les candidats
 
-Seuls les candidats qui disposent d’un [Dossier][dossier] complet sont listés sur ce point de terminaison.
+Seuls les candidats qui disposent d’un [dossier de candidature][dossier] complet sont listés sur ce point de terminaison.
 
 ## Rechercher un candidat par e-mail
 
@@ -134,7 +134,7 @@ curl https://myapi.aimaira.net/GraphV1/Candidat \
 
 :::
 
-Une fois le candidat créé, il est nécessaire de créer le [Dossier][dossier] lié à ce candidat afin de permettre de
+Une fois le candidat créé, il est nécessaire de créer le [dossier de candidature][dossier] lié à ce candidat afin de permettre de
 le lister depuis l’API et de l’afficher dans Manage.
 
 [dossier]: /reference/ressources/admission/dossier
@@ -142,4 +142,192 @@ le lister depuis l’API et de l’afficher dans Manage.
 [programme]: docs/api/reference/ressources/core/programme
 [voie-d-admission]: /reference/ressources/admission/voie-d-admission
 [canal-acquisition]: /reference/ressources/admission/canal-acquisition
-[creer-utilisateur]: /reference/ressources/core/utilisateur 
+[creer-utilisateur]: /reference/ressources/core/utilisateur
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer un candidat avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Candidat/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Candidat/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "Login": "",
+  "Prenoms": "",
+  "NomUsage": "",
+  "PrenomUsage": "",
+  "Prenom2": "",
+  "Prenom3": "",
+  "NomJeuneFille": "",
+  "Fonction": "",
+  "VilleNaissance": "",
+  "DepartementNaissance": "",
+  "CodeCommuneNaissance": "",
+  "CiviliteId": 0,
+  "AdresseId": 0,
+  "MailId": 0,
+  "TelephoneId": 0,
+  "MobileId": 0,
+  "Nationalite1Id": 0,
+  "Nationalite2Id": 0,
+  "PaysNaissanceId": 0,
+  "DateNaissance": null,
+  "GenreMale": false,
+  "Handicap": false,
+  "RefSysteme": "",
+  "AutoriseCRM": false,
+  "HasChosenRGPD": false,
+  "HasChosenMarketing": false,
+  "TiersTemps": false,
+  "TiersTempsPrecision": "",
+  "Numero": "",
+  "Password": "",
+  "Tuteur1Id": 0,
+  "IndividuId": 0,
+  "Tuteur2Id": 0,
+  "CanalAcquisitionId": 0,
+  "ResidencePaysId": 0,
+  "ResidenceProvinceId": 0
+}
+```
+
+:::
+
+## Modifier un candidat
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Candidat/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "Login": "texte",
+  "Prenoms": "texte",
+  "NomUsage": "texte",
+  "PrenomUsage": "texte",
+  "Prenom2": "texte",
+  "Prenom3": "texte",
+  "NomJeuneFille": "texte",
+  "Fonction": "texte",
+  "VilleNaissance": "texte",
+  "DepartementNaissance": "texte",
+  "CodeCommuneNaissance": "texte",
+  "CiviliteId": 1234567,
+  "AdresseId": 1234567,
+  "MailId": 1234567,
+  "TelephoneId": 1234567,
+  "MobileId": 1234567,
+  "Nationalite1Id": 1234567,
+  "Nationalite2Id": 1234567,
+  "PaysNaissanceId": 1234567,
+  "DateNaissance": "2026-09-01T00:00:00+02:00",
+  "GenreMale": false,
+  "Handicap": false,
+  "RefSysteme": "texte",
+  "AutoriseCRM": false,
+  "HasChosenRGPD": false,
+  "HasChosenMarketing": false,
+  "TiersTemps": false,
+  "TiersTempsPrecision": "texte",
+  "Numero": "texte",
+  "Password": "texte",
+  "Tuteur1Id": 1234567,
+  "IndividuId": 1234567,
+  "Tuteur2Id": 1234567,
+  "CanalAcquisitionId": 1234567,
+  "ResidencePaysId": 1234567,
+  "ResidenceProvinceId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Candidat/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "Login": "texte",
+  "Prenoms": "texte",
+  "NomUsage": "texte",
+  "PrenomUsage": "texte",
+  "Prenom2": "texte",
+  "Prenom3": "texte",
+  "NomJeuneFille": "texte",
+  "Fonction": "texte",
+  "VilleNaissance": "texte",
+  "DepartementNaissance": "texte",
+  "CodeCommuneNaissance": "texte",
+  "CiviliteId": 1234567,
+  "AdresseId": 1234567,
+  "MailId": 1234567,
+  "TelephoneId": 1234567,
+  "MobileId": 1234567,
+  "Nationalite1Id": 1234567,
+  "Nationalite2Id": 1234567,
+  "PaysNaissanceId": 1234567,
+  "DateNaissance": "2026-09-01T00:00:00+02:00",
+  "GenreMale": false,
+  "Handicap": false,
+  "RefSysteme": "texte",
+  "AutoriseCRM": false,
+  "HasChosenRGPD": false,
+  "HasChosenMarketing": false,
+  "TiersTemps": false,
+  "TiersTempsPrecision": "texte",
+  "Numero": "texte",
+  "Password": "texte",
+  "Tuteur1Id": 1234567,
+  "IndividuId": 1234567,
+  "Tuteur2Id": 1234567,
+  "CanalAcquisitionId": 1234567,
+  "ResidencePaysId": 1234567,
+  "ResidenceProvinceId": 1234567
+}
+```
+
+:::
+
+## Supprimer un candidat
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Candidat/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

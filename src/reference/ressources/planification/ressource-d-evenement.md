@@ -184,3 +184,99 @@ curl  https://myapi.aimaira.net/GraphV1/TypeRessource \
 ```
 
 :::
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Créer une ressource d’événement
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/PlanificationRessource \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "PlanificationId": 1234567,
+  "TypeRessourceId": 1234567,
+  "Debut": "2026-09-01T00:00:00+02:00",
+  "Fin": "2026-09-01T00:00:00+02:00",
+  "PlanificationDebut": "2026-09-01T00:00:00+02:00",
+  "PlanificationFin": "2026-09-01T00:00:00+02:00",
+  "Presence": false,
+  "Exclusion": false,
+  "Depart": false,
+  "Retard": false,
+  "Reference": 0,
+  "IdProgramme": 0,
+  "IdSequence": 0,
+  "Detail": "texte",
+  "ControlePresence": "2026-09-01T00:00:00+02:00",
+  "MotifId": 1234567,
+  "ReferenceTraitement": "texte",
+  "ProvenancePresence": "None",
+  "CommentaireId": 1234567,
+  "LibelleEtatInscription": "texte",
+  "RessourceCampusId": 1234567,
+  "GroupeId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#PlanificationRessource/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "PlanificationId": 1234567,
+  "TypeRessourceId": 1234567,
+  "Debut": "2026-09-01T00:00:00+02:00",
+  "Fin": "2026-09-01T00:00:00+02:00",
+  "PlanificationDebut": "2026-09-01T00:00:00+02:00",
+  "PlanificationFin": "2026-09-01T00:00:00+02:00",
+  "Presence": false,
+  "Exclusion": false,
+  "Depart": false,
+  "Retard": false,
+  "Reference": 0,
+  "IdProgramme": 0,
+  "IdSequence": 0,
+  "Detail": "texte",
+  "ControlePresence": "2026-09-01T00:00:00+02:00",
+  "MotifId": 1234567,
+  "ReferenceTraitement": "texte",
+  "ProvenancePresence": "None",
+  "CommentaireId": 1234567,
+  "LibelleEtatInscription": "texte",
+  "RessourceCampusId": 1234567,
+  "GroupeId": 1234567
+}
+```
+
+:::
+
+## Supprimer une ressource d’événement
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/PlanificationRessource/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

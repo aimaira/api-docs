@@ -1,4 +1,4 @@
-# Dossier
+# Dossier de candidature
 
 ## Lister les dossiers
 
@@ -396,3 +396,98 @@ curl https://myapi.aimaira.net/GraphV1/Dossier/2253447
 [etat-de-candidature]: /reference/ressources/admission/etat-de-candidature
 [voie-d-admission]: /reference/ressources/admission/voie-d-admission
 [lister-agent-campus]: /reference/ressources/admission/agent#lister-les-agents-d-un-campus-specifique
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Modifier un dossier de candidature
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Dossier/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "CandidatId": 1234567,
+  "SessionRecrutementId": 1234567,
+  "EtatCandidatureId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Dossier/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "AffaireId": 0,
+  "CandidatId": 1234567,
+  "SessionRecrutementId": 1234567,
+  "EtatCandidatureId": 1234567,
+  "DateDebut": null,
+  "DateFin": null,
+  "DateEvaluation": null,
+  "DecisionId": 0,
+  "DateDecision": null,
+  "AnneeBac": "",
+  "NoteBac": "",
+  "SpecialiteBac": "",
+  "SpecialiteBaccalaureatGeneral1Id": 0,
+  "SpecialiteBaccalaureatGeneral2Id": 0,
+  "EtablissementBac": "",
+  "EtablissementVilleBac": "",
+  "EtablissementNumeroUAIBac": "",
+  "NumeroINEBac": "",
+  "EnCoursBac": false,
+  "PaysIdBac": 0,
+  "BaccalaureatId": 0,
+  "MentionId": 0,
+  "InscriptionId": 0,
+  "CreneauId": 0,
+  "SituationActuelleId": 0,
+  "DernierDiplomeId": 0,
+  "Numero": "",
+  "ReferenceCRM": "",
+  "Referent1Id": 0,
+  "Referent2Id": 0,
+  "SessionId": 0,
+  "ReponseQuestionnaireCandidatId": 0,
+  "ReponseQuestionnaireReferent1Id": 0,
+  "ReponseQuestionnaireReferent2Id": 0,
+  "ReponseQuestionnaireEvaluateurId": 0,
+  "CreneauLibre": null,
+  "AgentId": 0,
+  "NiveauEtudeId": 0,
+  "EvaluateurId": 0,
+  "PourcentageAvancement": 0
+}
+```
+
+:::
+
+## Supprimer un dossier de candidature
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Dossier/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

@@ -342,3 +342,207 @@ curl https://myapi.aimaira.net/GraphV1/Inscription/2253468/InscriptionPeriodes \
 [etat-inscription]: /reference/ressources/inscription/issue-etat-d-inscription
 [regime]: /reference/ressources/inscription/regime-de-l-apprenant
 [voie-entree]: /reference/ressources/inscription/voie-d-entree
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer une inscription avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Inscription/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Inscription/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "EntiteJuridiqueId": 0,
+  "Date": null,
+  "CommentaireId": 0,
+  "Contentieux": false,
+  "AffaireId": 0,
+  "ApprenantId": 0,
+  "ProgrammeId": 0,
+  "RecrutementId": 0,
+  "EtatInscriptionId": 0,
+  "RegimeInscriptionId": 0,
+  "DateInscription": null,
+  "DateSortie": null,
+  "OrigineId": 0,
+  "SituationPrecedenteId": 0,
+  "BaccalaureatId": 0,
+  "MentionId": 0,
+  "SpecialiteBaccalaureat1Id": 0,
+  "SpecialiteBaccalaureat2Id": 0,
+  "TypePrepaId": 0,
+  "DernierDiplomeId": 0,
+  "DomaineDiplomeId": 0,
+  "DernierDiplomeLibelle": "",
+  "CPDernierEtablissement": "",
+  "VilleDernierEtablissement": "",
+  "DernierEtablissement": "",
+  "MotifDesinscription": "",
+  "DiplomeRequis": false,
+  "Convention": false,
+  "PieceIdentite": false,
+  "AttestationBourse": false,
+  "ConditionsGenerales": false,
+  "DernierReleveNote": false,
+  "AttestationResponsabiliteCivile": false,
+  "AccompteVerse": false,
+  "ReferenceRecrutement": "",
+  "DateArrivee": null,
+  "LogistiqueArrivee": "",
+  "NoteUrgenceId": 0,
+  "NoteDiversAdministratifId": 0,
+  "MailEcoleId": 0,
+  "AnneeBac": "",
+  "DepartementBac": "",
+  "VilleBac": "",
+  "EtablissementBac": "",
+  "SpecialiteBac": "",
+  "NoteBac": 0,
+  "PaysBacId": 0,
+  "PaysDernierEtablissementId": 0,
+  "NumeroDiplome": "",
+  "MentionDiplome": "",
+  "DetailOrigine": "",
+  "DatePremiereConnexion": null,
+  "EtablissementDernierDiplomeId": 0,
+  "ResponseSurveyId": 0,
+  "EtablissementBaccalaureatId": 0,
+  "DateJuryAdmission": null,
+  "DerniereMiseAJourCRM": null,
+  "OffreCrm": "",
+  "EnCoursBac": false,
+  "Numero": ""
+}
+```
+
+:::
+
+## Modifier une inscription
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Inscription/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "ApprenantId": 1234567,
+  "ProgrammeId": 1234567,
+  "RecrutementId": 1234567,
+  "EtatInscriptionId": 1234567,
+  "RegimeInscriptionId": 1234567,
+  "DateInscription": "2026-09-01T00:00:00+02:00"
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Inscription/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "EntiteJuridiqueId": 0,
+  "Date": null,
+  "CommentaireId": 0,
+  "Contentieux": false,
+  "AffaireId": 0,
+  "ApprenantId": 1234567,
+  "ProgrammeId": 1234567,
+  "RecrutementId": 1234567,
+  "EtatInscriptionId": 1234567,
+  "RegimeInscriptionId": 1234567,
+  "DateInscription": "2026-09-01T00:00:00+02:00",
+  "DateSortie": null,
+  "OrigineId": 0,
+  "SituationPrecedenteId": 0,
+  "BaccalaureatId": 0,
+  "MentionId": 0,
+  "SpecialiteBaccalaureat1Id": 0,
+  "SpecialiteBaccalaureat2Id": 0,
+  "TypePrepaId": 0,
+  "DernierDiplomeId": 0,
+  "DomaineDiplomeId": 0,
+  "DernierDiplomeLibelle": "",
+  "CPDernierEtablissement": "",
+  "VilleDernierEtablissement": "",
+  "DernierEtablissement": "",
+  "MotifDesinscription": "",
+  "DiplomeRequis": false,
+  "Convention": false,
+  "PieceIdentite": false,
+  "AttestationBourse": false,
+  "ConditionsGenerales": false,
+  "DernierReleveNote": false,
+  "AttestationResponsabiliteCivile": false,
+  "AccompteVerse": false,
+  "ReferenceRecrutement": "",
+  "DateArrivee": null,
+  "LogistiqueArrivee": "",
+  "NoteUrgenceId": 0,
+  "NoteDiversAdministratifId": 0,
+  "MailEcoleId": 0,
+  "AnneeBac": "",
+  "DepartementBac": "",
+  "VilleBac": "",
+  "EtablissementBac": "",
+  "SpecialiteBac": "",
+  "NoteBac": 0,
+  "PaysBacId": 0,
+  "PaysDernierEtablissementId": 0,
+  "NumeroDiplome": "",
+  "MentionDiplome": "",
+  "DetailOrigine": "",
+  "DatePremiereConnexion": null,
+  "EtablissementDernierDiplomeId": 0,
+  "ResponseSurveyId": 0,
+  "EtablissementBaccalaureatId": 0,
+  "DateJuryAdmission": null,
+  "DerniereMiseAJourCRM": null,
+  "OffreCrm": "",
+  "EnCoursBac": false,
+  "Numero": ""
+}
+```
+
+:::
+
+## Supprimer une inscription
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Inscription/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

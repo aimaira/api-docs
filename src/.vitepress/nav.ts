@@ -1,3 +1,5 @@
+import generated from './nav.graphv1.json'
+
 const nav = [
     {
         text: 'Créer votre intégration',
@@ -85,18 +87,18 @@ const nav = [
                     },
                     {
                         collapsed: true,
-                        text: 'File',
+                        text: 'Fichiers',
                         items: [
                             {
                                 text: 'Description',
                                 link: '/reference/ressources/file/description'
                             },
                             {
-                                text: 'Directory',
+                                text: 'Dossier',
                                 link: '/reference/ressources/file/directory'
                             },
                             {
-                                text: 'File',
+                                text: 'Fichier',
                                 link: '/reference/ressources/file/file'
                             },
                         ],
@@ -128,7 +130,7 @@ const nav = [
                                 link: '/reference/ressources/admission/candidat',
                             },
                             {
-                                text: 'Dossier',
+                                text: 'Dossier de candidature',
                                 link: '/reference/ressources/admission/dossier',
                             },
                             {
@@ -388,5 +390,22 @@ const nav = [
         ],
     },
 ];
+
+// Pages de ressources générées depuis le modèle de GraphV1 (npm run graphv1) : ajoutées au menu si elles n’y sont pas déjà.
+function addGeneratedPages(items) {
+    const links = new Set();
+    const collect = entries => entries.forEach(e => { if (e.link) links.add(e.link); if (e.items) collect(e.items); });
+    collect(items);
+    const resources = items.find(e => e.text === 'Référence')?.items.find(e => e.text === 'Ressources');
+    if (!resources) return;
+    for (const page of generated.pages.filter(p => !links.has(p.link))) {
+        const text = generated.sections[page.section] ?? page.section;
+        let section = resources.items.find(e => e.text === text);
+        if (!section) resources.items.push(section = { collapsed: true, text, items: [] });
+        section.items.push({ text: page.text, link: page.link });
+    }
+}
+
+addGeneratedPages(nav);
 
 export default nav;

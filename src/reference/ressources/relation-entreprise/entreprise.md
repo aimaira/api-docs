@@ -111,3 +111,83 @@ curl https://myapi.aimaira.net/GraphV1/Entreprise
 [creer-une-adresse]: /reference/ressources/core/adresse#creer-une-adresse
 [creer-une-adresse-email]: /reference/ressources/core/e-mail#creer-un-e-mail
 [creer-un-numero-de-telephone]: /reference/ressources/core/telephone#creer-un-telephone
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Modifier une entreprise
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Entreprise/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "AdresseId": 1234567,
+  "MailId": 1234567,
+  "TelephoneId": 1234567,
+  "CaisseRetraite": "texte",
+  "CaissePrevoyance": "texte",
+  "SIRET": "texte",
+  "NAF": "texte",
+  "TVAintracommunautaire": "texte",
+  "ConventionCollective": "texte",
+  "IDCC": "texte",
+  "IsParticulierEmployeur": false,
+  "NumUrssafParticulierEmployeur": "texte",
+  "Effectif": "texte",
+  "RefCompte": 0,
+  "FormeJuridiqueId": 1234567,
+  "TauxEntreprise": 0,
+  "AutreInformation": "texte",
+  "NumeroProjet": "texte",
+  "CodeAdressage": "texte",
+  "TypeEmployeurId": 1234567,
+  "SpecifiqueEmployeurId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Entreprise/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "AdresseId": 1234567,
+  "MailId": 1234567,
+  "TelephoneId": 1234567,
+  "CaisseRetraite": "texte",
+  "CaissePrevoyance": "texte",
+  "SIRET": "texte",
+  "NAF": "texte",
+  "TVAintracommunautaire": "texte",
+  "ConventionCollective": "texte",
+  "IDCC": "texte",
+  "IsParticulierEmployeur": false,
+  "NumUrssafParticulierEmployeur": "texte",
+  "Effectif": "texte",
+  "RefCompte": 0,
+  "FormeJuridiqueId": 1234567,
+  "TauxEntreprise": 0,
+  "AutreInformation": "texte",
+  "NumeroProjet": "texte",
+  "CodeAdressage": "texte",
+  "TypeEmployeurId": 1234567,
+  "SpecifiqueEmployeurId": 1234567
+}
+```
+
+:::
+
+<!-- graphv1:end -->

@@ -1,0 +1,1145 @@
+{
+  "generator": "GraphV1/tools/export-noms-herites.mjs",
+  "entites": [
+    {
+      "entitySet": "Adresse",
+      "univers": "",
+      "nomHerite": "myapp.T_ADRESSE"
+    },
+    {
+      "entitySet": "Affaire",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_AFFAIRE"
+    },
+    {
+      "entitySet": "Agent",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_AGENT"
+    },
+    {
+      "entitySet": "AgentPays",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TJ_AGENT_PAYS"
+    },
+    {
+      "entitySet": "AlgoCodeAffaire",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_ALGO_CODE_AFFAIRE"
+    },
+    {
+      "entitySet": "AlgoCodeApprenant",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ALGO_CODE_APPRENANT"
+    },
+    {
+      "entitySet": "AlgoCodeClient",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_ALGO_CODE_CLIENT"
+    },
+    {
+      "entitySet": "AlgoCodeCompte",
+      "univers": "CRM",
+      "nomHerite": "crm.TR_ALGO_CODE_COMPTE"
+    },
+    {
+      "entitySet": "AlgoCodeConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_ALGO_CODE_CONVENTION"
+    },
+    {
+      "entitySet": "AlgoCodeCours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_ALGO_CODE_COURS"
+    },
+    {
+      "entitySet": "AlgoCodeDossier",
+      "univers": "RH",
+      "nomHerite": "rh.TR_ALGO_CODE_DOSSIER"
+    },
+    {
+      "entitySet": "AlgoCodeEnseignant",
+      "univers": "Academie",
+      "nomHerite": "academie.TR_ALGO_CODE_ENSEIGNANT"
+    },
+    {
+      "entitySet": "AlgoCodeFacture",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_ALGO_CODE_FACTURE"
+    },
+    {
+      "entitySet": "AlgoCodeRecrutement",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_ALGO_CODE_RECRUTEMENT"
+    },
+    {
+      "entitySet": "AlgoRUM",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_ALGO_RUM"
+    },
+    {
+      "entitySet": "Apprenant",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_APPRENANT"
+    },
+    {
+      "entitySet": "AutreCandidature",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_AUTRE_CANDIDATURE"
+    },
+    {
+      "entitySet": "AutreLieuFormation",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_AUTRE_LIEU_FORMATION"
+    },
+    {
+      "entitySet": "Avertissement",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_AVERTISSEMENT"
+    },
+    {
+      "entitySet": "Baccalaureat",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_BACCALAUREAT"
+    },
+    {
+      "entitySet": "BalanceClient",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TJ_BALANCE_CLIENT"
+    },
+    {
+      "entitySet": "BalanceEnseignant",
+      "univers": "RH",
+      "nomHerite": "rh.TJ_BALANCE_ENSEIGNANT"
+    },
+    {
+      "entitySet": "Banque",
+      "univers": "",
+      "nomHerite": "myapp.T_BANQUE"
+    },
+    {
+      "entitySet": "Batiment",
+      "univers": "",
+      "nomHerite": "myapp.T_BATIMENT"
+    },
+    {
+      "entitySet": "Bibliographie",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_BIBLIOGRAPHIE"
+    },
+    {
+      "entitySet": "CanalAcquisition",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_CANAL_ACQUISITION"
+    },
+    {
+      "entitySet": "Candidat",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_CANDIDAT"
+    },
+    {
+      "entitySet": "Carte",
+      "univers": "",
+      "nomHerite": "myapp.T_CARTE"
+    },
+    {
+      "entitySet": "CategoriePrestation",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_CATEGORIE_PRESTATION"
+    },
+    {
+      "entitySet": "Cible",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_CIBLE"
+    },
+    {
+      "entitySet": "CibleSessionRecrutement",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TJ_CIBLE_SESSION_RECRUTEMENT"
+    },
+    {
+      "entitySet": "Civilite",
+      "univers": "",
+      "nomHerite": "myapp.TR_CIVILITE"
+    },
+    {
+      "entitySet": "Client",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_CLIENT"
+    },
+    {
+      "entitySet": "ClientPourAffaire",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TJ_AFFAIRE_CLIENT"
+    },
+    {
+      "entitySet": "CommandeCarte",
+      "univers": "",
+      "nomHerite": "myapp.T_COMMANDECARTE"
+    },
+    {
+      "entitySet": "CommandeCarteLigne",
+      "univers": "",
+      "nomHerite": "myapp.T_COMMANDE_CARTE_LIGNE"
+    },
+    {
+      "entitySet": "Commentaire",
+      "univers": "",
+      "nomHerite": "myapp.T_COMMENTAIRE"
+    },
+    {
+      "entitySet": "Compte",
+      "univers": "CRM",
+      "nomHerite": "crm.T_COMPTE"
+    },
+    {
+      "entitySet": "CompteAnalytique",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_COMPTE_ANALYTIQUE"
+    },
+    {
+      "entitySet": "CompteComptable",
+      "univers": "Gestion",
+      "nomHerite": "gestion.gestion.TR_COMPTE_COMPTABLE"
+    },
+    {
+      "entitySet": "Contact",
+      "univers": "CRM",
+      "nomHerite": "crm.T_CONTACT"
+    },
+    {
+      "entitySet": "Continent",
+      "univers": "",
+      "nomHerite": "myapp.TR_CONTINENT"
+    },
+    {
+      "entitySet": "Contrat",
+      "univers": "RH",
+      "nomHerite": "rh.T_CONTRAT"
+    },
+    {
+      "entitySet": "Convention",
+      "univers": "Internship",
+      "nomHerite": "internship.T_CONVENTION"
+    },
+    {
+      "entitySet": "Cours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_COURS"
+    },
+    {
+      "entitySet": "CoursOutgoing",
+      "univers": "International",
+      "nomHerite": "international.TJ_INSCRIPTION_COURS_INT"
+    },
+    {
+      "entitySet": "Creneau",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_CRENEAUX"
+    },
+    {
+      "entitySet": "CreneauSessionRecrutement",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TJ_CRENEAU_SESSION"
+    },
+    {
+      "entitySet": "CSP",
+      "univers": "",
+      "nomHerite": "myapp.TR_CSP"
+    },
+    {
+      "entitySet": "Cycle",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_CYCLE"
+    },
+    {
+      "entitySet": "DecisionJury",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_DECISION_JURY"
+    },
+    {
+      "entitySet": "Demarche",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_DEMARCHE"
+    },
+    {
+      "entitySet": "DemarcheTitreSejour",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_DEMARCHE_TITRE_SEJOUR"
+    },
+    {
+      "entitySet": "Departement",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_DEPARTEMENT"
+    },
+    {
+      "entitySet": "DernierDiplome",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_DERNIER_DIPLOME"
+    },
+    {
+      "entitySet": "DerniereClasse",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_DERNIERE_CLASSE"
+    },
+    {
+      "entitySet": "DetailBalance",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_DETAIL_BALANCE"
+    },
+    {
+      "entitySet": "DetailPrestation",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_DETAIL_PRESTATION"
+    },
+    {
+      "entitySet": "DetailTitreSejour",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_DETAIL_TITRE_SEJOUR"
+    },
+    {
+      "entitySet": "DiplomeApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_DIPLOME_APPRENTISSAGE"
+    },
+    {
+      "entitySet": "DiplomePrepare",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_DIPLOME_PREPA"
+    },
+    {
+      "entitySet": "DispositionFinanciere",
+      "univers": "Internship",
+      "nomHerite": "internship.T_DISPOSITION_FINANCIERE"
+    },
+    {
+      "entitySet": "Domaine",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_DOMAINE"
+    },
+    {
+      "entitySet": "DomaineDiplome",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_DOMAINE_DIPLOME"
+    },
+    {
+      "entitySet": "Dossier",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TJ_DOSSIER"
+    },
+    {
+      "entitySet": "Echeance",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_ECHEANCE"
+    },
+    {
+      "entitySet": "EcheanceApprentissageConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCE_APPRENTISSAGE_CONVENTION"
+    },
+    {
+      "entitySet": "EcheanceConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCE_CONVENTION"
+    },
+    {
+      "entitySet": "EcheanceFacturation",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCE_FACTURATION"
+    },
+    {
+      "entitySet": "EcheanceFacturationApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCE_FACTURATION_APPRENTISSAGE"
+    },
+    {
+      "entitySet": "EcheancierFacturation",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCIER_FACTURATION"
+    },
+    {
+      "entitySet": "EcheancierFacturationApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.T_ECHEANCIER_FACTURATION_APPRENTISSAGE"
+    },
+    {
+      "entitySet": "EchelonBourse",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ECHELON_BOURSE"
+    },
+    {
+      "entitySet": "Ecole",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ECOLE"
+    },
+    {
+      "entitySet": "Employeur",
+      "univers": "RH",
+      "nomHerite": "rh.T_EMPLOYEUR"
+    },
+    {
+      "entitySet": "Enseignant",
+      "univers": "Academie",
+      "nomHerite": "academie.T_ENSEIGNANT"
+    },
+    {
+      "entitySet": "EnseignantCours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_ENSEIGNANT_COURS"
+    },
+    {
+      "entitySet": "EnseignantType",
+      "univers": "Academie",
+      "nomHerite": "academie.TJ_ENSEIGNANT_TYPE"
+    },
+    {
+      "entitySet": "EntiteJuridique",
+      "univers": "",
+      "nomHerite": "myapp.TS_ENTITE_JURIDIQUE"
+    },
+    {
+      "entitySet": "Entreprise",
+      "univers": "",
+      "nomHerite": "myapp.T_ENTREPRISE"
+    },
+    {
+      "entitySet": "Etablissement",
+      "univers": "",
+      "nomHerite": "myapp.T_ETABLISSEMENT"
+    },
+    {
+      "entitySet": "EtatCandidature",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_ETAT_CANDIDATURE"
+    },
+    {
+      "entitySet": "EtatConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_ETAT_CONVENTION"
+    },
+    {
+      "entitySet": "EtatDemarche",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ETAT_DEMARCHE"
+    },
+    {
+      "entitySet": "EtatInscription",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ETAT_INSCRIPTION"
+    },
+    {
+      "entitySet": "EtatTitreSejour",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ETAT_TITRE_SEJOUR"
+    },
+    {
+      "entitySet": "Evaluateur",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_EVALUATEUR"
+    },
+    {
+      "entitySet": "Evaluation",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_EVALUATION"
+    },
+    {
+      "entitySet": "Evenement",
+      "univers": "Tempo",
+      "nomHerite": "tempo.T_EVENEMENT"
+    },
+    {
+      "entitySet": "EvenementCommun",
+      "univers": "Planification",
+      "nomHerite": "planification.T_EVENEMENT_COMMUN"
+    },
+    {
+      "entitySet": "EvenementCommunGroupe",
+      "univers": "Planification",
+      "nomHerite": "planification.TJ_EVENEMENT_COMMUN_GROUPE"
+    },
+    {
+      "entitySet": "EvenementCommunSequence",
+      "univers": "Planification",
+      "nomHerite": "planification.TJ_EVENEMENT_COMMUN_SEQUENCE"
+    },
+    {
+      "entitySet": "EvenementCRM",
+      "univers": "CRM",
+      "nomHerite": "crm.T_EVENEMENT"
+    },
+    {
+      "entitySet": "Examen",
+      "univers": "Planification",
+      "nomHerite": "planification.T_EXAMEN"
+    },
+    {
+      "entitySet": "ExperienceProfessionnelle",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_EXPERIENCE"
+    },
+    {
+      "entitySet": "Facture",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_FACTURE"
+    },
+    {
+      "entitySet": "FonctionExerce",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_FONCTION_EXERCE"
+    },
+    {
+      "entitySet": "FormeJuridique",
+      "univers": "",
+      "nomHerite": "myapp.TR_FORME_JURIDIQUE"
+    },
+    {
+      "entitySet": "Groupe",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_GROUPE"
+    },
+    {
+      "entitySet": "Inscription",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TJ_INSCRIPTION"
+    },
+    {
+      "entitySet": "InscriptionCours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_INSCRIPTION_COURS"
+    },
+    {
+      "entitySet": "InscriptionGroupe",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_INSCRIPTION_GROUPE"
+    },
+    {
+      "entitySet": "InscriptionPeriode",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TJ_INSCRIPTION_PERIODE"
+    },
+    {
+      "entitySet": "InscriptionSequence",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_INSCRIPTION_SEQUENCE"
+    },
+    {
+      "entitySet": "LangueEnseignement",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_LANGUE_ENSEIGNEMENT"
+    },
+    {
+      "entitySet": "LigneContrat",
+      "univers": "RH",
+      "nomHerite": "rh.T_LIGNE_CONTRAT"
+    },
+    {
+      "entitySet": "LignePrelevement",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TJ_LIGNE_PRELEVEMENT"
+    },
+    {
+      "entitySet": "Localisation",
+      "univers": "Tempo",
+      "nomHerite": "tempo.T_LOCALISATION"
+    },
+    {
+      "entitySet": "Mail",
+      "univers": "",
+      "nomHerite": "myapp.T_MAIL"
+    },
+    {
+      "entitySet": "MandatSEPA",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_SEPA"
+    },
+    {
+      "entitySet": "Mention",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_MENTION"
+    },
+    {
+      "entitySet": "Modalite",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_MODALITE_SEANCE"
+    },
+    {
+      "entitySet": "ModalitePaiement",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_MODALITES_PAIEMENT"
+    },
+    {
+      "entitySet": "ModalitePourPrestation",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TJ_MODALITE_PRESTATION"
+    },
+    {
+      "entitySet": "ModeContractuel",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_MODE_CONTRACTUEL"
+    },
+    {
+      "entitySet": "Module",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_MODULE"
+    },
+    {
+      "entitySet": "Motif",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_MOTIF"
+    },
+    {
+      "entitySet": "Mutuelle",
+      "univers": "Scolarite",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "NatureClient",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_NATURE_CLIENT"
+    },
+    {
+      "entitySet": "NatureTuteur",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_NATURE_TUTEUR"
+    },
+    {
+      "entitySet": "Niveau",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_NIVEAU"
+    },
+    {
+      "entitySet": "NiveauEnseignement",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_NIVEAU_ENSEIGNEMENT"
+    },
+    {
+      "entitySet": "NiveauLangue",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_NIVEAU_LANGUE"
+    },
+    {
+      "entitySet": "NiveauLangueInitial",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_NIVEAU_LANGUE"
+    },
+    {
+      "entitySet": "NiveauPublic",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_NIVEAU_PUBLIC"
+    },
+    {
+      "entitySet": "NiveauTest",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_NIVEAU_TEST"
+    },
+    {
+      "entitySet": "Note",
+      "univers": "",
+      "nomHerite": "myapp.TS_NOTES"
+    },
+    {
+      "entitySet": "Object",
+      "univers": "",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "OPCA",
+      "univers": "",
+      "nomHerite": "myapp.TR_OPCA"
+    },
+    {
+      "entitySet": "Origine",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_ORIGINE"
+    },
+    {
+      "entitySet": "OrigineContrat",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_ORIGINE_CONTRAT"
+    },
+    {
+      "entitySet": "Ouverture",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_OUVERTURE"
+    },
+    {
+      "entitySet": "Parcours",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_PARCOURS"
+    },
+    {
+      "entitySet": "ParcoursPeriode",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TJ_PARCOURS_PERIODE"
+    },
+    {
+      "entitySet": "ParcoursSequence",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TJ_PARCOURS_SEQUENCE"
+    },
+    {
+      "entitySet": "Partenaire",
+      "univers": "International",
+      "nomHerite": "international.TR_PARTENAIRE"
+    },
+    {
+      "entitySet": "ParticipationEvenement",
+      "univers": "CRM",
+      "nomHerite": "crm.TJ_PARTICIPATION"
+    },
+    {
+      "entitySet": "Pays",
+      "univers": "",
+      "nomHerite": "myapp.TR_PAYS"
+    },
+    {
+      "entitySet": "Periode",
+      "univers": "",
+      "nomHerite": "myapp.TS_PERIODE"
+    },
+    {
+      "entitySet": "PeriodeConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.T_PERIODE"
+    },
+    {
+      "entitySet": "PeriodeFacturation",
+      "univers": "Internship",
+      "nomHerite": "internship.T_PERIODE_FACTURATION"
+    },
+    {
+      "entitySet": "Personnalisation",
+      "univers": "Intranet",
+      "nomHerite": "intranet.T_PERSONNALISATION"
+    },
+    {
+      "entitySet": "Planification",
+      "univers": "Planification",
+      "nomHerite": "planification.T_PLANIFICATION"
+    },
+    {
+      "entitySet": "PlanificationRessource",
+      "univers": "Planification",
+      "nomHerite": "planification.TJ_PLANIFICATION_RESSOURCE"
+    },
+    {
+      "entitySet": "Prefecture",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_PREFECTURE"
+    },
+    {
+      "entitySet": "Prestation",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_PRESTATION"
+    },
+    {
+      "entitySet": "PrestationReference",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TJ_PRESTATION_REF"
+    },
+    {
+      "entitySet": "Professionnel",
+      "univers": "Internship",
+      "nomHerite": "internship.T_PROFESSIONNEL"
+    },
+    {
+      "entitySet": "Profil",
+      "univers": "",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "Programme",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_PROGRAMME"
+    },
+    {
+      "entitySet": "ProgrammeRegime",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TJ_PROGRAMME_REGIME"
+    },
+    {
+      "entitySet": "ProgrammeTypeConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.TJ_ETAT_PRG_TYC"
+    },
+    {
+      "entitySet": "ProvenanceOffre",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_PROVENANCE_OFFRE"
+    },
+    {
+      "entitySet": "Province",
+      "univers": "",
+      "nomHerite": "myapp.TR_PROVINCE"
+    },
+    {
+      "entitySet": "Qualification",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_QUALIFICATION"
+    },
+    {
+      "entitySet": "QuestionOuverte",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_QUESTION_OUVERTE"
+    },
+    {
+      "entitySet": "Rattrapage",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_RATTRAPAGE"
+    },
+    {
+      "entitySet": "Recrutement",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_RECRUTEMENT"
+    },
+    {
+      "entitySet": "ReferenceECTS",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_REFERENCE_ECTS"
+    },
+    {
+      "entitySet": "Referent",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_REFERENT"
+    },
+    {
+      "entitySet": "ReferentEcole",
+      "univers": "Internship",
+      "nomHerite": "internship.T_REFERENT_ECOLE"
+    },
+    {
+      "entitySet": "RegimeInscription",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_REGIME_INSCRIPTION"
+    },
+    {
+      "entitySet": "Remuneration",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_REMUNERATION"
+    },
+    {
+      "entitySet": "Repetition",
+      "univers": "Planification",
+      "nomHerite": "planification.T_REPETITION"
+    },
+    {
+      "entitySet": "Reponse",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_REPONSE"
+    },
+    {
+      "entitySet": "Reservation",
+      "univers": "Planification",
+      "nomHerite": "planification.T_RESERVATION"
+    },
+    {
+      "entitySet": "ResponseSurvey",
+      "univers": "",
+      "nomHerite": "myapp.T_RESPONSE_SURVEY_JS"
+    },
+    {
+      "entitySet": "Ressource",
+      "univers": "Planification",
+      "nomHerite": "planification.T_RESSOURCE_EXTERNE"
+    },
+    {
+      "entitySet": "RythmeApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_RYTHME_APP"
+    },
+    {
+      "entitySet": "Scolarite",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_SCOLARITE"
+    },
+    {
+      "entitySet": "Seance",
+      "univers": "Planification",
+      "nomHerite": "planification.T_SEANCE_COURS"
+    },
+    {
+      "entitySet": "SeanceGroupe",
+      "univers": "Planification",
+      "nomHerite": "planification.TJ_SEANCE_GROUPE"
+    },
+    {
+      "entitySet": "Sequence",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_SEQUENCE"
+    },
+    {
+      "entitySet": "SequenceCours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_SEQUENCE_COURS"
+    },
+    {
+      "entitySet": "SequenceOutgoing",
+      "univers": "International",
+      "nomHerite": "international.T_OUTGOING"
+    },
+    {
+      "entitySet": "SequenceSequence",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TJ_SEQUENCE_SEQUENCE"
+    },
+    {
+      "entitySet": "Session",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_SESSION"
+    },
+    {
+      "entitySet": "SessionExportCompta",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_SESSION_EXP_COMPTA"
+    },
+    {
+      "entitySet": "SessionExportPrelevement",
+      "univers": "Gestion",
+      "nomHerite": "gestion.T_SESSION_EXP_PRELEVEMENT"
+    },
+    {
+      "entitySet": "SessionExportVirement",
+      "univers": "RH",
+      "nomHerite": "rh.T_SESSION_EXP_VIREMENT"
+    },
+    {
+      "entitySet": "SessionRattrapage",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_SESSION_RATTRAPAGE "
+    },
+    {
+      "entitySet": "SessionRecrutement",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.T_SESSION_RECRUTEMENT"
+    },
+    {
+      "entitySet": "Site",
+      "univers": "",
+      "nomHerite": "myapp.T_SITE"
+    },
+    {
+      "entitySet": "SituationAvantContratApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_SITUATION_AVANT_CONTRAT_APP"
+    },
+    {
+      "entitySet": "SituationAvantContratProfessionnalisation",
+      "univers": "Internship",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "SituationPrecedente",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_SITUATION_PRECEDENTE"
+    },
+    {
+      "entitySet": "Specialite",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_SPECIALITE"
+    },
+    {
+      "entitySet": "SpecialiteBaccalaureat",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_SPECIALITE_BACCALAUREAT"
+    },
+    {
+      "entitySet": "StructureCours",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.T_STRUCTURE_COURS"
+    },
+    {
+      "entitySet": "Survey",
+      "univers": "",
+      "nomHerite": "myapp.T_SURVEY_JS"
+    },
+    {
+      "entitySet": "Telephone",
+      "univers": "",
+      "nomHerite": "myapp.T_TELEPHONE"
+    },
+    {
+      "entitySet": "TemplateISIC",
+      "univers": "",
+      "nomHerite": "myapp.T_TEMPLATE_ISIC"
+    },
+    {
+      "entitySet": "TemplateMessage",
+      "univers": "",
+      "nomHerite": "structure.T_TEMPLATE_MESSAGE"
+    },
+    {
+      "entitySet": "Terminal",
+      "univers": "Tempo",
+      "nomHerite": "tempo.T_TERMINAL"
+    },
+    {
+      "entitySet": "Test",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_TEST"
+    },
+    {
+      "entitySet": "Travaux",
+      "univers": "Planification",
+      "nomHerite": "planification.T_TRAVAUX"
+    },
+    {
+      "entitySet": "Tuteur",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.T_TUTEUR"
+    },
+    {
+      "entitySet": "TypeAvertissement",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_AVERTISSEMENT"
+    },
+    {
+      "entitySet": "TypeCalcul",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_TYPE_CALCUL"
+    },
+    {
+      "entitySet": "TypeCertification",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_CERTIFICATION"
+    },
+    {
+      "entitySet": "TypeContrat",
+      "univers": "RH",
+      "nomHerite": "rh.TR_TYPE_CONTRAT"
+    },
+    {
+      "entitySet": "TypeContratApprentissage",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_TYPE_CONTRAT_APP"
+    },
+    {
+      "entitySet": "TypeContratProfessionnalisation",
+      "univers": "Internship",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "TypeConvention",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_TYPE_CONVENTION"
+    },
+    {
+      "entitySet": "TypeDemarche",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_DEMARCHE"
+    },
+    {
+      "entitySet": "TypeDerogation",
+      "univers": "Internship",
+      "nomHerite": "internship.TR_TYPE_DEROGATION"
+    },
+    {
+      "entitySet": "TypeEmploi",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_TYPE_EMPLOI"
+    },
+    {
+      "entitySet": "TypeEnseignant",
+      "univers": "Academie",
+      "nomHerite": "academie.TR_TYPE_ENSEIGNANT"
+    },
+    {
+      "entitySet": "TypeEvenementCRM",
+      "univers": "CRM",
+      "nomHerite": "crm.TR_TYPE_EVENEMENT"
+    },
+    {
+      "entitySet": "TypePaiement",
+      "univers": "Gestion",
+      "nomHerite": "gestion.TR_TYPE_PAIEMENT"
+    },
+    {
+      "entitySet": "TypePlanification",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_TYPE_PLANIFICATION"
+    },
+    {
+      "entitySet": "TypePrepa",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_PREPA"
+    },
+    {
+      "entitySet": "TypePrestationRH",
+      "univers": "RH",
+      "nomHerite": "rh.TR_TYPE_PRESTATION"
+    },
+    {
+      "entitySet": "TypeQualification",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_TYPE_QUALIFICATION"
+    },
+    {
+      "entitySet": "TypeRecrutement",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_RECRUTEMENT"
+    },
+    {
+      "entitySet": "TypeReferenceBibliographique",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_TYPE_REFERENCE"
+    },
+    {
+      "entitySet": "TypeRelationContractuelle",
+      "univers": "RH",
+      "nomHerite": "rh.TR_TYPE_RELATION_CONTRACTUELLE"
+    },
+    {
+      "entitySet": "TypeRessource",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_TYPE_RESSOURCE"
+    },
+    {
+      "entitySet": "TypeSalle",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_TYPE_SALLE"
+    },
+    {
+      "entitySet": "TypeSeance",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_TYPE_SEANCE"
+    },
+    {
+      "entitySet": "TypeSequence",
+      "univers": "Pedagogie",
+      "nomHerite": "pedagogie.TR_TYPE_SEQUENCE"
+    },
+    {
+      "entitySet": "TypeSignature",
+      "univers": "Signature",
+      "nomHerite": "signature.TR_TYPE_SIGNATURE"
+    },
+    {
+      "entitySet": "TypeTest",
+      "univers": "Recrutement",
+      "nomHerite": "recrutement.TR_TYPE_EMPLOI"
+    },
+    {
+      "entitySet": "TypeTitreSejour",
+      "univers": "Scolarite",
+      "nomHerite": "scolarite.TR_TYPE_TITRE_SEJOUR"
+    },
+    {
+      "entitySet": "TypeTravaux",
+      "univers": "Planification",
+      "nomHerite": "planification.TR_TYPE_TRAVAUX"
+    },
+    {
+      "entitySet": "Universite",
+      "univers": "",
+      "nomHerite": "myapp.T_UNIVERSITE"
+    },
+    {
+      "entitySet": "User",
+      "univers": "",
+      "nomHerite": null
+    },
+    {
+      "entitySet": "ValiditeCarte",
+      "univers": "",
+      "nomHerite": "myapp.T_CARTE_VALIDITE"
+    }
+  ]
+}

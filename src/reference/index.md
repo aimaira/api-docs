@@ -29,11 +29,11 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Utilisateur](/reference/ressources/core/utilisateur)
 - [Commentaire](/reference/ressources/core/commentaire)
 
-#### File
+#### Fichiers
 
 - [Description](/reference/ressources/file/description)
-- [Directory](/reference/ressources/file/directory)
-- [File](/reference/ressources/file/file)
+- [Dossier](/reference/ressources/file/directory)
+- [Fichier](/reference/ressources/file/file)
 
 #### Académie
 
@@ -44,7 +44,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Agent](/reference/ressources/admission/agent)
 - [Canal d’acquisition](/reference/ressources/admission/canal-acquisition)
 - [Candidat](/reference/ressources/admission/candidat)
-- [Dossier](/reference/ressources/admission/dossier)
+- [Dossier de candidature](/reference/ressources/admission/dossier)
 - [État de candidature](/reference/ressources/admission/etat-de-candidature)
 - [Voie d’admission](/reference/ressources/admission/voie-d-admission)
 

@@ -78,3 +78,185 @@ curl 'https://myapi.aimaira.net/GraphV1/OPCA' \
 ```
 
 :::
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer un organisme financeur avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/OPCA/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#OPCA/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "EntiteJuridiqueId": 0,
+  "RefClient": 0,
+  "AdresseId": 0,
+  "EntrepriseId": 0,
+  "CommentaireId": 0,
+  "ContactId": 0,
+  "NouvelleReference": 0,
+  "LibelleExterne": "",
+  "ClefCFADock": "",
+  "CleAuthentification_DateFinValidite": null,
+  "CFADockdossier": false,
+  "CFADockfacture": false,
+  "FA13v10": false,
+  "CodeAdressage": ""
+}
+```
+
+:::
+
+## Créer un organisme financeur
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/OPCA \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "EntiteJuridiqueId": 1234567,
+  "RefClient": 0,
+  "AdresseId": 1234567,
+  "EntrepriseId": 1234567,
+  "CommentaireId": 1234567,
+  "ContactId": 1234567,
+  "NouvelleReference": 0,
+  "LibelleExterne": "texte",
+  "ClefCFADock": "texte",
+  "CleAuthentification_DateFinValidite": "2026-09-01T00:00:00+02:00",
+  "CFADockdossier": false,
+  "CFADockfacture": false,
+  "FA13v10": false,
+  "CodeAdressage": "texte"
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#OPCA/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "EntiteJuridiqueId": 1234567,
+  "RefClient": 0,
+  "AdresseId": 1234567,
+  "EntrepriseId": 1234567,
+  "CommentaireId": 1234567,
+  "ContactId": 1234567,
+  "NouvelleReference": 0,
+  "LibelleExterne": "texte",
+  "ClefCFADock": "texte",
+  "CleAuthentification_DateFinValidite": "2026-09-01T00:00:00+02:00",
+  "CFADockdossier": false,
+  "CFADockfacture": false,
+  "FA13v10": false,
+  "CodeAdressage": "texte"
+}
+```
+
+:::
+
+## Modifier un organisme financeur
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/OPCA/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "EntiteJuridiqueId": 1234567,
+  "RefClient": 0,
+  "AdresseId": 1234567,
+  "EntrepriseId": 1234567,
+  "CommentaireId": 1234567,
+  "ContactId": 1234567,
+  "NouvelleReference": 0,
+  "LibelleExterne": "texte",
+  "ClefCFADock": "texte",
+  "CleAuthentification_DateFinValidite": "2026-09-01T00:00:00+02:00",
+  "CFADockdossier": false,
+  "CFADockfacture": false,
+  "FA13v10": false,
+  "CodeAdressage": "texte"
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#OPCA/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "EntiteJuridiqueId": 1234567,
+  "RefClient": 0,
+  "AdresseId": 1234567,
+  "EntrepriseId": 1234567,
+  "CommentaireId": 1234567,
+  "ContactId": 1234567,
+  "NouvelleReference": 0,
+  "LibelleExterne": "texte",
+  "ClefCFADock": "texte",
+  "CleAuthentification_DateFinValidite": "2026-09-01T00:00:00+02:00",
+  "CFADockdossier": false,
+  "CFADockfacture": false,
+  "FA13v10": false,
+  "CodeAdressage": "texte"
+}
+```
+
+:::
+
+## Supprimer un organisme financeur
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/OPCA/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

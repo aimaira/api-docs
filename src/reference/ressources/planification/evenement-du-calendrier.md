@@ -17,8 +17,8 @@ Toutes les dates transmises à l’API doivent respecter le format [ISO 8601][is
 
 ### Données obligatoires
 
-- `EntiteJuridique` *(voir [Campus][campus])*
-- `TypePlanification` *(voir [Type d’événement du calendrier][type-d-evenement-du-calendrier])*
+- `EntiteJuridiqueId` *(voir [Campus][campus])*
+- `TypePlanificationId` *(voir [Type d’événement du calendrier][type-d-evenement-du-calendrier])*
 - `Debut`
 - `Fin`
 
@@ -104,3 +104,63 @@ curl https://myapi.aimaira.net/GraphV1/Planification/123456 \
 [campus]: /reference/ressources/core/campus
 [type-d-evenement-du-calendrier]: /reference/ressources/planification/type-d-evenement
 [iso-8601]: https://fr.wikipedia.org/wiki/ISO_8601
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer un événement du calendrier avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Planification/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Planification/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "EntiteJuridiqueId": 0,
+  "Debut": null,
+  "Fin": null,
+  "TypePlanificationId": 0,
+  "Enseignants": "",
+  "ReferenceExterne": "",
+  "DateSynchronisation": null,
+  "ReferenceMultiple": "00000000-0000-0000-0000-000000000000",
+  "Annule": false,
+  "Realise": false,
+  "CommentaireInterneId": 0,
+  "CommentaireExterneId": 0,
+  "ProgrammeId": 0,
+  "SequenceId": 0
+}
+```
+
+:::
+
+## Supprimer un événement du calendrier
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Planification/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->
