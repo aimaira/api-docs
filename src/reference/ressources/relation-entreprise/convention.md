@@ -760,7 +760,7 @@ curl https://myapi.aimaira.net/GraphV1/EcheanceApprentissageConvention \
 
 ```json [JSON]
 {
-  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceConvention",
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EcheanceApprentissageConvention/$entity",
   "Id": 11028949,
   "Nom": "",
   "Code": "",
@@ -1021,3 +1021,332 @@ curl https://myapi.aimaira.net/GraphV1/EcheanceConvention \
 
 [client-par-reference]: /reference/ressources/finance/client#recuperer-un-client-avec-une-reference
 [nature-client]: /reference/ressources/finance/nature-client#lister-les-natures-de-clients
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Lister les conventions
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Convention \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Convention",
+  "value": [
+    {
+      "Id": 1234567,
+      "Nom": "",
+      "Code": "",
+      "ProvenanceOffreId": 0,
+      "FonctionExerceId": 0,
+      "TypeContratApprentissageId": 0,
+      "TypeContratProfessionnalisationId": 0,
+      "DiplomePlusEleveProfessionnalisationId": 0,
+      "DernierDiplomePrepareProfessionalisationId": 0,
+      "DiplomeViseId": 0,
+      "DernierDiplomePrepareId": 0,
+      "DiplomePlusEleveId": 0,
+      "DerniereClasseId": 0,
+      "SituationAvantContratApprentissageId": 0,
+      "SituationAvantContratProfessionnalisationId": 0,
+      "RythmeProfessionnalisationId": 0,
+      "RythmeApprentissageId": 0,
+      "TypeDerogationId": 0,
+      "ApprenantId": 0,
+      "SequenceId": 0,
+      "EnseignantId": 0,
+      "EntrepriseId": 0,
+      "SignataireId": 0,
+      "MaitreId": 0,
+      "MaitreBisId": 0,
+      "ReferentId": 0,
+      "Remuneration": 0,
+      "CoutFormation": 0,
+      "CoutFormationOrganismeFinanceur": 0,
+      "CoutFormationResteChargeEntreprise": 0,
+      "EstLieuDeFormationPrincipal": false,
+      "AutreLieuFormationId": 0,
+      "MissionId": 0,
+      "DateRupture": null,
+      "DateFinMaintienFormation": null,
+      "MotifRuptureId": 0,
+      "DateDebutSaisie": null,
+      "Avenant": false,
+      "ConventionOrigineId": 0,
+      "DateValidationApprenant": null,
+      "DateValidationEcole": null,
+      "DateValidationEnseignant": null,
+      "DateValidationEntreprise": null,
+      "DateValidationMaitre": null,
+      "DateDebut": null,
+      "DateFin": null,
+      "TypeConventionId": 0,
+      "MinimumSocialProfessionnalisationId": 0,
+      "EtatConventionId": 0,
+      "NbJourPeriodeEssai": 0,
+      "DureePoleEmploi": 0,
+      "ClassificationEmploi": "",
+      "Subrogation": false,
+      "InscritPoleEmploi": false,
+      "NbHeureFormation": 0,
+      "NbHeureFormationDistancielle": 0,
+      "NbHeureEnseignement": 0,
+      "NbHeureOPCA": 0,
+      "NbHeureEntreprise": 0,
+      "NumeroPoleEmploi": "",
+      "Poste": "",
+      "NiveauPoste": "",
+      "CoeficientHierarchique": "",
+      "ReferenceId": 0,
+      "NatureContratId": 0,
+      "OrganismeFormation": "",
+      "TypeQualification": "",
+      "OrigineContratId": 0,
+      "ReferentEcoleId": 0,
+      "CompetencesAcquerirId": 0,
+      "NbJourConges": "",
+      "NbJourPresence": 0,
+      "AvantageAccordId": 0,
+      "RemunerationHoraire": 0,
+      "StageEtranger": false,
+      "RemunerationNette": false,
+      "CasParticulierId": 0,
+      "CommentaireId": 0,
+      "DureeEffective": 0,
+      "DureeEffectiveHeure": 0,
+      "DebutFormation": null,
+      "FinFormation": null,
+      "Devise": "",
+      "PeriodeConventionId": 0,
+      "NombreOrganismeFormation": 0,
+      "OrganismeFormationInterne": false,
+      "IdMotifAvenant": 0,
+      "MotifAvenant": "",
+      "TauxEntreprise": 0,
+      "TauxOPCA": 0,
+      "TravailHandicape": false,
+      "ExtensionBOE": false,
+      "EquivalenceJeunes": false,
+      "InscritListeSportive": false,
+      "QuotiteTempsTravail": 0,
+      "ProjetEntreprise": false,
+      "RegimeSocial": "",
+      "AssuranceChomage": false,
+      "AvantageAutre": "",
+      "AvantageLogement": 0,
+      "AvantageNourriture": 0,
+      "CaisseRetraite": "",
+      "NumContrat": "",
+      "NumCommande": "",
+      "DateFinEssai": null,
+      "DateAvenant": null,
+      "TravailDangereux": false,
+      "AttesteEnsembleDoc": false,
+      "LanId": 0,
+      "IdClasseAnneeDerniere": 0,
+      "IdDepartement": 0,
+      "IntitulePrecisDiplomeCERFA": "",
+      "CodeRNCP": "",
+      "CodeDIPLOM": "",
+      "DateConclusion": null,
+      "ModeContractuelId": 0,
+      "DateDebutPratique": null,
+      "AdresseFacturationId": 0,
+      "TelephoneFacturationId": 0,
+      "MailFacturationId": 0,
+      "ContactFacturation": "",
+      "FonctionFacturation": "",
+      "StatutCFADOCK": "",
+      "DateMajStatutCFADOCK": null,
+      "DernierDiplomeLibelle": ""
+    }
+  ]
+}
+```
+
+:::
+
+## Modifier une convention
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Convention/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "ApprenantId": 1234567,
+  "SequenceId": 1234567,
+  "TypeConventionId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Convention/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "ProvenanceOffreId": 0,
+  "FonctionExerceId": 0,
+  "TypeContratApprentissageId": 0,
+  "TypeContratProfessionnalisationId": 0,
+  "DiplomePlusEleveProfessionnalisationId": 0,
+  "DernierDiplomePrepareProfessionalisationId": 0,
+  "DiplomeViseId": 0,
+  "DernierDiplomePrepareId": 0,
+  "DiplomePlusEleveId": 0,
+  "DerniereClasseId": 0,
+  "SituationAvantContratApprentissageId": 0,
+  "SituationAvantContratProfessionnalisationId": 0,
+  "RythmeProfessionnalisationId": 0,
+  "RythmeApprentissageId": 0,
+  "TypeDerogationId": 0,
+  "ApprenantId": 1234567,
+  "SequenceId": 1234567,
+  "EnseignantId": 0,
+  "EntrepriseId": 0,
+  "SignataireId": 0,
+  "MaitreId": 0,
+  "MaitreBisId": 0,
+  "ReferentId": 0,
+  "Remuneration": 0,
+  "CoutFormation": 0,
+  "CoutFormationOrganismeFinanceur": 0,
+  "CoutFormationResteChargeEntreprise": 0,
+  "EstLieuDeFormationPrincipal": false,
+  "AutreLieuFormationId": 0,
+  "MissionId": 0,
+  "DateRupture": null,
+  "DateFinMaintienFormation": null,
+  "MotifRuptureId": 0,
+  "DateDebutSaisie": null,
+  "Avenant": false,
+  "ConventionOrigineId": 0,
+  "DateValidationApprenant": null,
+  "DateValidationEcole": null,
+  "DateValidationEnseignant": null,
+  "DateValidationEntreprise": null,
+  "DateValidationMaitre": null,
+  "DateDebut": null,
+  "DateFin": null,
+  "TypeConventionId": 1234567,
+  "MinimumSocialProfessionnalisationId": 0,
+  "EtatConventionId": 0,
+  "NbJourPeriodeEssai": 0,
+  "DureePoleEmploi": 0,
+  "ClassificationEmploi": "",
+  "Subrogation": false,
+  "InscritPoleEmploi": false,
+  "NbHeureFormation": 0,
+  "NbHeureFormationDistancielle": 0,
+  "NbHeureEnseignement": 0,
+  "NbHeureOPCA": 0,
+  "NbHeureEntreprise": 0,
+  "NumeroPoleEmploi": "",
+  "Poste": "",
+  "NiveauPoste": "",
+  "CoeficientHierarchique": "",
+  "ReferenceId": 0,
+  "NatureContratId": 0,
+  "OrganismeFormation": "",
+  "TypeQualification": "",
+  "OrigineContratId": 0,
+  "ReferentEcoleId": 0,
+  "CompetencesAcquerirId": 0,
+  "NbJourConges": "",
+  "NbJourPresence": 0,
+  "AvantageAccordId": 0,
+  "RemunerationHoraire": 0,
+  "StageEtranger": false,
+  "RemunerationNette": false,
+  "CasParticulierId": 0,
+  "CommentaireId": 0,
+  "DureeEffective": 0,
+  "DureeEffectiveHeure": 0,
+  "DebutFormation": null,
+  "FinFormation": null,
+  "Devise": "",
+  "PeriodeConventionId": 0,
+  "NombreOrganismeFormation": 0,
+  "OrganismeFormationInterne": false,
+  "IdMotifAvenant": 0,
+  "MotifAvenant": "",
+  "TauxEntreprise": 0,
+  "TauxOPCA": 0,
+  "TravailHandicape": false,
+  "ExtensionBOE": false,
+  "EquivalenceJeunes": false,
+  "InscritListeSportive": false,
+  "QuotiteTempsTravail": 0,
+  "ProjetEntreprise": false,
+  "RegimeSocial": "",
+  "AssuranceChomage": false,
+  "AvantageAutre": "",
+  "AvantageLogement": 0,
+  "AvantageNourriture": 0,
+  "CaisseRetraite": "",
+  "NumContrat": "",
+  "NumCommande": "",
+  "DateFinEssai": null,
+  "DateAvenant": null,
+  "TravailDangereux": false,
+  "AttesteEnsembleDoc": false,
+  "LanId": 0,
+  "IdClasseAnneeDerniere": 0,
+  "IdDepartement": 0,
+  "IntitulePrecisDiplomeCERFA": "",
+  "CodeRNCP": "",
+  "CodeDIPLOM": "",
+  "DateConclusion": null,
+  "ModeContractuelId": 0,
+  "DateDebutPratique": null,
+  "AdresseFacturationId": 0,
+  "TelephoneFacturationId": 0,
+  "MailFacturationId": 0,
+  "ContactFacturation": "",
+  "FonctionFacturation": "",
+  "StatutCFADOCK": "",
+  "DateMajStatutCFADOCK": null,
+  "DernierDiplomeLibelle": ""
+}
+```
+
+:::
+
+## Supprimer une convention
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Convention/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

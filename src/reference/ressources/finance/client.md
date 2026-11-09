@@ -251,3 +251,157 @@ Afin de lier un `Client` et une `Affaire`, il faut créer un [`ClientPourAffaire
 [creer-une-adresse]: /reference/ressources/core/adresse
 [creer-un-e-mail]: /reference/ressources/core/e-mail
 [creer-un-telephone]: /reference/ressources/core/telephone
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer un client avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Client/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Client/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "Login": "",
+  "Prenoms": "",
+  "NomUsage": "",
+  "PrenomUsage": "",
+  "Prenom2": "",
+  "Prenom3": "",
+  "NomJeuneFille": "",
+  "Fonction": "",
+  "VilleNaissance": "",
+  "DepartementNaissance": "",
+  "CodeCommuneNaissance": "",
+  "CiviliteId": 0,
+  "AdresseId": 0,
+  "MailId": 0,
+  "TelephoneId": 0,
+  "MobileId": 0,
+  "Nationalite1Id": 0,
+  "Nationalite2Id": 0,
+  "PaysNaissanceId": 0,
+  "DateNaissance": null,
+  "GenreMale": false,
+  "Handicap": false,
+  "RefSysteme": "",
+  "AutoriseCRM": false,
+  "HasChosenRGPD": false,
+  "HasChosenMarketing": false,
+  "TiersTemps": false,
+  "TiersTempsPrecision": "",
+  "EntrepriseId": 0,
+  "SignataireId": 0,
+  "Douteux": false,
+  "EntiteJuridiqueId": 0,
+  "NatureClientId": 0,
+  "ReferenceId": 0,
+  "ContactId": 0,
+  "TVAintracommunautaire": ""
+}
+```
+
+:::
+
+## Modifier un client
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Client/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Prenoms": "texte",
+  "EntiteJuridiqueId": 1234567,
+  "NatureClientId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Client/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "",
+  "Login": "",
+  "Prenoms": "texte",
+  "NomUsage": "",
+  "PrenomUsage": "",
+  "Prenom2": "",
+  "Prenom3": "",
+  "NomJeuneFille": "",
+  "Fonction": "",
+  "VilleNaissance": "",
+  "DepartementNaissance": "",
+  "CodeCommuneNaissance": "",
+  "CiviliteId": 0,
+  "AdresseId": 0,
+  "MailId": 0,
+  "TelephoneId": 0,
+  "MobileId": 0,
+  "Nationalite1Id": 0,
+  "Nationalite2Id": 0,
+  "PaysNaissanceId": 0,
+  "DateNaissance": null,
+  "GenreMale": false,
+  "Handicap": false,
+  "RefSysteme": "",
+  "AutoriseCRM": false,
+  "HasChosenRGPD": false,
+  "HasChosenMarketing": false,
+  "TiersTemps": false,
+  "TiersTempsPrecision": "",
+  "EntrepriseId": 0,
+  "SignataireId": 0,
+  "Douteux": false,
+  "EntiteJuridiqueId": 1234567,
+  "NatureClientId": 1234567,
+  "ReferenceId": 0,
+  "ContactId": 0,
+  "TVAintracommunautaire": ""
+}
+```
+
+:::
+
+## Supprimer un client
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Client/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

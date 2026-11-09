@@ -1,4 +1,4 @@
-# File
+# Fichier
 
 Cette entité représente un fichier lié à une autre entité et disponible dans l’onglet Fichier de l’interface
 d’administration.
@@ -81,3 +81,72 @@ curl https://myapi.aimaira.net/GraphV1/File  \
 
 :::
 
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Modifier un fichier
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/File/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Streamid": "00000000-0000-0000-0000-000000000000",
+  "Name": "texte",
+  "Creation_time": "2026-09-01T00:00:00+02:00",
+  "Update_time": "2026-09-01T00:00:00+02:00",
+  "Delete_time": "2026-09-01T00:00:00+02:00",
+  "Last_access_time": "2026-09-01T00:00:00+02:00",
+  "Isdirectory": false,
+  "File_extension": "texte",
+  "Size": 0,
+  "stream": {}
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#File/$entity",
+  "Streamid": "00000000-0000-0000-0000-000000000000",
+  "Name": "texte",
+  "Creation_time": "2026-09-01T00:00:00+02:00",
+  "Update_time": "2026-09-01T00:00:00+02:00",
+  "Delete_time": "2026-09-01T00:00:00+02:00",
+  "Last_access_time": "2026-09-01T00:00:00+02:00",
+  "Isdirectory": false,
+  "File_extension": "texte",
+  "Size": 0,
+  "stream": {},
+  "Id": 1234567
+}
+```
+
+:::
+
+## Supprimer un fichier
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/File/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

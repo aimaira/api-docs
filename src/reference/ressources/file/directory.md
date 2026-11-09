@@ -1,4 +1,4 @@
-# Directory
+# Dossier
 
 ## Afficher les informations d’un dossier à partir d’un chemin
 
@@ -149,3 +149,75 @@ curl https://myapi.aimaira.net/GraphV1/Directory/e41f31cf-faaa-4afe-a12f-5ec61cc
 ```
 
 [instance]: /reference/ressources/core/instance
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Modifier un dossier
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Directory/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Streamid": "00000000-0000-0000-0000-000000000000",
+  "Name": "texte",
+  "Creation_time": "2026-09-01T00:00:00+02:00",
+  "Update_time": "2026-09-01T00:00:00+02:00",
+  "Delete_time": "2026-09-01T00:00:00+02:00",
+  "Last_access_time": "2026-09-01T00:00:00+02:00",
+  "Isdirectory": false,
+  "File_extension": "texte",
+  "Path": "texte",
+  "Size": 0,
+  "stream": {}
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Directory/$entity",
+  "Streamid": "00000000-0000-0000-0000-000000000000",
+  "Name": "texte",
+  "Creation_time": "2026-09-01T00:00:00+02:00",
+  "Update_time": "2026-09-01T00:00:00+02:00",
+  "Delete_time": "2026-09-01T00:00:00+02:00",
+  "Last_access_time": "2026-09-01T00:00:00+02:00",
+  "Isdirectory": false,
+  "File_extension": "texte",
+  "Path": "texte",
+  "Size": 0,
+  "stream": {},
+  "Id": 1234567
+}
+```
+
+:::
+
+## Supprimer un dossier
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Directory/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

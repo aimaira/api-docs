@@ -125,3 +125,129 @@ Une valeur à `-1.0` indique qu’une note n’est pas renseignée.
 :::
 
 [notes-apprenant]: /reference/cas-d-usage/recuperer-les-notes-d-un-apprenant
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Créer une évaluation
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Evaluation \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "CoursId": 1234567,
+  "TypeEvaluationId": 1234567,
+  "NotesPubliees": false,
+  "Ponderation": 0,
+  "Excusable": false,
+  "Anonyme": false,
+  "Duree": 0,
+  "IdEvaluationParent": 0,
+  "DateFinalisation": "2026-09-01T00:00:00+02:00",
+  "CoursSegmenteId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Evaluation/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "CoursId": 1234567,
+  "TypeEvaluationId": 1234567,
+  "NotesPubliees": false,
+  "Ponderation": 0,
+  "Excusable": false,
+  "Anonyme": false,
+  "Duree": 0,
+  "IdEvaluationParent": 0,
+  "DateFinalisation": "2026-09-01T00:00:00+02:00",
+  "CoursSegmenteId": 1234567
+}
+```
+
+:::
+
+## Modifier une évaluation
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Evaluation/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "CoursId": 1234567,
+  "TypeEvaluationId": 1234567,
+  "NotesPubliees": false,
+  "Ponderation": 0,
+  "Excusable": false,
+  "Anonyme": false,
+  "Duree": 0,
+  "IdEvaluationParent": 0,
+  "DateFinalisation": "2026-09-01T00:00:00+02:00",
+  "CoursSegmenteId": 1234567
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#Evaluation/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "CoursId": 1234567,
+  "TypeEvaluationId": 1234567,
+  "NotesPubliees": false,
+  "Ponderation": 0,
+  "Excusable": false,
+  "Anonyme": false,
+  "Duree": 0,
+  "IdEvaluationParent": 0,
+  "DateFinalisation": "2026-09-01T00:00:00+02:00",
+  "CoursSegmenteId": 1234567
+}
+```
+
+:::
+
+## Supprimer une évaluation
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/Evaluation/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->

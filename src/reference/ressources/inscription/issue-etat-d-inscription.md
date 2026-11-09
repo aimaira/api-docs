@@ -206,3 +206,155 @@ curl https://myapi.aimaira.net/GraphV1/EtatInscription
 ```
 
 :::
+
+<!-- graphv1:start — section générée depuis le modèle de GraphV1 (npm run graphv1), ne pas modifier à la main -->
+
+## Récupérer une issue - état d’inscription avec son identifiant
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EtatInscription/1234567 \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EtatInscription/$entity",
+  "Id": 1234567,
+  "Nom": "",
+  "Code": "",
+  "ApprenantON": false,
+  "NumeroOrdre": 0,
+  "EtatInduitId": 0,
+  "SuiviInscription": false,
+  "SuiviReinscription": false,
+  "OuvreAccesIntranet": false,
+  "ReferenceExterne": "",
+  "LibelleIssue": ""
+}
+```
+
+:::
+
+## Créer une issue - état d’inscription
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EtatInscription \
+  --request POST \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "ApprenantON": false,
+  "NumeroOrdre": 0,
+  "EtatInduitId": 1234567,
+  "SuiviInscription": false,
+  "SuiviReinscription": false,
+  "OuvreAccesIntranet": false,
+  "ReferenceExterne": "texte",
+  "LibelleIssue": "texte"
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EtatInscription/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "ApprenantON": false,
+  "NumeroOrdre": 0,
+  "EtatInduitId": 1234567,
+  "SuiviInscription": false,
+  "SuiviReinscription": false,
+  "OuvreAccesIntranet": false,
+  "ReferenceExterne": "texte",
+  "LibelleIssue": "texte"
+}
+```
+
+:::
+
+## Modifier une issue - état d’inscription
+
+Comme pour toute autre mise à jour de données, [cette mise en garde](/creer-votre-integration/prise-en-main-de-l-api#mise-a-jour-des-donnees) s’applique.
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EtatInscription/1234567 \
+  --request PUT \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "Nom": "Nom",
+  "Code": "CODE",
+  "ApprenantON": false,
+  "NumeroOrdre": 0,
+  "EtatInduitId": 1234567,
+  "SuiviInscription": false,
+  "SuiviReinscription": false,
+  "OuvreAccesIntranet": false,
+  "ReferenceExterne": "texte",
+  "LibelleIssue": "texte"
+}' \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+::: code-group
+
+```json [JSON]
+{
+  "@odata.context": "https://myapi.aimaira.net/GraphV1/$metadata#EtatInscription/$entity",
+  "Id": 1234567,
+  "Nom": "Nom",
+  "Code": "CODE",
+  "ApprenantON": false,
+  "NumeroOrdre": 0,
+  "EtatInduitId": 1234567,
+  "SuiviInscription": false,
+  "SuiviReinscription": false,
+  "OuvreAccesIntranet": false,
+  "ReferenceExterne": "texte",
+  "LibelleIssue": "texte"
+}
+```
+
+:::
+
+## Supprimer une issue - état d’inscription
+
+::: code-group
+
+```bash [cURL]
+curl https://myapi.aimaira.net/GraphV1/EtatInscription/1234567 \
+  --request DELETE \
+  -u 'nomdutilisateur:motdepasse'
+```
+
+:::
+
+### Réponse
+
+La réponse est vide (code HTTP 204).
+
+<!-- graphv1:end -->
