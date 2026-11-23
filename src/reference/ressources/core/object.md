@@ -1,4 +1,4 @@
-# Object
+# Objet
 
 ## Récuperer les métadonnées d’une entité
 

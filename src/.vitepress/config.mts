@@ -2,6 +2,8 @@ import Mermaid from './mermaid-plugin';
 import Attrs from 'markdown-it-attrs';
 import { defineConfig, MarkdownOptions } from 'vitepress'
 import sidebar from './nav'
+import commentaires from './commentaires-plugin'
+import { fileURLToPath } from 'node:url'
 
 const markdownOptions: MarkdownOptions = {
     async config(md) {
@@ -25,6 +27,9 @@ export default defineConfig({
     cleanUrls: true,
     markdown: markdownOptions,
     ignoreDeadLinks: true,
+    vite: {
+        plugins: [commentaires(fileURLToPath(new URL('../../commentaires.json', import.meta.url)))],
+    },
     themeConfig: {
         search: {
             provider: 'local',
@@ -46,6 +51,7 @@ export default defineConfig({
             next: 'Page suivante',
         },
         footer: {
+            message: '<a href="/api-docs/notes-de-version">Notes de version</a>',
             copyright: 'Copyright © 2022 – 2023 AIMAIRA',
         }
     }

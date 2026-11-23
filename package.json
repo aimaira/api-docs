@@ -14,7 +14,10 @@
     "scripts": {
         "dev": "vitepress dev src",
         "build": "vitepress build src --outDir dist",
-        "serve": "vitepress serve src"
+        "serve": "vitepress serve src",
+        "reference": "node scripts/reference.mjs",
+        "reference:check": "node scripts/reference.mjs --check",
+        "reference:report": "node scripts/reference.mjs --report reference/rapport.md"
     },
     "dependencies": {
         "mermaid": "^11.13.0"

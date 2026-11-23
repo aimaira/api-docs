@@ -1,0 +1,1863 @@
+{
+  "baseUrl": "https://myapi.aimaira.net/GraphV1",
+  "auth": "-u 'nomdutilisateur:motdepasse'",
+  "sections": {
+    "core": "Core",
+    "file": "Fichiers",
+    "academie": "Académie",
+    "admission": "Admission",
+    "inscription": "Inscription",
+    "finance": "Finance",
+    "pedagogie": "Pédagogie",
+    "planification": "Planification",
+    "relation-entreprise": "Relation entreprise",
+    "herite": "Hérité",
+    "referentiel": "Référentiel",
+    "selection": "Sélection"
+  },
+  "pages": {
+    "BalanceEnseignant": {
+      "page": "academie/balance-enseignant",
+      "nom": "balance enseignant",
+      "un": "une balance enseignant",
+      "les": "les balances enseignant"
+    },
+    "TypeEnseignant": {
+      "page": "academie/categorie-d-enseignant",
+      "nom": "catégorie d’enseignant",
+      "un": "une catégorie d’enseignant",
+      "les": "les catégories d’enseignant"
+    },
+    "EnseignantType": {
+      "page": "academie/categorie-d-un-enseignant",
+      "nom": "catégorie d’un enseignant",
+      "un": "une catégorie d’un enseignant",
+      "les": "les catégories des enseignants"
+    },
+    "Contrat": {
+      "page": "academie/contrat-d-enseignant",
+      "nom": "contrat d’enseignant",
+      "un": "un contrat d’enseignant",
+      "les": "les contrats d’enseignant",
+      "verifierNomTechnique": false
+    },
+    "Employeur": {
+      "page": "academie/employeur",
+      "nom": "employeur",
+      "un": "un employeur",
+      "les": "les employeurs"
+    },
+    "Enseignant": {
+      "page": "academie/enseignant",
+      "nom": "enseignant",
+      "un": "un enseignant",
+      "les": "les enseignants"
+    },
+    "SessionExportVirement": {
+      "page": "academie/export-de-virements",
+      "nom": "export de virements",
+      "un": "un export de virements",
+      "les": "les exports de virements"
+    },
+    "LigneContrat": {
+      "page": "academie/ligne-de-contrat",
+      "nom": "ligne de contrat",
+      "un": "une ligne de contrat",
+      "les": "les lignes de contrat"
+    },
+    "TypePrestationRH": {
+      "page": "academie/type-de-prestation-rh",
+      "nom": "type de prestation RH",
+      "un": "un type de prestation RH",
+      "les": "les types de prestation RH"
+    },
+    "TypeRelationContractuelle": {
+      "page": "academie/type-de-relation-contractuelle",
+      "nom": "type de relation contractuelle",
+      "un": "un type de relation contractuelle",
+      "les": "les types de relation contractuelle"
+    },
+    "Agent": {
+      "page": "admission/agent",
+      "nom": "agent",
+      "un": "un agent",
+      "les": "les agents"
+    },
+    "AutreCandidature": {
+      "page": "admission/autre-candidature",
+      "nom": "autre candidature",
+      "un": "une autre candidature",
+      "les": "les autres candidatures"
+    },
+    "CanalAcquisition": {
+      "page": "admission/canal-acquisition",
+      "nom": "canal d’acquisition",
+      "un": "un canal d’acquisition",
+      "les": "les canaux d’acquisition"
+    },
+    "Candidat": {
+      "page": "admission/candidat",
+      "nom": "candidat",
+      "un": "un candidat",
+      "les": "les candidats"
+    },
+    "Cible": {
+      "page": "admission/cible",
+      "nom": "cible",
+      "un": "une cible",
+      "les": "les cibles"
+    },
+    "CibleSessionRecrutement": {
+      "page": "admission/cible-d-une-voie-d-admission",
+      "nom": "cible d’une voie d’admission",
+      "un": "une cible d’une voie d’admission",
+      "les": "les cibles des voies d’admission"
+    },
+    "Creneau": {
+      "page": "admission/creneau",
+      "nom": "créneau",
+      "un": "un créneau",
+      "les": "les créneaux"
+    },
+    "CreneauSessionRecrutement": {
+      "page": "admission/creneau-d-une-voie-d-admission",
+      "nom": "créneau d’une voie d’admission",
+      "un": "un créneau d’une voie d’admission",
+      "les": "les créneaux des voies d’admission"
+    },
+    "Dossier": {
+      "page": "admission/dossier",
+      "nom": "dossier de candidature",
+      "un": "un dossier de candidature",
+      "les": "les dossiers de candidature",
+      "verifierNomTechnique": false
+    },
+    "EtatCandidature": {
+      "page": "admission/etat-de-candidature",
+      "nom": "état de candidature",
+      "un": "un état de candidature",
+      "les": "les états de candidature"
+    },
+    "Evaluateur": {
+      "page": "admission/evaluateur",
+      "nom": "évaluateur",
+      "un": "un évaluateur",
+      "les": "les évaluateurs"
+    },
+    "ExperienceProfessionnelle": {
+      "page": "admission/experience-professionnelle",
+      "nom": "expérience professionnelle",
+      "un": "une expérience professionnelle",
+      "les": "les expériences professionnelles"
+    },
+    "NiveauEtude": {
+      "page": "admission/niveau-d-etudes",
+      "nom": "niveau d’études",
+      "un": "un niveau d’études",
+      "les": "les niveaux d’études"
+    },
+    "NiveauLangue": {
+      "page": "admission/niveau-de-langue",
+      "nom": "niveau de langue",
+      "un": "un niveau de langue",
+      "les": "les niveaux de langue"
+    },
+    "Ouverture": {
+      "page": "admission/ouverture",
+      "nom": "ouverture",
+      "un": "une ouverture",
+      "les": "les ouvertures"
+    },
+    "AgentPays": {
+      "page": "admission/pays-d-un-agent",
+      "nom": "pays d’un agent",
+      "un": "un pays d’un agent",
+      "les": "les pays des agents"
+    },
+    "Qualification": {
+      "page": "admission/qualification",
+      "nom": "qualification",
+      "un": "une qualification",
+      "les": "les qualifications"
+    },
+    "QuestionOuverte": {
+      "page": "admission/question-ouverte",
+      "nom": "question ouverte",
+      "un": "une question ouverte",
+      "les": "les questions ouvertes"
+    },
+    "Referent": {
+      "page": "admission/referent",
+      "nom": "référent",
+      "un": "un référent",
+      "les": "les référents"
+    },
+    "Reponse": {
+      "page": "admission/reponse-a-une-question-ouverte",
+      "nom": "réponse à une question ouverte",
+      "un": "une réponse à une question ouverte",
+      "les": "les réponses aux questions ouvertes"
+    },
+    "NiveauTest": {
+      "page": "admission/resultat-de-test",
+      "nom": "résultat de test",
+      "un": "un résultat de test",
+      "les": "les résultats de test"
+    },
+    "Scolarite": {
+      "page": "admission/scolarite-anterieure",
+      "nom": "scolarité antérieure",
+      "un": "une scolarité antérieure",
+      "les": "les scolarités antérieures"
+    },
+    "Session": {
+      "page": "admission/session",
+      "nom": "session",
+      "un": "une session",
+      "les": "les sessions"
+    },
+    "Test": {
+      "page": "admission/test",
+      "nom": "test",
+      "un": "un test",
+      "les": "les tests"
+    },
+    "TypeEmploi": {
+      "page": "admission/type-d-emploi",
+      "nom": "type d’emploi",
+      "un": "un type d’emploi",
+      "les": "les types d’emploi"
+    },
+    "TypeQualification": {
+      "page": "admission/type-de-qualification",
+      "nom": "type de qualification",
+      "un": "un type de qualification",
+      "les": "les types de qualification"
+    },
+    "TypeTest": {
+      "page": "admission/type-de-test",
+      "nom": "type de test",
+      "un": "un type de test",
+      "les": "les types de test"
+    },
+    "SessionRecrutement": {
+      "page": "admission/voie-d-admission",
+      "nom": "voie d’admission",
+      "un": "une voie d’admission",
+      "les": "les voies d’admission"
+    },
+    "Adresse": {
+      "page": "core/adresse",
+      "nom": "adresse",
+      "un": "une adresse",
+      "les": "les adresses"
+    },
+    "Campus": {
+      "page": "core/campus",
+      "nom": "campus",
+      "un": "un campus",
+      "les": "les campus"
+    },
+    "Civilite": {
+      "page": "core/civilite",
+      "nom": "civilité",
+      "un": "une civilité",
+      "les": "les civilités"
+    },
+    "Commentaire": {
+      "page": "core/commentaire",
+      "nom": "commentaire",
+      "un": "un commentaire",
+      "les": "les commentaires"
+    },
+    "Mail": {
+      "page": "core/e-mail",
+      "nom": "e-mail",
+      "un": "un e-mail",
+      "les": "les e-mails"
+    },
+    "Individu": {
+      "page": "core/individu",
+      "nom": "individu",
+      "un": "un individu",
+      "les": "les individus"
+    },
+    "Instance": {
+      "page": "core/instance",
+      "nom": "instance",
+      "un": "une instance",
+      "les": "les instances"
+    },
+    "Ecole": {
+      "page": "core/marque",
+      "nom": "marque",
+      "un": "une marque",
+      "les": "les marques"
+    },
+    "Note": {
+      "page": "core/note",
+      "nom": "note",
+      "un": "une note",
+      "les": "les notes"
+    },
+    "Object": {
+      "page": "core/object",
+      "nav": false,
+      "nom": "objet",
+      "un": "un objet",
+      "les": "les objets"
+    },
+    "Pays": {
+      "page": "core/pays",
+      "nom": "pays",
+      "un": "un pays",
+      "les": "les pays"
+    },
+    "Periode": {
+      "page": "core/periode",
+      "nom": "période",
+      "un": "une période",
+      "les": "les périodes"
+    },
+    "Programme": {
+      "page": "core/programme",
+      "nom": "programme",
+      "un": "un programme",
+      "les": "les programmes"
+    },
+    "ReferenceExterne": {
+      "page": "core/reference-externe",
+      "nom": "référence externe",
+      "un": "une référence externe",
+      "les": "les références externes"
+    },
+    "Telephone": {
+      "page": "core/telephone",
+      "nom": "téléphone",
+      "un": "un téléphone",
+      "les": "les téléphones"
+    },
+    "User": {
+      "page": "core/utilisateur",
+      "nom": "utilisateur",
+      "un": "un utilisateur",
+      "les": "les utilisateurs"
+    },
+    "Description": {
+      "page": "file/description",
+      "nom": "description",
+      "un": "une description",
+      "les": "les descriptions"
+    },
+    "Directory": {
+      "page": "file/directory",
+      "nom": "dossier",
+      "un": "un dossier",
+      "les": "les dossiers"
+    },
+    "File": {
+      "page": "file/file",
+      "nom": "fichier",
+      "un": "un fichier",
+      "les": "les fichiers"
+    },
+    "Affaire": {
+      "page": "finance/affaire",
+      "nom": "affaire",
+      "un": "une affaire",
+      "les": "les affaires"
+    },
+    "BalanceClient": {
+      "page": "finance/balance-client",
+      "nom": "ligne de balance client",
+      "un": "une ligne de balance client",
+      "les": "les lignes de balance client"
+    },
+    "CategoriePrestation": {
+      "page": "finance/categorie-de-prestation",
+      "nom": "catégorie de prestation",
+      "un": "une catégorie de prestation",
+      "les": "les catégories de prestation"
+    },
+    "Client": {
+      "page": "finance/client",
+      "nom": "client",
+      "un": "un client",
+      "les": "les clients"
+    },
+    "ClientPourAffaire": {
+      "page": "finance/client-pour-affaire",
+      "nom": "lien entre un client et une affaire",
+      "un": "un lien entre un client et une affaire",
+      "les": "les liens entre un client et une affaire"
+    },
+    "CompteAnalytique": {
+      "page": "finance/compte-analytique",
+      "nom": "compte analytique",
+      "un": "un compte analytique",
+      "les": "les comptes analytiques"
+    },
+    "Banque": {
+      "page": "finance/compte-bancaire",
+      "nom": "compte bancaire",
+      "un": "un compte bancaire",
+      "les": "les comptes bancaires"
+    },
+    "CompteComptable": {
+      "page": "finance/compte-comptable",
+      "nom": "compte comptable",
+      "un": "un compte comptable",
+      "les": "les comptes comptables"
+    },
+    "DetailBalance": {
+      "page": "finance/detail-de-balance",
+      "nom": "détail de balance",
+      "un": "un détail de balance",
+      "les": "les détails de balance"
+    },
+    "DetailPrestation": {
+      "page": "finance/detail-de-prestation",
+      "nom": "détail de prestation",
+      "un": "un détail de prestation",
+      "les": "les détails de prestation"
+    },
+    "Echeance": {
+      "page": "finance/echeance",
+      "nom": "échéance",
+      "un": "une échéance",
+      "les": "les échéances"
+    },
+    "SessionExportCompta": {
+      "page": "finance/export-comptable",
+      "nom": "export comptable",
+      "un": "un export comptable",
+      "les": "les exports comptables"
+    },
+    "SessionExportPrelevement": {
+      "page": "finance/export-de-prelevements",
+      "nom": "export de prélèvements",
+      "un": "un export de prélèvements",
+      "les": "les exports de prélèvements"
+    },
+    "Facture": {
+      "page": "finance/facture",
+      "nom": "facture",
+      "un": "une facture",
+      "les": "les factures"
+    },
+    "LignePrelevement": {
+      "page": "finance/ligne-de-prelevement",
+      "nom": "ligne de prélèvement",
+      "un": "une ligne de prélèvement",
+      "les": "les lignes de prélèvement"
+    },
+    "MandatSEPA": {
+      "page": "finance/mandat-sepa",
+      "nom": "mandat SEPA",
+      "un": "un mandat SEPA",
+      "les": "les mandats SEPA"
+    },
+    "ModalitePaiement": {
+      "page": "finance/modalite-de-paiement",
+      "nom": "modalité de paiement",
+      "un": "une modalité de paiement",
+      "les": "les modalités de paiement"
+    },
+    "ModalitePourPrestation": {
+      "page": "finance/modalite-de-paiement-d-une-prestation",
+      "nom": "modalité de paiement d’une prestation",
+      "un": "une modalité de paiement d’une prestation",
+      "les": "les modalités de paiement des prestations"
+    },
+    "NatureClient": {
+      "page": "finance/nature-client",
+      "nom": "nature du client",
+      "un": "une nature du client",
+      "les": "les natures de clients"
+    },
+    "Prestation": {
+      "page": "finance/prestation",
+      "nom": "prestation",
+      "un": "une prestation",
+      "les": "les prestations"
+    },
+    "PrestationReference": {
+      "page": "finance/prestation-rattachee-a-une-entite",
+      "nom": "prestation rattachée à une entité",
+      "un": "une prestation rattachée à une entité",
+      "les": "les prestations rattachées aux entités"
+    },
+    "SocieteFacturation": {
+      "page": "finance/societe-de-facturation",
+      "nom": "société de facturation",
+      "un": "une société de facturation",
+      "les": "les sociétés de facturation"
+    },
+    "TypePaiement": {
+      "page": "finance/type-de-paiement",
+      "nom": "type de paiement",
+      "un": "un type de paiement",
+      "les": "les types de paiement"
+    },
+    "EntiteJuridique": {
+      "page": "herite/entite-juridique",
+      "nav": false,
+      "nom": "entité juridique",
+      "un": "une entité juridique",
+      "les": "les entités juridiques"
+    },
+    "Apprenant": {
+      "page": "inscription/apprenant",
+      "nom": "apprenant",
+      "un": "un apprenant",
+      "les": "les apprenants"
+    },
+    "Carte": {
+      "page": "inscription/carte-etudiante",
+      "nom": "carte étudiante",
+      "un": "une carte étudiante",
+      "les": "les cartes étudiantes",
+      "verifierNomTechnique": false
+    },
+    "CommandeCarte": {
+      "page": "inscription/commande-de-cartes",
+      "nom": "commande de cartes",
+      "un": "une commande de cartes",
+      "les": "les commandes de cartes"
+    },
+    "Demarche": {
+      "page": "inscription/demarche",
+      "nom": "démarche",
+      "un": "une démarche",
+      "les": "les démarches"
+    },
+    "DemarcheTitreSejour": {
+      "page": "inscription/demarche-de-titre-de-sejour",
+      "nom": "démarche de titre de séjour",
+      "un": "une démarche de titre de séjour",
+      "les": "les démarches de titre de séjour"
+    },
+    "DetailTitreSejour": {
+      "page": "inscription/detail-de-titre-de-sejour",
+      "nom": "détail de titre de séjour",
+      "un": "un détail de titre de séjour",
+      "les": "les détails de titre de séjour"
+    },
+    "DomaineDiplome": {
+      "page": "inscription/domaine-du-diplome",
+      "nom": "domaine du diplôme",
+      "un": "un domaine du diplôme",
+      "les": "les domaines du diplôme"
+    },
+    "EtatDemarche": {
+      "page": "inscription/etat-de-demarche",
+      "nom": "état de démarche",
+      "un": "un état de démarche",
+      "les": "les états de démarche"
+    },
+    "EtatTitreSejour": {
+      "page": "inscription/etat-de-titre-de-sejour",
+      "nom": "état de titre de séjour",
+      "un": "un état de titre de séjour",
+      "les": "les états de titre de séjour"
+    },
+    "Inscription": {
+      "page": "inscription/inscription",
+      "nom": "inscription",
+      "un": "une inscription",
+      "les": "les inscriptions"
+    },
+    "InscriptionPeriode": {
+      "page": "inscription/inscription-a-une-periode",
+      "nom": "inscription à une période",
+      "un": "une inscription à une période",
+      "les": "les inscriptions aux périodes"
+    },
+    "EtatInscription": {
+      "page": "inscription/issue-etat-d-inscription",
+      "nom": "issue - état d’inscription",
+      "un": "une issue - état d’inscription",
+      "les": "les issues - états d’inscription"
+    },
+    "CommandeCarteLigne": {
+      "page": "inscription/ligne-de-commande-de-cartes",
+      "nom": "ligne de commande de cartes",
+      "un": "une ligne de commande de cartes",
+      "les": "les lignes de commande de cartes"
+    },
+    "TemplateISIC": {
+      "page": "inscription/modele-de-carte-isic",
+      "nom": "modèle de carte ISIC",
+      "un": "un modèle de carte ISIC",
+      "les": "les modèles de carte ISIC"
+    },
+    "Mutuelle": {
+      "page": "inscription/mutuelle",
+      "nom": "mutuelle",
+      "un": "une mutuelle",
+      "les": "les mutuelles"
+    },
+    "NiveauLangueInitial": {
+      "page": "inscription/niveau-de-langue-initial",
+      "nom": "niveau de langue initial",
+      "un": "un niveau de langue initial",
+      "les": "les niveaux de langue initiaux"
+    },
+    "Origine": {
+      "page": "inscription/origine",
+      "nom": "origine",
+      "un": "une origine",
+      "les": "les origines"
+    },
+    "Parcours": {
+      "page": "inscription/parcours",
+      "nom": "parcours",
+      "un": "un parcours",
+      "les": "les parcours"
+    },
+    "ParcoursPeriode": {
+      "page": "inscription/periode-d-un-parcours",
+      "nom": "période d’un parcours",
+      "un": "une période d’un parcours",
+      "les": "les périodes des parcours"
+    },
+    "ProgrammeRegime": {
+      "page": "inscription/programme-regime",
+      "nom": "liaison entre un programme et un régime",
+      "un": "une liaison entre un programme et un régime",
+      "les": "les liaisons entre un programme et un régime"
+    },
+    "RegimeInscription": {
+      "page": "inscription/regime-de-l-apprenant",
+      "nom": "régime de l’apprenant",
+      "un": "un régime de l’apprenant",
+      "les": "les régimes de l’apprenant"
+    },
+    "ParcoursSequence": {
+      "page": "inscription/sequence-d-un-parcours",
+      "nom": "séquence d’un parcours",
+      "un": "une séquence d’un parcours",
+      "les": "les séquences des parcours"
+    },
+    "Specialite": {
+      "page": "inscription/specialite",
+      "nom": "spécialité",
+      "un": "une spécialité",
+      "les": "les spécialités"
+    },
+    "Tuteur": {
+      "page": "inscription/tuteur",
+      "nom": "tuteur",
+      "un": "un tuteur",
+      "les": "les tuteurs"
+    },
+    "TypeAvertissement": {
+      "page": "inscription/type-d-avertissement",
+      "nom": "type d’avertissement",
+      "un": "un type d’avertissement",
+      "les": "les types d’avertissement"
+    },
+    "TypeCertification": {
+      "page": "inscription/type-de-certification",
+      "nom": "type de certification",
+      "un": "un type de certification",
+      "les": "les types de certification"
+    },
+    "TypeDemarche": {
+      "page": "inscription/type-de-demarche",
+      "nom": "type de démarche",
+      "un": "un type de démarche",
+      "les": "les types de démarche"
+    },
+    "TypeRecrutement": {
+      "page": "inscription/type-de-recrutement",
+      "nom": "type de recrutement",
+      "un": "un type de recrutement",
+      "les": "les types de recrutement"
+    },
+    "TypeTitreSejour": {
+      "page": "inscription/type-de-titre-de-sejour",
+      "nom": "type de titre de séjour",
+      "un": "un type de titre de séjour",
+      "les": "les types de titre de séjour"
+    },
+    "ValiditeCarte": {
+      "page": "inscription/validite-de-carte",
+      "nom": "validité de carte",
+      "un": "une validité de carte",
+      "les": "les validités de carte"
+    },
+    "Recrutement": {
+      "page": "inscription/voie-d-entree",
+      "nom": "voie d’entrée ou de réinscription",
+      "un": "une voie d’entrée ou de réinscription",
+      "les": "les voies d’entrée ou de réinscription"
+    },
+    "Avertissement": {
+      "page": "pedagogie/avertissement",
+      "nom": "avertissement",
+      "un": "un avertissement",
+      "les": "les avertissements"
+    },
+    "Cours": {
+      "page": "pedagogie/cours",
+      "nom": "cours",
+      "un": "un cours",
+      "les": "les cours"
+    },
+    "SequenceCours": {
+      "page": "pedagogie/cours-d-une-sequence",
+      "nom": "cours d’une séquence",
+      "un": "un cours d’une séquence",
+      "les": "les cours des séquences"
+    },
+    "CoursOutgoing": {
+      "page": "pedagogie/cours-suivi-en-mobilite",
+      "nom": "cours suivi en mobilité",
+      "un": "un cours suivi en mobilité",
+      "les": "les cours suivis en mobilité"
+    },
+    "Cycle": {
+      "page": "pedagogie/cycle",
+      "nom": "cycle",
+      "un": "un cycle",
+      "les": "les cycles"
+    },
+    "DecisionJury": {
+      "page": "pedagogie/decision-du-jury",
+      "nom": "décision du jury",
+      "un": "une décision du jury",
+      "les": "les décisions du jury"
+    },
+    "Departement": {
+      "page": "pedagogie/departement",
+      "nom": "département",
+      "un": "un département",
+      "les": "les départements"
+    },
+    "EnseignantCours": {
+      "page": "pedagogie/enseignant-d-un-cours",
+      "nom": "enseignant d’un cours",
+      "un": "un enseignant d’un cours",
+      "les": "les enseignants des cours"
+    },
+    "Evaluation": {
+      "page": "pedagogie/evaluation",
+      "nom": "évaluation",
+      "un": "une évaluation",
+      "les": "les évaluations"
+    },
+    "Groupe": {
+      "page": "pedagogie/groupe",
+      "nom": "groupe",
+      "un": "un groupe",
+      "les": "les groupes"
+    },
+    "InscriptionCours": {
+      "page": "pedagogie/inscription-a-un-cours",
+      "nom": "inscription à un cours",
+      "un": "une inscription à un cours",
+      "les": "les inscriptions aux cours"
+    },
+    "InscriptionGroupe": {
+      "page": "pedagogie/inscription-a-un-groupe",
+      "nom": "inscription à un groupe",
+      "un": "une inscription à un groupe",
+      "les": "les inscriptions aux groupes"
+    },
+    "InscriptionSequence": {
+      "page": "pedagogie/inscription-a-une-sequence",
+      "nom": "inscription à une séquence",
+      "un": "une inscription à une séquence",
+      "les": "les inscriptions aux séquences"
+    },
+    "Module": {
+      "page": "pedagogie/module",
+      "nom": "module",
+      "un": "un module",
+      "les": "les modules"
+    },
+    "Motif": {
+      "page": "pedagogie/motif-d-absence",
+      "nom": "motif d’absence",
+      "un": "un motif d’absence",
+      "les": "les motifs d’absence",
+      "verifierNomTechnique": false
+    },
+    "Partenaire": {
+      "page": "pedagogie/partenaire",
+      "nom": "partenaire",
+      "un": "un partenaire",
+      "les": "les partenaires"
+    },
+    "Rattrapage": {
+      "page": "pedagogie/rattrapage",
+      "nom": "rattrapage",
+      "un": "un rattrapage",
+      "les": "les rattrapages"
+    },
+    "Bibliographie": {
+      "page": "pedagogie/reference-bibliographique",
+      "nom": "référence bibliographique",
+      "un": "une référence bibliographique",
+      "les": "les références bibliographiques"
+    },
+    "ReferenceECTS": {
+      "page": "pedagogie/reference-ects",
+      "nom": "référence ECTS",
+      "un": "une référence ECTS",
+      "les": "les références ECTS"
+    },
+    "ReferentEcole": {
+      "page": "pedagogie/referent-ecole",
+      "nom": "référent école",
+      "un": "un référent école",
+      "les": "les référents école"
+    },
+    "Sequence": {
+      "page": "pedagogie/sequence",
+      "nom": "séquence",
+      "un": "une séquence",
+      "les": "les séquences"
+    },
+    "SequenceOutgoing": {
+      "page": "pedagogie/sequence-suivie-en-mobilite",
+      "nom": "séquence suivie en mobilité",
+      "un": "une séquence suivie en mobilité",
+      "les": "les séquences suivies en mobilité"
+    },
+    "SessionRattrapage": {
+      "page": "pedagogie/session-de-rattrapage",
+      "nom": "session de rattrapage",
+      "un": "une session de rattrapage",
+      "les": "les sessions de rattrapage"
+    },
+    "SequenceSequence": {
+      "page": "pedagogie/sous-sequence",
+      "nom": "sous-séquence",
+      "un": "une sous-séquence",
+      "les": "les sous-séquences"
+    },
+    "StructureCours": {
+      "page": "pedagogie/structure-de-cours",
+      "nom": "structure de cours",
+      "un": "une structure de cours",
+      "les": "les structures de cours"
+    },
+    "TypeCalcul": {
+      "page": "pedagogie/type-de-calcul",
+      "nom": "type de calcul",
+      "un": "un type de calcul",
+      "les": "les types de calcul"
+    },
+    "TypeProjet": {
+      "page": "pedagogie/type-de-projet",
+      "nom": "type de projet",
+      "un": "un type de projet",
+      "les": "les types de projet"
+    },
+    "TypeSequence": {
+      "page": "pedagogie/type-de-sequence",
+      "nom": "type de séquence",
+      "un": "un type de séquence",
+      "les": "les types de séquences"
+    },
+    "EvenementCommun": {
+      "page": "planification/evenement-commun",
+      "nom": "événement commun",
+      "un": "un événement commun",
+      "les": "les événements communs"
+    },
+    "Planification": {
+      "page": "planification/evenement-du-calendrier",
+      "nom": "événement du calendrier",
+      "un": "un événement du calendrier",
+      "les": "les événements du calendrier",
+      "verifierNomTechnique": false
+    },
+    "Examen": {
+      "page": "planification/examen",
+      "nom": "examen",
+      "un": "un examen",
+      "les": "les examens"
+    },
+    "SeanceGroupe": {
+      "page": "planification/groupe-d-une-seance",
+      "nom": "groupe d’une séance",
+      "un": "un groupe d’une séance",
+      "les": "les groupes des séances"
+    },
+    "Repetition": {
+      "page": "planification/repetition",
+      "nom": "répétition",
+      "un": "une répétition",
+      "les": "les répétitions"
+    },
+    "Reservation": {
+      "page": "planification/reservation",
+      "nom": "réservation",
+      "un": "une réservation",
+      "les": "les réservations"
+    },
+    "Ressource": {
+      "page": "planification/ressource",
+      "nom": "ressource",
+      "un": "une ressource",
+      "les": "les ressources"
+    },
+    "PlanificationRessource": {
+      "page": "planification/ressource-d-evenement",
+      "nom": "ressource d’événement",
+      "un": "une ressource d’événement",
+      "les": "les ressources d’événement"
+    },
+    "Seance": {
+      "page": "planification/seance",
+      "nom": "séance",
+      "un": "une séance",
+      "les": "les séances"
+    },
+    "Travaux": {
+      "page": "planification/travail-a-rendre",
+      "nom": "travail à rendre",
+      "un": "un travail à rendre",
+      "les": "les travaux à rendre"
+    },
+    "TypePlanification": {
+      "page": "planification/type-d-evenement",
+      "nom": "type d’événement du calendrier",
+      "un": "un type d’événement du calendrier",
+      "les": "les types d’événements du calendrier"
+    },
+    "TypeRessource": {
+      "page": "planification/type-de-ressource",
+      "nom": "type de ressource",
+      "un": "un type de ressource",
+      "les": "les types de ressource"
+    },
+    "AlgoCodeAffaire": {
+      "page": "referentiel/algorithme-de-code-des-affaires",
+      "nom": "algorithme de code des affaires",
+      "un": "un algorithme de code des affaires",
+      "les": "les algorithmes de code des affaires"
+    },
+    "AlgoCodeApprenant": {
+      "page": "referentiel/algorithme-de-code-des-apprenants",
+      "nom": "algorithme de code des apprenants",
+      "un": "un algorithme de code des apprenants",
+      "les": "les algorithmes de code des apprenants"
+    },
+    "AlgoCodeClient": {
+      "page": "referentiel/algorithme-de-code-des-clients",
+      "nom": "algorithme de code des clients",
+      "un": "un algorithme de code des clients",
+      "les": "les algorithmes de code des clients"
+    },
+    "AlgoCodeConvention": {
+      "page": "referentiel/algorithme-de-code-des-conventions",
+      "nom": "algorithme de code des conventions",
+      "un": "un algorithme de code des conventions",
+      "les": "les algorithmes de code des conventions"
+    },
+    "AlgoCodeCours": {
+      "page": "referentiel/algorithme-de-code-des-cours",
+      "nom": "algorithme de code des cours",
+      "un": "un algorithme de code des cours",
+      "les": "les algorithmes de code des cours"
+    },
+    "AlgoCodeRecrutement": {
+      "page": "referentiel/algorithme-de-code-des-dossiers-de-candidature",
+      "nom": "algorithme de code des dossiers de candidature",
+      "un": "un algorithme de code des dossiers de candidature",
+      "les": "les algorithmes de code des dossiers de candidature"
+    },
+    "AlgoCodeDossier": {
+      "page": "referentiel/algorithme-de-code-des-dossiers-rh",
+      "nom": "algorithme de code des dossiers RH",
+      "un": "un algorithme de code des dossiers RH",
+      "les": "les algorithmes de code des dossiers RH"
+    },
+    "AlgoCodeEnseignant": {
+      "page": "referentiel/algorithme-de-code-des-enseignants",
+      "nom": "algorithme de code des enseignants",
+      "un": "un algorithme de code des enseignants",
+      "les": "les algorithmes de code des enseignants"
+    },
+    "AlgoCodeFacture": {
+      "page": "referentiel/algorithme-de-code-des-factures",
+      "nom": "algorithme de code des factures",
+      "un": "un algorithme de code des factures",
+      "les": "les algorithmes de code des factures"
+    },
+    "AlgoRUM": {
+      "page": "referentiel/algorithme-de-rum",
+      "nom": "algorithme de RUM",
+      "un": "un algorithme de RUM",
+      "les": "les algorithmes de RUM"
+    },
+    "Baccalaureat": {
+      "page": "referentiel/baccalaureat",
+      "nom": "baccalauréat",
+      "un": "un baccalauréat",
+      "les": "les baccalauréats"
+    },
+    "Terminal": {
+      "page": "referentiel/badgeuse",
+      "nom": "badgeuse",
+      "un": "une badgeuse",
+      "les": "les badgeuses"
+    },
+    "Batiment": {
+      "page": "referentiel/batiment",
+      "nom": "bâtiment",
+      "un": "un bâtiment",
+      "les": "les bâtiments"
+    },
+    "CSP": {
+      "page": "referentiel/categorie-socioprofessionnelle",
+      "nom": "catégorie socioprofessionnelle",
+      "un": "une catégorie socioprofessionnelle",
+      "les": "les catégories socioprofessionnelles"
+    },
+    "Continent": {
+      "page": "referentiel/continent",
+      "nom": "continent",
+      "un": "un continent",
+      "les": "les continents"
+    },
+    "DernierDiplome": {
+      "page": "referentiel/dernier-diplome",
+      "nom": "dernier diplôme",
+      "un": "un dernier diplôme",
+      "les": "les derniers diplômes"
+    },
+    "messages/Recipient": {
+      "page": "referentiel/destinataire",
+      "nom": "destinataire",
+      "un": "un destinataire",
+      "les": "les destinataires"
+    },
+    "Recipient": {
+      "page": "referentiel/destinataire-d-un-e-mail-sortant",
+      "nom": "destinataire d’un e-mail sortant",
+      "un": "un destinataire d’un e-mail sortant",
+      "les": "les destinataires des e-mails sortants"
+    },
+    "DiplomePrepare": {
+      "page": "referentiel/diplome-prepare",
+      "nom": "diplôme préparé",
+      "un": "un diplôme préparé",
+      "les": "les diplômes préparés"
+    },
+    "Domaine": {
+      "page": "referentiel/domaine",
+      "nom": "domaine",
+      "un": "un domaine",
+      "les": "les domaines"
+    },
+    "Message": {
+      "page": "referentiel/e-mail-sortant",
+      "nom": "e-mail sortant",
+      "un": "un e-mail sortant",
+      "les": "les e-mails sortants",
+      "verifierNomTechnique": false
+    },
+    "EchelonBourse": {
+      "page": "referentiel/echelon-de-bourse",
+      "nom": "échelon de bourse",
+      "un": "un échelon de bourse",
+      "les": "les échelons de bourse"
+    },
+    "Etablissement": {
+      "page": "referentiel/etablissement",
+      "nom": "établissement",
+      "un": "un établissement",
+      "les": "les établissements"
+    },
+    "LangueEnseignement": {
+      "page": "referentiel/langue-d-enseignement",
+      "nom": "langue d’enseignement",
+      "un": "une langue d’enseignement",
+      "les": "les langues d’enseignement"
+    },
+    "Localisation": {
+      "page": "referentiel/localisation-d-une-badgeuse",
+      "nom": "localisation d’une badgeuse",
+      "un": "une localisation d’une badgeuse",
+      "les": "les localisations des badgeuses",
+      "verifierNomTechnique": false
+    },
+    "Mention": {
+      "page": "referentiel/mention",
+      "nom": "mention",
+      "un": "une mention",
+      "les": "les mentions"
+    },
+    "messages/Message": {
+      "page": "referentiel/message",
+      "nom": "message",
+      "un": "un message",
+      "les": "les messages"
+    },
+    "MessageTransform": {
+      "page": "referentiel/mise-en-forme-d-un-message",
+      "nom": "mise en forme d’un message",
+      "un": "une mise en forme d’un message",
+      "les": "les mises en forme des messages"
+    },
+    "Modalite": {
+      "page": "referentiel/modalite-de-seance",
+      "nom": "modalité de séance",
+      "un": "une modalité de séance",
+      "les": "les modalités de séance"
+    },
+    "TemplateMessage": {
+      "page": "referentiel/modele-de-message",
+      "nom": "modèle de message",
+      "un": "un modèle de message",
+      "les": "les modèles de message"
+    },
+    "UserTemplate": {
+      "page": "referentiel/modele-utilisateur",
+      "nom": "modèle d’utilisateur",
+      "un": "un modèle d’utilisateur",
+      "les": "les modèles d’utilisateur"
+    },
+    "NatureTuteur": {
+      "page": "referentiel/nature-du-tuteur",
+      "nom": "nature du tuteur",
+      "un": "une nature du tuteur",
+      "les": "les natures du tuteur"
+    },
+    "Niveau": {
+      "page": "referentiel/niveau",
+      "nom": "niveau",
+      "un": "un niveau",
+      "les": "les niveaux"
+    },
+    "NiveauEnseignement": {
+      "page": "referentiel/niveau-d-enseignement",
+      "nom": "niveau d’enseignement",
+      "un": "un niveau d’enseignement",
+      "les": "les niveaux d’enseignement"
+    },
+    "NiveauPublic": {
+      "page": "referentiel/niveau-du-public",
+      "nom": "niveau du public",
+      "un": "un niveau du public",
+      "les": "les niveaux du public"
+    },
+    "Evenement": {
+      "page": "referentiel/passage-de-badge",
+      "nom": "passage de badge",
+      "un": "un passage de badge",
+      "les": "les passages de badge"
+    },
+    "Personnalisation": {
+      "page": "referentiel/personnalisation-de-l-intranet",
+      "nom": "personnalisation de l’intranet",
+      "un": "une personnalisation de l’intranet",
+      "les": "les personnalisations de l’intranet",
+      "verifierNomTechnique": false
+    },
+    "messages/Attachment": {
+      "page": "referentiel/piece-jointe",
+      "nom": "pièce jointe",
+      "un": "une pièce jointe",
+      "les": "les pièces jointes"
+    },
+    "Attachement": {
+      "page": "referentiel/piece-jointe-d-un-e-mail-sortant",
+      "nom": "pièce jointe d’un e-mail sortant",
+      "un": "une pièce jointe d’un e-mail sortant",
+      "les": "les pièces jointes des e-mails sortants"
+    },
+    "Profil": {
+      "page": "referentiel/profil",
+      "nom": "profil",
+      "un": "un profil",
+      "les": "les profils"
+    },
+    "UserProfil": {
+      "page": "referentiel/profil-d-un-utilisateur",
+      "nom": "profil d’un utilisateur",
+      "un": "un profil d’un utilisateur",
+      "les": "les profils des utilisateurs"
+    },
+    "Province": {
+      "page": "referentiel/province",
+      "nom": "province",
+      "un": "une province",
+      "les": "les provinces"
+    },
+    "Survey": {
+      "page": "referentiel/questionnaire",
+      "nom": "questionnaire",
+      "un": "un questionnaire",
+      "les": "les questionnaires"
+    },
+    "ResponseSurvey": {
+      "page": "referentiel/reponse-a-un-questionnaire",
+      "nom": "réponse à un questionnaire",
+      "un": "une réponse à un questionnaire",
+      "les": "les réponses aux questionnaires"
+    },
+    "Site": {
+      "page": "referentiel/site",
+      "nom": "site",
+      "un": "un site",
+      "les": "les sites"
+    },
+    "SituationPrecedente": {
+      "page": "referentiel/situation-precedente",
+      "nom": "situation précédente",
+      "un": "une situation précédente",
+      "les": "les situations précédentes"
+    },
+    "Sms": {
+      "page": "referentiel/sms",
+      "nom": "SMS",
+      "un": "un SMS",
+      "les": "les SMS"
+    },
+    "SpecialiteBaccalaureat": {
+      "page": "referentiel/specialite-du-baccalaureat",
+      "nom": "spécialité du baccalauréat",
+      "un": "une spécialité du baccalauréat",
+      "les": "les spécialités du baccalauréat"
+    },
+    "TypeEvaluation": {
+      "page": "referentiel/type-d-evaluation",
+      "nom": "type d’évaluation",
+      "un": "un type d’évaluation",
+      "les": "les types d’évaluation"
+    },
+    "TypeContrat": {
+      "page": "referentiel/type-de-contrat",
+      "nom": "type de contrat",
+      "un": "un type de contrat",
+      "les": "les types de contrat"
+    },
+    "messages/MessageType": {
+      "page": "referentiel/type-de-message",
+      "nom": "type de message",
+      "un": "un type de message",
+      "les": "les types de message"
+    },
+    "TypePrepa": {
+      "page": "referentiel/type-de-prepa",
+      "nom": "type de prépa",
+      "un": "un type de prépa",
+      "les": "les types de prépa"
+    },
+    "TypeReferenceBibliographique": {
+      "page": "referentiel/type-de-reference-bibliographique",
+      "nom": "type de référence bibliographique",
+      "un": "un type de référence bibliographique",
+      "les": "les types de référence bibliographique"
+    },
+    "TypeSalle": {
+      "page": "referentiel/type-de-salle",
+      "nom": "type de salle",
+      "un": "un type de salle",
+      "les": "les types de salle"
+    },
+    "TypeSeance": {
+      "page": "referentiel/type-de-seance",
+      "nom": "type de séance",
+      "un": "un type de séance",
+      "les": "les types de séance"
+    },
+    "TypeSignature": {
+      "page": "referentiel/type-de-signature",
+      "nom": "type de signature",
+      "un": "un type de signature",
+      "les": "les types de signature"
+    },
+    "TypeTravaux": {
+      "page": "referentiel/type-de-travaux",
+      "nom": "type de travaux",
+      "un": "un type de travaux",
+      "les": "les types de travaux"
+    },
+    "Universite": {
+      "page": "referentiel/universite",
+      "nom": "université",
+      "un": "une université",
+      "les": "les universités"
+    },
+    "Webhook": {
+      "page": "referentiel/webhook",
+      "nom": "webhook",
+      "un": "un webhook",
+      "les": "les webhooks"
+    },
+    "AlgoCodeCompte": {
+      "page": "relation-entreprise/algorithme-de-code-des-comptes",
+      "nom": "algorithme de code des comptes",
+      "un": "un algorithme de code des comptes",
+      "les": "les algorithmes de code des comptes"
+    },
+    "AutreLieuFormation": {
+      "page": "relation-entreprise/autre-lieu-de-formation",
+      "nom": "autre lieu de formation",
+      "un": "un autre lieu de formation",
+      "les": "les autres lieux de formation"
+    },
+    "Compte": {
+      "page": "relation-entreprise/compte",
+      "nom": "compte",
+      "un": "un compte",
+      "les": "les comptes"
+    },
+    "Contact": {
+      "page": "relation-entreprise/contact",
+      "nom": "contact",
+      "un": "un contact",
+      "les": "les contacts"
+    },
+    "Convention": {
+      "page": "relation-entreprise/convention",
+      "nom": "convention",
+      "un": "une convention",
+      "les": "les conventions"
+    },
+    "DerniereClasse": {
+      "page": "relation-entreprise/derniere-classe-frequentee",
+      "nom": "dernière classe fréquentée",
+      "un": "une dernière classe fréquentée",
+      "les": "les dernières classes fréquentées"
+    },
+    "DiplomeApprentissage": {
+      "page": "relation-entreprise/diplome-prepare-en-apprentissage",
+      "nom": "diplôme préparé en apprentissage",
+      "un": "un diplôme préparé en apprentissage",
+      "les": "les diplômes préparés en apprentissage"
+    },
+    "DiplomeProfessionnalisation": {
+      "page": "relation-entreprise/diplome-prepare-en-professionnalisation",
+      "nom": "diplôme préparé en professionnalisation",
+      "un": "un diplôme préparé en professionnalisation",
+      "les": "les diplômes préparés en professionnalisation"
+    },
+    "EcheanceApprentissageConvention": {
+      "page": "relation-entreprise/echeance-d-apprentissage-d-une-convention",
+      "nom": "échéance d’apprentissage d’une convention",
+      "un": "une échéance d’apprentissage d’une convention",
+      "les": "les échéances d’apprentissage des conventions"
+    },
+    "EcheanceConvention": {
+      "page": "relation-entreprise/echeance-de-convention",
+      "nom": "échéance de convention",
+      "un": "une échéance de convention",
+      "les": "les échéances de convention"
+    },
+    "EcheanceFacturation": {
+      "page": "relation-entreprise/echeance-de-facturation",
+      "nom": "échéance de facturation",
+      "un": "une échéance de facturation",
+      "les": "les échéances de facturation"
+    },
+    "EcheanceFacturationApprentissage": {
+      "page": "relation-entreprise/echeance-de-facturation-d-apprentissage",
+      "nom": "échéance de facturation d’apprentissage",
+      "un": "une échéance de facturation d’apprentissage",
+      "les": "les échéances de facturation d’apprentissage"
+    },
+    "EcheancierFacturation": {
+      "page": "relation-entreprise/echeancier-de-facturation",
+      "nom": "échéancier de facturation",
+      "un": "un échéancier de facturation",
+      "les": "les échéanciers de facturation"
+    },
+    "EcheancierFacturationApprentissage": {
+      "page": "relation-entreprise/echeancier-de-facturation-d-apprentissage",
+      "nom": "échéancier de facturation d’apprentissage",
+      "un": "un échéancier de facturation d’apprentissage",
+      "les": "les échéanciers de facturation d’apprentissage"
+    },
+    "Entreprise": {
+      "page": "relation-entreprise/entreprise",
+      "nom": "entreprise",
+      "un": "une entreprise",
+      "les": "les entreprises"
+    },
+    "EtatConvention": {
+      "page": "relation-entreprise/etat-de-convention",
+      "nom": "état de convention",
+      "un": "un état de convention",
+      "les": "les états de convention"
+    },
+    "EvenementCRM": {
+      "page": "relation-entreprise/evenement-crm",
+      "nom": "événement CRM",
+      "un": "un événement CRM",
+      "les": "les événements CRM"
+    },
+    "FonctionExerce": {
+      "page": "relation-entreprise/fonction-exercee",
+      "nom": "fonction exercée",
+      "un": "une fonction exercée",
+      "les": "les fonctions exercées"
+    },
+    "FormeJuridique": {
+      "page": "relation-entreprise/forme-juridique",
+      "nom": "forme juridique",
+      "un": "une forme juridique",
+      "les": "les formes juridiques"
+    },
+    "DispositionFinanciere": {
+      "page": "relation-entreprise/frais-de-formation",
+      "nom": "frais de formation",
+      "un": "des frais de formation",
+      "les": "les frais de formation",
+      "possessif": "leur"
+    },
+    "MinimumSocial": {
+      "page": "relation-entreprise/minimum-social",
+      "nom": "minimum social",
+      "un": "un minimum social",
+      "les": "les minima sociaux"
+    },
+    "ModeContractuel": {
+      "page": "relation-entreprise/mode-contractuel",
+      "nom": "mode contractuel",
+      "un": "un mode contractuel",
+      "les": "les modes contractuels"
+    },
+    "NatureContrat": {
+      "page": "relation-entreprise/nature-de-contrat",
+      "nom": "nature de contrat",
+      "un": "une nature de contrat",
+      "les": "les natures de contrat"
+    },
+    "OPCA": {
+      "page": "relation-entreprise/organisme-financeur",
+      "nom": "organisme financeur",
+      "un": "un organisme financeur",
+      "les": "les organismes financeurs",
+      "verifierNomTechnique": false
+    },
+    "ConventionOrganismeFinanceur": {
+      "page": "relation-entreprise/organisme-financeur-d-une-convention",
+      "nom": "organisme financeur d’une convention",
+      "un": "un organisme financeur d’une convention",
+      "les": "les organismes financeurs des conventions"
+    },
+    "OrigineContrat": {
+      "page": "relation-entreprise/origine-de-contrat",
+      "nom": "origine de contrat",
+      "un": "une origine de contrat",
+      "les": "les origines de contrat"
+    },
+    "ParticipationEvenement": {
+      "page": "relation-entreprise/participation-a-un-evenement",
+      "nom": "participation à un événement",
+      "un": "une participation à un événement",
+      "les": "les participations aux événements"
+    },
+    "PeriodeConvention": {
+      "page": "relation-entreprise/periode-de-convention",
+      "nom": "période de convention",
+      "un": "une période de convention",
+      "les": "les périodes de convention"
+    },
+    "PeriodeFacturation": {
+      "page": "relation-entreprise/periode-de-facturation",
+      "nom": "période de facturation",
+      "un": "une période de facturation",
+      "les": "les périodes de facturation"
+    },
+    "Professionnel": {
+      "page": "relation-entreprise/professionnel",
+      "nom": "professionnel",
+      "un": "un professionnel",
+      "les": "les professionnels"
+    },
+    "ProvenanceOffre": {
+      "page": "relation-entreprise/provenance-de-l-offre",
+      "nom": "provenance de l’offre",
+      "un": "une provenance de l’offre",
+      "les": "les provenances de l’offre"
+    },
+    "QualificationViseeProfessionnalisation": {
+      "page": "relation-entreprise/qualification-visee-en-professionnalisation",
+      "nom": "qualification visée en professionnalisation",
+      "un": "une qualification visée en professionnalisation",
+      "les": "les qualifications visées en professionnalisation"
+    },
+    "Remuneration": {
+      "page": "relation-entreprise/remuneration",
+      "nom": "rémunération de l’apprenant",
+      "un": "une rémunération de l’apprenant",
+      "les": "les rémunérations de l’apprenant"
+    },
+    "RythmeApprentissage": {
+      "page": "relation-entreprise/rythme-d-apprentissage",
+      "nom": "rythme d’apprentissage",
+      "un": "un rythme d’apprentissage",
+      "les": "les rythmes d’apprentissage"
+    },
+    "RythmeProfessionnalisation": {
+      "page": "relation-entreprise/rythme-de-professionnalisation",
+      "nom": "rythme de professionnalisation",
+      "un": "un rythme de professionnalisation",
+      "les": "les rythmes de professionnalisation"
+    },
+    "SituationAvantContratApprentissage": {
+      "page": "relation-entreprise/situation-avant-le-contrat-d-apprentissage",
+      "nom": "situation avant le contrat d’apprentissage",
+      "un": "une situation avant le contrat d’apprentissage",
+      "les": "les situations avant le contrat d’apprentissage"
+    },
+    "SituationAvantContratProfessionnalisation": {
+      "page": "relation-entreprise/situation-avant-le-contrat-de-professionnalisation",
+      "nom": "situation avant le contrat de professionnalisation",
+      "un": "une situation avant le contrat de professionnalisation",
+      "les": "les situations avant le contrat de professionnalisation"
+    },
+    "SpecialiteProfessionnalisation": {
+      "page": "relation-entreprise/specialite-de-professionnalisation",
+      "nom": "spécialité de professionnalisation",
+      "un": "une spécialité de professionnalisation",
+      "les": "les spécialités de professionnalisation"
+    },
+    "SpecifiqueEmployeur": {
+      "page": "relation-entreprise/specificite-de-l-employeur",
+      "nom": "spécificité de l’employeur",
+      "un": "une spécificité de l’employeur",
+      "les": "les spécificités de l’employeur"
+    },
+    "TypeEmployeur": {
+      "page": "relation-entreprise/type-d-employeur",
+      "nom": "type d’employeur",
+      "un": "un type d’employeur",
+      "les": "les types d’employeur"
+    },
+    "TypeEvenementCRM": {
+      "page": "relation-entreprise/type-d-evenement-crm",
+      "nom": "type d’événement CRM",
+      "un": "un type d’événement CRM",
+      "les": "les types d’événement CRM"
+    },
+    "TypeContratApprentissage": {
+      "page": "relation-entreprise/type-de-contrat-d-apprentissage",
+      "nom": "type de contrat d’apprentissage",
+      "un": "un type de contrat d’apprentissage",
+      "les": "les types de contrat d’apprentissage"
+    },
+    "TypeContratProfessionnalisation": {
+      "page": "relation-entreprise/type-de-contrat-de-professionnalisation",
+      "nom": "type de contrat de professionnalisation",
+      "un": "un type de contrat de professionnalisation",
+      "les": "les types de contrat de professionnalisation"
+    },
+    "TypeConvention": {
+      "page": "relation-entreprise/type-de-convention",
+      "nom": "type de convention",
+      "un": "un type de convention",
+      "les": "les types de convention"
+    },
+    "ProgrammeTypeConvention": {
+      "page": "relation-entreprise/type-de-convention-d-un-programme",
+      "nom": "type de convention d’un programme",
+      "un": "un type de convention d’un programme",
+      "les": "les types de convention des programmes"
+    },
+    "TypeDerogation": {
+      "page": "relation-entreprise/type-de-derogation",
+      "nom": "type de dérogation",
+      "un": "un type de dérogation",
+      "les": "les types de dérogation"
+    },
+    "TypeFraisFormation": {
+      "page": "relation-entreprise/type-de-frais-de-formation",
+      "nom": "type de frais de formation",
+      "un": "un type de frais de formation",
+      "les": "les types de frais de formation"
+    },
+    "selection/Adresse": {
+      "page": "selection/adresse",
+      "nom": "adresse",
+      "un": "une adresse",
+      "les": "les adresses"
+    },
+    "selection/Baccalaureat": {
+      "page": "selection/baccalaureat",
+      "nom": "baccalauréat",
+      "un": "un baccalauréat",
+      "les": "les baccalauréats"
+    },
+    "selection/Barres": {
+      "page": "selection/barre-d-admission",
+      "nom": "barre d’admission",
+      "un": "une barre d’admission",
+      "les": "les barres d’admission"
+    },
+    "selection/Candidat": {
+      "page": "selection/candidat",
+      "nom": "candidat",
+      "un": "un candidat",
+      "les": "les candidats"
+    },
+    "selection/CSP": {
+      "page": "selection/categorie-socioprofessionnelle",
+      "nom": "catégorie socioprofessionnelle",
+      "un": "une catégorie socioprofessionnelle",
+      "les": "les catégories socioprofessionnelles"
+    },
+    "selection/CentreExamen": {
+      "page": "selection/centre-d-examen",
+      "nom": "centre d’examen",
+      "un": "un centre d’examen",
+      "les": "les centres d’examen"
+    },
+    "selection/Civilite": {
+      "page": "selection/civilite",
+      "nom": "civilité",
+      "un": "une civilité",
+      "les": "les civilités"
+    },
+    "selection/Cohorte": {
+      "page": "selection/cohorte",
+      "nom": "cohorte",
+      "un": "une cohorte",
+      "les": "les cohortes"
+    },
+    "selection/Concours": {
+      "page": "selection/concours",
+      "nom": "concours",
+      "un": "un concours",
+      "les": "les concours"
+    },
+    "selection/Continent": {
+      "page": "selection/continent",
+      "nom": "continent",
+      "un": "un continent",
+      "les": "les continents"
+    },
+    "selection/Convocation": {
+      "page": "selection/convocation",
+      "nom": "convocation",
+      "un": "une convocation",
+      "les": "les convocations"
+    },
+    "selection/Domaine": {
+      "page": "selection/domaine",
+      "nom": "domaine",
+      "un": "un domaine",
+      "les": "les domaines"
+    },
+    "selection/Mail": {
+      "page": "selection/e-mail",
+      "nom": "e-mail",
+      "un": "un e-mail",
+      "les": "les e-mails"
+    },
+    "selection/Ecole": {
+      "page": "selection/ecole",
+      "nom": "école",
+      "un": "une école",
+      "les": "les écoles"
+    },
+    "selection/Entreprise": {
+      "page": "selection/entreprise",
+      "nom": "entreprise",
+      "un": "une entreprise",
+      "les": "les entreprises"
+    },
+    "selection/Epreuve": {
+      "page": "selection/epreuve",
+      "nom": "épreuve",
+      "un": "une épreuve",
+      "les": "les épreuves"
+    },
+    "selection/EpreuveJure": {
+      "page": "selection/epreuve-d-un-jure",
+      "nom": "épreuve d’un juré",
+      "un": "une épreuve d’un juré",
+      "les": "les épreuves des jurés"
+    },
+    "selection/EpreuveEcole": {
+      "page": "selection/epreuve-d-une-ecole",
+      "nom": "épreuve d’une école",
+      "un": "une épreuve d’une école",
+      "les": "les épreuves des écoles"
+    },
+    "selection/EpreuveOrganisation": {
+      "page": "selection/epreuve-d-une-journee-d-epreuves",
+      "nom": "épreuve d’une journée d’épreuves",
+      "un": "une épreuve d’une journée d’épreuves",
+      "les": "les épreuves des journées d’épreuves"
+    },
+    "selection/Harmonisation": {
+      "page": "selection/harmonisation",
+      "nom": "harmonisation",
+      "un": "une harmonisation",
+      "les": "les harmonisations"
+    },
+    "selection/OrganisationEpreuve": {
+      "page": "selection/journee-d-epreuves",
+      "nom": "journée d’épreuves",
+      "un": "une journée d’épreuves",
+      "les": "les journées d’épreuves"
+    },
+    "selection/Jure": {
+      "page": "selection/jure",
+      "nom": "juré",
+      "un": "un juré",
+      "les": "les jurés"
+    },
+    "selection/Jury": {
+      "page": "selection/jury",
+      "nom": "jury",
+      "un": "un jury",
+      "les": "les jurys"
+    },
+    "selection/Langue": {
+      "page": "selection/langue",
+      "nom": "langue",
+      "un": "une langue",
+      "les": "les langues"
+    },
+    "selection/Lycee": {
+      "page": "selection/lycee",
+      "nom": "lycée",
+      "un": "un lycée",
+      "les": "les lycées"
+    },
+    "selection/Mention": {
+      "page": "selection/mention",
+      "nom": "mention",
+      "un": "une mention",
+      "les": "les mentions"
+    },
+    "selection/Nationalite": {
+      "page": "selection/nationalite",
+      "nom": "nationalité",
+      "un": "une nationalité",
+      "les": "les nationalités"
+    },
+    "selection/Niveau": {
+      "page": "selection/niveau",
+      "nom": "niveau",
+      "un": "un niveau",
+      "les": "les niveaux"
+    },
+    "selection/Note": {
+      "page": "selection/note",
+      "nom": "note",
+      "un": "une note",
+      "les": "les notes"
+    },
+    "selection/Objet": {
+      "page": "selection/objet",
+      "nom": "objet",
+      "un": "un objet",
+      "les": "les objets"
+    },
+    "selection/Passage": {
+      "page": "selection/passage",
+      "nom": "passage",
+      "un": "un passage",
+      "les": "les passages"
+    },
+    "selection/Pause": {
+      "page": "selection/pause",
+      "nom": "pause",
+      "un": "une pause",
+      "les": "les pauses"
+    },
+    "selection/Pays": {
+      "page": "selection/pays",
+      "nom": "pays",
+      "un": "un pays",
+      "les": "les pays"
+    },
+    "selection/Survey": {
+      "page": "selection/questionnaire",
+      "nom": "questionnaire",
+      "un": "un questionnaire",
+      "les": "les questionnaires"
+    },
+    "selection/ReferenceExterne": {
+      "page": "selection/reference-externe",
+      "nom": "référence externe",
+      "un": "une référence externe",
+      "les": "les références externes"
+    },
+    "selection/ResponseSurvey": {
+      "page": "selection/reponse-a-un-questionnaire",
+      "nom": "réponse à un questionnaire",
+      "un": "une réponse à un questionnaire",
+      "les": "les réponses aux questionnaires"
+    },
+    "selection/ResultatEpreuve": {
+      "page": "selection/resultat-d-epreuve",
+      "nom": "résultat d’épreuve",
+      "un": "un résultat d’épreuve",
+      "les": "les résultats d’épreuve"
+    },
+    "selection/Salle": {
+      "page": "selection/salle",
+      "nom": "salle",
+      "un": "une salle",
+      "les": "les salles"
+    },
+    "selection/Session": {
+      "page": "selection/session",
+      "nom": "session",
+      "un": "une session",
+      "les": "les sessions"
+    },
+    "selection/Statut": {
+      "page": "selection/statut",
+      "nom": "statut",
+      "un": "un statut",
+      "les": "les statuts"
+    },
+    "selection/Telephone": {
+      "page": "selection/telephone",
+      "nom": "téléphone",
+      "un": "un téléphone",
+      "les": "les téléphones"
+    },
+    "selection/Type": {
+      "page": "selection/type-d-epreuve",
+      "nom": "type d’épreuve",
+      "un": "un type d’épreuve",
+      "les": "les types d’épreuve",
+      "verifierNomTechnique": false
+    },
+    "selection/TypeConcours": {
+      "page": "selection/type-de-concours",
+      "nom": "type de concours",
+      "un": "un type de concours",
+      "les": "les types de concours"
+    },
+    "selection/TypeJure": {
+      "page": "selection/type-de-jure",
+      "nom": "type de juré",
+      "un": "un type de juré",
+      "les": "les types de juré"
+    },
+    "selection/Validation": {
+      "page": "selection/validation",
+      "nom": "validation",
+      "un": "une validation",
+      "les": "les validations"
+    },
+    "selection/VoeuxJure": {
+      "page": "selection/voeu-de-jure",
+      "nom": "vœu de juré",
+      "un": "un vœu de juré",
+      "les": "les vœux des jurés"
+    }
+  },
+  "ignore": [
+    "ApprenantEvaluation",
+    "Authentification",
+    "Base",
+    "ChampsLibre"
+  ]
+}

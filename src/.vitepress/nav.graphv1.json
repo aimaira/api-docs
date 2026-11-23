@@ -1,0 +1,1528 @@
+{
+  "sections": {
+    "core": "Core",
+    "file": "Fichiers",
+    "academie": "Académie",
+    "admission": "Admission",
+    "inscription": "Inscription",
+    "finance": "Finance",
+    "pedagogie": "Pédagogie",
+    "planification": "Planification",
+    "relation-entreprise": "Relation entreprise",
+    "herite": "Hérité",
+    "referentiel": "Référentiel",
+    "selection": "Sélection"
+  },
+  "pages": [
+    {
+      "section": "academie",
+      "text": "Balance enseignant",
+      "link": "/reference/ressources/academie/balance-enseignant"
+    },
+    {
+      "section": "academie",
+      "text": "Catégorie d’enseignant",
+      "link": "/reference/ressources/academie/categorie-d-enseignant"
+    },
+    {
+      "section": "academie",
+      "text": "Catégorie d’un enseignant",
+      "link": "/reference/ressources/academie/categorie-d-un-enseignant"
+    },
+    {
+      "section": "academie",
+      "text": "Contrat d’enseignant",
+      "link": "/reference/ressources/academie/contrat-d-enseignant"
+    },
+    {
+      "section": "academie",
+      "text": "Employeur",
+      "link": "/reference/ressources/academie/employeur"
+    },
+    {
+      "section": "academie",
+      "text": "Enseignant",
+      "link": "/reference/ressources/academie/enseignant"
+    },
+    {
+      "section": "academie",
+      "text": "Export de virements",
+      "link": "/reference/ressources/academie/export-de-virements"
+    },
+    {
+      "section": "academie",
+      "text": "Ligne de contrat",
+      "link": "/reference/ressources/academie/ligne-de-contrat"
+    },
+    {
+      "section": "academie",
+      "text": "Type de prestation RH",
+      "link": "/reference/ressources/academie/type-de-prestation-rh"
+    },
+    {
+      "section": "academie",
+      "text": "Type de relation contractuelle",
+      "link": "/reference/ressources/academie/type-de-relation-contractuelle"
+    },
+    {
+      "section": "admission",
+      "text": "Agent",
+      "link": "/reference/ressources/admission/agent"
+    },
+    {
+      "section": "admission",
+      "text": "Autre candidature",
+      "link": "/reference/ressources/admission/autre-candidature"
+    },
+    {
+      "section": "admission",
+      "text": "Canal d’acquisition du candidat",
+      "link": "/reference/ressources/admission/canal-acquisition"
+    },
+    {
+      "section": "admission",
+      "text": "Candidat",
+      "link": "/reference/ressources/admission/candidat"
+    },
+    {
+      "section": "admission",
+      "text": "Cible",
+      "link": "/reference/ressources/admission/cible"
+    },
+    {
+      "section": "admission",
+      "text": "Cible d’une voie d’admission",
+      "link": "/reference/ressources/admission/cible-d-une-voie-d-admission"
+    },
+    {
+      "section": "admission",
+      "text": "Créneau",
+      "link": "/reference/ressources/admission/creneau"
+    },
+    {
+      "section": "admission",
+      "text": "Créneau d’une voie d’admission",
+      "link": "/reference/ressources/admission/creneau-d-une-voie-d-admission"
+    },
+    {
+      "section": "admission",
+      "text": "Dossier de candidature",
+      "link": "/reference/ressources/admission/dossier"
+    },
+    {
+      "section": "admission",
+      "text": "Etat de candidature",
+      "link": "/reference/ressources/admission/etat-de-candidature"
+    },
+    {
+      "section": "admission",
+      "text": "Évaluateur",
+      "link": "/reference/ressources/admission/evaluateur"
+    },
+    {
+      "section": "admission",
+      "text": "Expérience professionnelle",
+      "link": "/reference/ressources/admission/experience-professionnelle"
+    },
+    {
+      "section": "admission",
+      "text": "Niveau d’études",
+      "link": "/reference/ressources/admission/niveau-d-etudes"
+    },
+    {
+      "section": "admission",
+      "text": "Niveau de langue",
+      "link": "/reference/ressources/admission/niveau-de-langue"
+    },
+    {
+      "section": "admission",
+      "text": "Ouverture",
+      "link": "/reference/ressources/admission/ouverture"
+    },
+    {
+      "section": "admission",
+      "text": "Pays d’un agent",
+      "link": "/reference/ressources/admission/pays-d-un-agent"
+    },
+    {
+      "section": "admission",
+      "text": "Qualification",
+      "link": "/reference/ressources/admission/qualification"
+    },
+    {
+      "section": "admission",
+      "text": "Question ouverte",
+      "link": "/reference/ressources/admission/question-ouverte"
+    },
+    {
+      "section": "admission",
+      "text": "Référent",
+      "link": "/reference/ressources/admission/referent"
+    },
+    {
+      "section": "admission",
+      "text": "Réponse à une question ouverte",
+      "link": "/reference/ressources/admission/reponse-a-une-question-ouverte"
+    },
+    {
+      "section": "admission",
+      "text": "Résultat de test",
+      "link": "/reference/ressources/admission/resultat-de-test"
+    },
+    {
+      "section": "admission",
+      "text": "Scolarité antérieure",
+      "link": "/reference/ressources/admission/scolarite-anterieure"
+    },
+    {
+      "section": "admission",
+      "text": "Session",
+      "link": "/reference/ressources/admission/session"
+    },
+    {
+      "section": "admission",
+      "text": "Test",
+      "link": "/reference/ressources/admission/test"
+    },
+    {
+      "section": "admission",
+      "text": "Type d’emploi",
+      "link": "/reference/ressources/admission/type-d-emploi"
+    },
+    {
+      "section": "admission",
+      "text": "Type de qualification",
+      "link": "/reference/ressources/admission/type-de-qualification"
+    },
+    {
+      "section": "admission",
+      "text": "Type de test",
+      "link": "/reference/ressources/admission/type-de-test"
+    },
+    {
+      "section": "admission",
+      "text": "Voie d’admission",
+      "link": "/reference/ressources/admission/voie-d-admission"
+    },
+    {
+      "section": "core",
+      "text": "Adresse",
+      "link": "/reference/ressources/core/adresse"
+    },
+    {
+      "section": "core",
+      "text": "Campus",
+      "link": "/reference/ressources/core/campus"
+    },
+    {
+      "section": "core",
+      "text": "Civilité",
+      "link": "/reference/ressources/core/civilite"
+    },
+    {
+      "section": "core",
+      "text": "Commentaire",
+      "link": "/reference/ressources/core/commentaire"
+    },
+    {
+      "section": "core",
+      "text": "E-mail",
+      "link": "/reference/ressources/core/e-mail"
+    },
+    {
+      "section": "core",
+      "text": "Individu",
+      "link": "/reference/ressources/core/individu"
+    },
+    {
+      "section": "core",
+      "text": "Instance",
+      "link": "/reference/ressources/core/instance"
+    },
+    {
+      "section": "core",
+      "text": "Marque",
+      "link": "/reference/ressources/core/marque"
+    },
+    {
+      "section": "core",
+      "text": "Note",
+      "link": "/reference/ressources/core/note"
+    },
+    {
+      "section": "core",
+      "text": "Pays",
+      "link": "/reference/ressources/core/pays"
+    },
+    {
+      "section": "core",
+      "text": "Période",
+      "link": "/reference/ressources/core/periode"
+    },
+    {
+      "section": "core",
+      "text": "Programme",
+      "link": "/reference/ressources/core/programme"
+    },
+    {
+      "section": "core",
+      "text": "Référence externe",
+      "link": "/reference/ressources/core/reference-externe"
+    },
+    {
+      "section": "core",
+      "text": "Téléphone",
+      "link": "/reference/ressources/core/telephone"
+    },
+    {
+      "section": "core",
+      "text": "Utilisateur",
+      "link": "/reference/ressources/core/utilisateur"
+    },
+    {
+      "section": "file",
+      "text": "Description",
+      "link": "/reference/ressources/file/description"
+    },
+    {
+      "section": "file",
+      "text": "Dossier",
+      "link": "/reference/ressources/file/directory"
+    },
+    {
+      "section": "file",
+      "text": "Fichier",
+      "link": "/reference/ressources/file/file"
+    },
+    {
+      "section": "finance",
+      "text": "Affaire",
+      "link": "/reference/ressources/finance/affaire"
+    },
+    {
+      "section": "finance",
+      "text": "Balance client",
+      "link": "/reference/ressources/finance/balance-client"
+    },
+    {
+      "section": "finance",
+      "text": "Catégorie de prestation",
+      "link": "/reference/ressources/finance/categorie-de-prestation"
+    },
+    {
+      "section": "finance",
+      "text": "Client",
+      "link": "/reference/ressources/finance/client"
+    },
+    {
+      "section": "finance",
+      "text": "Compte analytique",
+      "link": "/reference/ressources/finance/compte-analytique"
+    },
+    {
+      "section": "finance",
+      "text": "Compte bancaire",
+      "link": "/reference/ressources/finance/compte-bancaire"
+    },
+    {
+      "section": "finance",
+      "text": "Compte comptable",
+      "link": "/reference/ressources/finance/compte-comptable"
+    },
+    {
+      "section": "finance",
+      "text": "Détail de balance",
+      "link": "/reference/ressources/finance/detail-de-balance"
+    },
+    {
+      "section": "finance",
+      "text": "Détail de prestation",
+      "link": "/reference/ressources/finance/detail-de-prestation"
+    },
+    {
+      "section": "finance",
+      "text": "Échéance",
+      "link": "/reference/ressources/finance/echeance"
+    },
+    {
+      "section": "finance",
+      "text": "Export comptable",
+      "link": "/reference/ressources/finance/export-comptable"
+    },
+    {
+      "section": "finance",
+      "text": "Export de prélèvements",
+      "link": "/reference/ressources/finance/export-de-prelevements"
+    },
+    {
+      "section": "finance",
+      "text": "Facture",
+      "link": "/reference/ressources/finance/facture"
+    },
+    {
+      "section": "finance",
+      "text": "Lien entre un Client et une Affaire",
+      "link": "/reference/ressources/finance/client-pour-affaire"
+    },
+    {
+      "section": "finance",
+      "text": "Ligne de prélèvement",
+      "link": "/reference/ressources/finance/ligne-de-prelevement"
+    },
+    {
+      "section": "finance",
+      "text": "Mandat SEPA",
+      "link": "/reference/ressources/finance/mandat-sepa"
+    },
+    {
+      "section": "finance",
+      "text": "Modalité de paiement",
+      "link": "/reference/ressources/finance/modalite-de-paiement"
+    },
+    {
+      "section": "finance",
+      "text": "Modalité de paiement d’une prestation",
+      "link": "/reference/ressources/finance/modalite-de-paiement-d-une-prestation"
+    },
+    {
+      "section": "finance",
+      "text": "Nature du client",
+      "link": "/reference/ressources/finance/nature-client"
+    },
+    {
+      "section": "finance",
+      "text": "Prestation",
+      "link": "/reference/ressources/finance/prestation"
+    },
+    {
+      "section": "finance",
+      "text": "Prestation rattachée à une entité",
+      "link": "/reference/ressources/finance/prestation-rattachee-a-une-entite"
+    },
+    {
+      "section": "finance",
+      "text": "Société de facturation",
+      "link": "/reference/ressources/finance/societe-de-facturation"
+    },
+    {
+      "section": "finance",
+      "text": "Type de paiement",
+      "link": "/reference/ressources/finance/type-de-paiement"
+    },
+    {
+      "section": "inscription",
+      "text": "Apprenant",
+      "link": "/reference/ressources/inscription/apprenant"
+    },
+    {
+      "section": "inscription",
+      "text": "Carte étudiante",
+      "link": "/reference/ressources/inscription/carte-etudiante"
+    },
+    {
+      "section": "inscription",
+      "text": "Commande de cartes",
+      "link": "/reference/ressources/inscription/commande-de-cartes"
+    },
+    {
+      "section": "inscription",
+      "text": "Démarche",
+      "link": "/reference/ressources/inscription/demarche"
+    },
+    {
+      "section": "inscription",
+      "text": "Démarche de titre de séjour",
+      "link": "/reference/ressources/inscription/demarche-de-titre-de-sejour"
+    },
+    {
+      "section": "inscription",
+      "text": "Détail de titre de séjour",
+      "link": "/reference/ressources/inscription/detail-de-titre-de-sejour"
+    },
+    {
+      "section": "inscription",
+      "text": "Domaine du diplôme",
+      "link": "/reference/ressources/inscription/domaine-du-diplome"
+    },
+    {
+      "section": "inscription",
+      "text": "État de démarche",
+      "link": "/reference/ressources/inscription/etat-de-demarche"
+    },
+    {
+      "section": "inscription",
+      "text": "État de titre de séjour",
+      "link": "/reference/ressources/inscription/etat-de-titre-de-sejour"
+    },
+    {
+      "section": "inscription",
+      "text": "Inscription",
+      "link": "/reference/ressources/inscription/inscription"
+    },
+    {
+      "section": "inscription",
+      "text": "Inscription à une période",
+      "link": "/reference/ressources/inscription/inscription-a-une-periode"
+    },
+    {
+      "section": "inscription",
+      "text": "Issue - État d’inscription",
+      "link": "/reference/ressources/inscription/issue-etat-d-inscription"
+    },
+    {
+      "section": "inscription",
+      "text": "Liaison entre un programme et le régime de l’apprenant",
+      "link": "/reference/ressources/inscription/programme-regime"
+    },
+    {
+      "section": "inscription",
+      "text": "Ligne de commande de cartes",
+      "link": "/reference/ressources/inscription/ligne-de-commande-de-cartes"
+    },
+    {
+      "section": "inscription",
+      "text": "Modèle de carte ISIC",
+      "link": "/reference/ressources/inscription/modele-de-carte-isic"
+    },
+    {
+      "section": "inscription",
+      "text": "Mutuelle",
+      "link": "/reference/ressources/inscription/mutuelle"
+    },
+    {
+      "section": "inscription",
+      "text": "Niveau de langue initial",
+      "link": "/reference/ressources/inscription/niveau-de-langue-initial"
+    },
+    {
+      "section": "inscription",
+      "text": "Origine",
+      "link": "/reference/ressources/inscription/origine"
+    },
+    {
+      "section": "inscription",
+      "text": "Parcours",
+      "link": "/reference/ressources/inscription/parcours"
+    },
+    {
+      "section": "inscription",
+      "text": "Période d’un parcours",
+      "link": "/reference/ressources/inscription/periode-d-un-parcours"
+    },
+    {
+      "section": "inscription",
+      "text": "Régime de l’apprenant",
+      "link": "/reference/ressources/inscription/regime-de-l-apprenant"
+    },
+    {
+      "section": "inscription",
+      "text": "Séquence d’un parcours",
+      "link": "/reference/ressources/inscription/sequence-d-un-parcours"
+    },
+    {
+      "section": "inscription",
+      "text": "Spécialité",
+      "link": "/reference/ressources/inscription/specialite"
+    },
+    {
+      "section": "inscription",
+      "text": "Tuteur",
+      "link": "/reference/ressources/inscription/tuteur"
+    },
+    {
+      "section": "inscription",
+      "text": "Type d’avertissement",
+      "link": "/reference/ressources/inscription/type-d-avertissement"
+    },
+    {
+      "section": "inscription",
+      "text": "Type de certification",
+      "link": "/reference/ressources/inscription/type-de-certification"
+    },
+    {
+      "section": "inscription",
+      "text": "Type de démarche",
+      "link": "/reference/ressources/inscription/type-de-demarche"
+    },
+    {
+      "section": "inscription",
+      "text": "Type de recrutement",
+      "link": "/reference/ressources/inscription/type-de-recrutement"
+    },
+    {
+      "section": "inscription",
+      "text": "Type de titre de séjour",
+      "link": "/reference/ressources/inscription/type-de-titre-de-sejour"
+    },
+    {
+      "section": "inscription",
+      "text": "Validité de carte",
+      "link": "/reference/ressources/inscription/validite-de-carte"
+    },
+    {
+      "section": "inscription",
+      "text": "Voie d’entrée",
+      "link": "/reference/ressources/inscription/voie-d-entree"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Avertissement",
+      "link": "/reference/ressources/pedagogie/avertissement"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Cours",
+      "link": "/reference/ressources/pedagogie/cours"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Cours d’une séquence",
+      "link": "/reference/ressources/pedagogie/cours-d-une-sequence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Cours suivi en mobilité",
+      "link": "/reference/ressources/pedagogie/cours-suivi-en-mobilite"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Cycle",
+      "link": "/reference/ressources/pedagogie/cycle"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Décision du jury",
+      "link": "/reference/ressources/pedagogie/decision-du-jury"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Département",
+      "link": "/reference/ressources/pedagogie/departement"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Enseignant d’un cours",
+      "link": "/reference/ressources/pedagogie/enseignant-d-un-cours"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Évaluation",
+      "link": "/reference/ressources/pedagogie/evaluation"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Groupe",
+      "link": "/reference/ressources/pedagogie/groupe"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Inscription à un cours",
+      "link": "/reference/ressources/pedagogie/inscription-a-un-cours"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Inscription à un groupe",
+      "link": "/reference/ressources/pedagogie/inscription-a-un-groupe"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Inscription à une séquence",
+      "link": "/reference/ressources/pedagogie/inscription-a-une-sequence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Module",
+      "link": "/reference/ressources/pedagogie/module"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Motif d’absence",
+      "link": "/reference/ressources/pedagogie/motif-d-absence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Partenaire",
+      "link": "/reference/ressources/pedagogie/partenaire"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Rattrapage",
+      "link": "/reference/ressources/pedagogie/rattrapage"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Référence bibliographique",
+      "link": "/reference/ressources/pedagogie/reference-bibliographique"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Référence ECTS",
+      "link": "/reference/ressources/pedagogie/reference-ects"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Référent école",
+      "link": "/reference/ressources/pedagogie/referent-ecole"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Séquence",
+      "link": "/reference/ressources/pedagogie/sequence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Séquence suivie en mobilité",
+      "link": "/reference/ressources/pedagogie/sequence-suivie-en-mobilite"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Session de rattrapage",
+      "link": "/reference/ressources/pedagogie/session-de-rattrapage"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Sous-séquence",
+      "link": "/reference/ressources/pedagogie/sous-sequence"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Structure de cours",
+      "link": "/reference/ressources/pedagogie/structure-de-cours"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Type de calcul",
+      "link": "/reference/ressources/pedagogie/type-de-calcul"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Type de projet",
+      "link": "/reference/ressources/pedagogie/type-de-projet"
+    },
+    {
+      "section": "pedagogie",
+      "text": "Type de séquence",
+      "link": "/reference/ressources/pedagogie/type-de-sequence"
+    },
+    {
+      "section": "planification",
+      "text": "Événement commun",
+      "link": "/reference/ressources/planification/evenement-commun"
+    },
+    {
+      "section": "planification",
+      "text": "Événement du calendrier",
+      "link": "/reference/ressources/planification/evenement-du-calendrier"
+    },
+    {
+      "section": "planification",
+      "text": "Examen",
+      "link": "/reference/ressources/planification/examen"
+    },
+    {
+      "section": "planification",
+      "text": "Groupe d’une séance",
+      "link": "/reference/ressources/planification/groupe-d-une-seance"
+    },
+    {
+      "section": "planification",
+      "text": "Répétition",
+      "link": "/reference/ressources/planification/repetition"
+    },
+    {
+      "section": "planification",
+      "text": "Réservation",
+      "link": "/reference/ressources/planification/reservation"
+    },
+    {
+      "section": "planification",
+      "text": "Ressource",
+      "link": "/reference/ressources/planification/ressource"
+    },
+    {
+      "section": "planification",
+      "text": "Ressource d’événement du calendrier",
+      "link": "/reference/ressources/planification/ressource-d-evenement"
+    },
+    {
+      "section": "planification",
+      "text": "Séance",
+      "link": "/reference/ressources/planification/seance"
+    },
+    {
+      "section": "planification",
+      "text": "Travail à rendre",
+      "link": "/reference/ressources/planification/travail-a-rendre"
+    },
+    {
+      "section": "planification",
+      "text": "Type d’événement du calendrier",
+      "link": "/reference/ressources/planification/type-d-evenement"
+    },
+    {
+      "section": "planification",
+      "text": "Type de ressource",
+      "link": "/reference/ressources/planification/type-de-ressource"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des affaires",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-affaires"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des apprenants",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-apprenants"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des clients",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-clients"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des conventions",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-conventions"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des cours",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-cours"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des dossiers de candidature",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-dossiers-de-candidature"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des dossiers RH",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-dossiers-rh"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des enseignants",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-enseignants"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de code des factures",
+      "link": "/reference/ressources/referentiel/algorithme-de-code-des-factures"
+    },
+    {
+      "section": "referentiel",
+      "text": "Algorithme de RUM",
+      "link": "/reference/ressources/referentiel/algorithme-de-rum"
+    },
+    {
+      "section": "referentiel",
+      "text": "Baccalauréat",
+      "link": "/reference/ressources/referentiel/baccalaureat"
+    },
+    {
+      "section": "referentiel",
+      "text": "Badgeuse",
+      "link": "/reference/ressources/referentiel/badgeuse"
+    },
+    {
+      "section": "referentiel",
+      "text": "Bâtiment",
+      "link": "/reference/ressources/referentiel/batiment"
+    },
+    {
+      "section": "referentiel",
+      "text": "Catégorie socioprofessionnelle",
+      "link": "/reference/ressources/referentiel/categorie-socioprofessionnelle"
+    },
+    {
+      "section": "referentiel",
+      "text": "Continent",
+      "link": "/reference/ressources/referentiel/continent"
+    },
+    {
+      "section": "referentiel",
+      "text": "Dernier diplôme",
+      "link": "/reference/ressources/referentiel/dernier-diplome"
+    },
+    {
+      "section": "referentiel",
+      "text": "Destinataire",
+      "link": "/reference/ressources/referentiel/destinataire"
+    },
+    {
+      "section": "referentiel",
+      "text": "Destinataire d’un e-mail sortant",
+      "link": "/reference/ressources/referentiel/destinataire-d-un-e-mail-sortant"
+    },
+    {
+      "section": "referentiel",
+      "text": "Diplôme préparé",
+      "link": "/reference/ressources/referentiel/diplome-prepare"
+    },
+    {
+      "section": "referentiel",
+      "text": "Domaine",
+      "link": "/reference/ressources/referentiel/domaine"
+    },
+    {
+      "section": "referentiel",
+      "text": "E-mail sortant",
+      "link": "/reference/ressources/referentiel/e-mail-sortant"
+    },
+    {
+      "section": "referentiel",
+      "text": "Échelon de bourse",
+      "link": "/reference/ressources/referentiel/echelon-de-bourse"
+    },
+    {
+      "section": "referentiel",
+      "text": "Établissement",
+      "link": "/reference/ressources/referentiel/etablissement"
+    },
+    {
+      "section": "referentiel",
+      "text": "Langue d’enseignement",
+      "link": "/reference/ressources/referentiel/langue-d-enseignement"
+    },
+    {
+      "section": "referentiel",
+      "text": "Localisation d’une badgeuse",
+      "link": "/reference/ressources/referentiel/localisation-d-une-badgeuse"
+    },
+    {
+      "section": "referentiel",
+      "text": "Mention",
+      "link": "/reference/ressources/referentiel/mention"
+    },
+    {
+      "section": "referentiel",
+      "text": "Message",
+      "link": "/reference/ressources/referentiel/message"
+    },
+    {
+      "section": "referentiel",
+      "text": "Mise en forme d’un message",
+      "link": "/reference/ressources/referentiel/mise-en-forme-d-un-message"
+    },
+    {
+      "section": "referentiel",
+      "text": "Modalité de séance",
+      "link": "/reference/ressources/referentiel/modalite-de-seance"
+    },
+    {
+      "section": "referentiel",
+      "text": "Modèle d’utilisateur",
+      "link": "/reference/ressources/referentiel/modele-utilisateur"
+    },
+    {
+      "section": "referentiel",
+      "text": "Modèle de message",
+      "link": "/reference/ressources/referentiel/modele-de-message"
+    },
+    {
+      "section": "referentiel",
+      "text": "Nature du tuteur",
+      "link": "/reference/ressources/referentiel/nature-du-tuteur"
+    },
+    {
+      "section": "referentiel",
+      "text": "Niveau",
+      "link": "/reference/ressources/referentiel/niveau"
+    },
+    {
+      "section": "referentiel",
+      "text": "Niveau d’enseignement",
+      "link": "/reference/ressources/referentiel/niveau-d-enseignement"
+    },
+    {
+      "section": "referentiel",
+      "text": "Niveau du public",
+      "link": "/reference/ressources/referentiel/niveau-du-public"
+    },
+    {
+      "section": "referentiel",
+      "text": "Passage de badge",
+      "link": "/reference/ressources/referentiel/passage-de-badge"
+    },
+    {
+      "section": "referentiel",
+      "text": "Personnalisation de l’intranet",
+      "link": "/reference/ressources/referentiel/personnalisation-de-l-intranet"
+    },
+    {
+      "section": "referentiel",
+      "text": "Pièce jointe",
+      "link": "/reference/ressources/referentiel/piece-jointe"
+    },
+    {
+      "section": "referentiel",
+      "text": "Pièce jointe d’un e-mail sortant",
+      "link": "/reference/ressources/referentiel/piece-jointe-d-un-e-mail-sortant"
+    },
+    {
+      "section": "referentiel",
+      "text": "Profil",
+      "link": "/reference/ressources/referentiel/profil"
+    },
+    {
+      "section": "referentiel",
+      "text": "Profil d’un utilisateur",
+      "link": "/reference/ressources/referentiel/profil-d-un-utilisateur"
+    },
+    {
+      "section": "referentiel",
+      "text": "Province",
+      "link": "/reference/ressources/referentiel/province"
+    },
+    {
+      "section": "referentiel",
+      "text": "Questionnaire",
+      "link": "/reference/ressources/referentiel/questionnaire"
+    },
+    {
+      "section": "referentiel",
+      "text": "Réponse à un questionnaire",
+      "link": "/reference/ressources/referentiel/reponse-a-un-questionnaire"
+    },
+    {
+      "section": "referentiel",
+      "text": "Site",
+      "link": "/reference/ressources/referentiel/site"
+    },
+    {
+      "section": "referentiel",
+      "text": "Situation précédente",
+      "link": "/reference/ressources/referentiel/situation-precedente"
+    },
+    {
+      "section": "referentiel",
+      "text": "SMS",
+      "link": "/reference/ressources/referentiel/sms"
+    },
+    {
+      "section": "referentiel",
+      "text": "Spécialité du baccalauréat",
+      "link": "/reference/ressources/referentiel/specialite-du-baccalaureat"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type d’évaluation",
+      "link": "/reference/ressources/referentiel/type-d-evaluation"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de contrat",
+      "link": "/reference/ressources/referentiel/type-de-contrat"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de message",
+      "link": "/reference/ressources/referentiel/type-de-message"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de prépa",
+      "link": "/reference/ressources/referentiel/type-de-prepa"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de référence bibliographique",
+      "link": "/reference/ressources/referentiel/type-de-reference-bibliographique"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de salle",
+      "link": "/reference/ressources/referentiel/type-de-salle"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de séance",
+      "link": "/reference/ressources/referentiel/type-de-seance"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de signature",
+      "link": "/reference/ressources/referentiel/type-de-signature"
+    },
+    {
+      "section": "referentiel",
+      "text": "Type de travaux",
+      "link": "/reference/ressources/referentiel/type-de-travaux"
+    },
+    {
+      "section": "referentiel",
+      "text": "Université",
+      "link": "/reference/ressources/referentiel/universite"
+    },
+    {
+      "section": "referentiel",
+      "text": "Webhook",
+      "link": "/reference/ressources/referentiel/webhook"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Algorithme de code des comptes",
+      "link": "/reference/ressources/relation-entreprise/algorithme-de-code-des-comptes"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Autre lieu de formation",
+      "link": "/reference/ressources/relation-entreprise/autre-lieu-de-formation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Compte",
+      "link": "/reference/ressources/relation-entreprise/compte"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Contact",
+      "link": "/reference/ressources/relation-entreprise/contact"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Convention",
+      "link": "/reference/ressources/relation-entreprise/convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Dernière classe fréquentée",
+      "link": "/reference/ressources/relation-entreprise/derniere-classe-frequentee"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Diplôme préparé en apprentissage",
+      "link": "/reference/ressources/relation-entreprise/diplome-prepare-en-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Diplôme préparé en professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/diplome-prepare-en-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéance d’apprentissage d’une convention",
+      "link": "/reference/ressources/relation-entreprise/echeance-d-apprentissage-d-une-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéance de convention",
+      "link": "/reference/ressources/relation-entreprise/echeance-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéance de facturation",
+      "link": "/reference/ressources/relation-entreprise/echeance-de-facturation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéance de facturation d’apprentissage",
+      "link": "/reference/ressources/relation-entreprise/echeance-de-facturation-d-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéancier de facturation",
+      "link": "/reference/ressources/relation-entreprise/echeancier-de-facturation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Échéancier de facturation d’apprentissage",
+      "link": "/reference/ressources/relation-entreprise/echeancier-de-facturation-d-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Entreprise",
+      "link": "/reference/ressources/relation-entreprise/entreprise"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "État de convention",
+      "link": "/reference/ressources/relation-entreprise/etat-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Événement CRM",
+      "link": "/reference/ressources/relation-entreprise/evenement-crm"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Fonction exercée",
+      "link": "/reference/ressources/relation-entreprise/fonction-exercee"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Forme juridique",
+      "link": "/reference/ressources/relation-entreprise/forme-juridique"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Frais de formation",
+      "link": "/reference/ressources/relation-entreprise/frais-de-formation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Minimum social",
+      "link": "/reference/ressources/relation-entreprise/minimum-social"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Mode contractuel",
+      "link": "/reference/ressources/relation-entreprise/mode-contractuel"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Nature de contrat",
+      "link": "/reference/ressources/relation-entreprise/nature-de-contrat"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Organisme financeur",
+      "link": "/reference/ressources/relation-entreprise/organisme-financeur"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Organisme financeur d’une convention",
+      "link": "/reference/ressources/relation-entreprise/organisme-financeur-d-une-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Origine de contrat",
+      "link": "/reference/ressources/relation-entreprise/origine-de-contrat"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Participation à un événement",
+      "link": "/reference/ressources/relation-entreprise/participation-a-un-evenement"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Période de convention",
+      "link": "/reference/ressources/relation-entreprise/periode-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Période de facturation",
+      "link": "/reference/ressources/relation-entreprise/periode-de-facturation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Professionnel",
+      "link": "/reference/ressources/relation-entreprise/professionnel"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Provenance de l’offre",
+      "link": "/reference/ressources/relation-entreprise/provenance-de-l-offre"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Qualification visée en professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/qualification-visee-en-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Rémunération de l’apprenant",
+      "link": "/reference/ressources/relation-entreprise/remuneration"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Rythme d’apprentissage",
+      "link": "/reference/ressources/relation-entreprise/rythme-d-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Rythme de professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/rythme-de-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Situation avant le contrat d’apprentissage",
+      "link": "/reference/ressources/relation-entreprise/situation-avant-le-contrat-d-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Situation avant le contrat de professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/situation-avant-le-contrat-de-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Spécialité de professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/specialite-de-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Spécificité de l’employeur",
+      "link": "/reference/ressources/relation-entreprise/specificite-de-l-employeur"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type d’employeur",
+      "link": "/reference/ressources/relation-entreprise/type-d-employeur"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type d’événement CRM",
+      "link": "/reference/ressources/relation-entreprise/type-d-evenement-crm"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de contrat d’apprentissage",
+      "link": "/reference/ressources/relation-entreprise/type-de-contrat-d-apprentissage"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de contrat de professionnalisation",
+      "link": "/reference/ressources/relation-entreprise/type-de-contrat-de-professionnalisation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de convention",
+      "link": "/reference/ressources/relation-entreprise/type-de-convention"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de convention d’un programme",
+      "link": "/reference/ressources/relation-entreprise/type-de-convention-d-un-programme"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de dérogation",
+      "link": "/reference/ressources/relation-entreprise/type-de-derogation"
+    },
+    {
+      "section": "relation-entreprise",
+      "text": "Type de frais de formation",
+      "link": "/reference/ressources/relation-entreprise/type-de-frais-de-formation"
+    },
+    {
+      "section": "selection",
+      "text": "Adresse",
+      "link": "/reference/ressources/selection/adresse"
+    },
+    {
+      "section": "selection",
+      "text": "Baccalauréat",
+      "link": "/reference/ressources/selection/baccalaureat"
+    },
+    {
+      "section": "selection",
+      "text": "Barre d’admission",
+      "link": "/reference/ressources/selection/barre-d-admission"
+    },
+    {
+      "section": "selection",
+      "text": "Candidat",
+      "link": "/reference/ressources/selection/candidat"
+    },
+    {
+      "section": "selection",
+      "text": "Catégorie socioprofessionnelle",
+      "link": "/reference/ressources/selection/categorie-socioprofessionnelle"
+    },
+    {
+      "section": "selection",
+      "text": "Centre d’examen",
+      "link": "/reference/ressources/selection/centre-d-examen"
+    },
+    {
+      "section": "selection",
+      "text": "Civilité",
+      "link": "/reference/ressources/selection/civilite"
+    },
+    {
+      "section": "selection",
+      "text": "Cohorte",
+      "link": "/reference/ressources/selection/cohorte"
+    },
+    {
+      "section": "selection",
+      "text": "Concours",
+      "link": "/reference/ressources/selection/concours"
+    },
+    {
+      "section": "selection",
+      "text": "Continent",
+      "link": "/reference/ressources/selection/continent"
+    },
+    {
+      "section": "selection",
+      "text": "Convocation",
+      "link": "/reference/ressources/selection/convocation"
+    },
+    {
+      "section": "selection",
+      "text": "Domaine",
+      "link": "/reference/ressources/selection/domaine"
+    },
+    {
+      "section": "selection",
+      "text": "E-mail",
+      "link": "/reference/ressources/selection/e-mail"
+    },
+    {
+      "section": "selection",
+      "text": "École",
+      "link": "/reference/ressources/selection/ecole"
+    },
+    {
+      "section": "selection",
+      "text": "Entreprise",
+      "link": "/reference/ressources/selection/entreprise"
+    },
+    {
+      "section": "selection",
+      "text": "Épreuve",
+      "link": "/reference/ressources/selection/epreuve"
+    },
+    {
+      "section": "selection",
+      "text": "Épreuve d’un juré",
+      "link": "/reference/ressources/selection/epreuve-d-un-jure"
+    },
+    {
+      "section": "selection",
+      "text": "Épreuve d’une école",
+      "link": "/reference/ressources/selection/epreuve-d-une-ecole"
+    },
+    {
+      "section": "selection",
+      "text": "Épreuve d’une journée d’épreuves",
+      "link": "/reference/ressources/selection/epreuve-d-une-journee-d-epreuves"
+    },
+    {
+      "section": "selection",
+      "text": "Harmonisation",
+      "link": "/reference/ressources/selection/harmonisation"
+    },
+    {
+      "section": "selection",
+      "text": "Journée d’épreuves",
+      "link": "/reference/ressources/selection/journee-d-epreuves"
+    },
+    {
+      "section": "selection",
+      "text": "Juré",
+      "link": "/reference/ressources/selection/jure"
+    },
+    {
+      "section": "selection",
+      "text": "Jury",
+      "link": "/reference/ressources/selection/jury"
+    },
+    {
+      "section": "selection",
+      "text": "Langue",
+      "link": "/reference/ressources/selection/langue"
+    },
+    {
+      "section": "selection",
+      "text": "Lycée",
+      "link": "/reference/ressources/selection/lycee"
+    },
+    {
+      "section": "selection",
+      "text": "Mention",
+      "link": "/reference/ressources/selection/mention"
+    },
+    {
+      "section": "selection",
+      "text": "Nationalité",
+      "link": "/reference/ressources/selection/nationalite"
+    },
+    {
+      "section": "selection",
+      "text": "Niveau",
+      "link": "/reference/ressources/selection/niveau"
+    },
+    {
+      "section": "selection",
+      "text": "Note",
+      "link": "/reference/ressources/selection/note"
+    },
+    {
+      "section": "selection",
+      "text": "Objet",
+      "link": "/reference/ressources/selection/objet"
+    },
+    {
+      "section": "selection",
+      "text": "Passage",
+      "link": "/reference/ressources/selection/passage"
+    },
+    {
+      "section": "selection",
+      "text": "Pause",
+      "link": "/reference/ressources/selection/pause"
+    },
+    {
+      "section": "selection",
+      "text": "Pays",
+      "link": "/reference/ressources/selection/pays"
+    },
+    {
+      "section": "selection",
+      "text": "Questionnaire",
+      "link": "/reference/ressources/selection/questionnaire"
+    },
+    {
+      "section": "selection",
+      "text": "Référence externe",
+      "link": "/reference/ressources/selection/reference-externe"
+    },
+    {
+      "section": "selection",
+      "text": "Réponse à un questionnaire",
+      "link": "/reference/ressources/selection/reponse-a-un-questionnaire"
+    },
+    {
+      "section": "selection",
+      "text": "Résultat d’épreuve",
+      "link": "/reference/ressources/selection/resultat-d-epreuve"
+    },
+    {
+      "section": "selection",
+      "text": "Salle",
+      "link": "/reference/ressources/selection/salle"
+    },
+    {
+      "section": "selection",
+      "text": "Session",
+      "link": "/reference/ressources/selection/session"
+    },
+    {
+      "section": "selection",
+      "text": "Statut",
+      "link": "/reference/ressources/selection/statut"
+    },
+    {
+      "section": "selection",
+      "text": "Téléphone",
+      "link": "/reference/ressources/selection/telephone"
+    },
+    {
+      "section": "selection",
+      "text": "Type d’épreuve",
+      "link": "/reference/ressources/selection/type-d-epreuve"
+    },
+    {
+      "section": "selection",
+      "text": "Type de concours",
+      "link": "/reference/ressources/selection/type-de-concours"
+    },
+    {
+      "section": "selection",
+      "text": "Type de juré",
+      "link": "/reference/ressources/selection/type-de-jure"
+    },
+    {
+      "section": "selection",
+      "text": "Validation",
+      "link": "/reference/ressources/selection/validation"
+    },
+    {
+      "section": "selection",
+      "text": "Vœu de juré",
+      "link": "/reference/ressources/selection/voeu-de-jure"
+    }
+  ]
+}
