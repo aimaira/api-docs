@@ -74,7 +74,7 @@ faire une requête via l’API.
 Afin de vérifier le type de modification à l’origine de l’appel au webhook, il peut être nécessaire de récupérer les
 métadonnées liées à l’entitée modifiée.
 
-Pour ce faire, il est nécessaire d’appeler [le point d’entrée Object][endpoint-object] avec l’identifiant de l’entité.
+Pour ce faire, il est nécessaire d’appeler [le point d’entrée `Object`][endpoint-object] avec l’identifiant de l’entité.
 
 ## Authentification lors du déclenchement du webhook
 

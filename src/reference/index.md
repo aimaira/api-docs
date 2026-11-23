@@ -4,6 +4,11 @@ L’API d’AIMAIRA est organisée autour des concepts de REST. Notre API possè
 ressources, accepte des corps de requêtes `form-encoded`, retourne des réponses encodées au format JSON et utilise des 
 codes de réponse HTTP, des mécanismes d’authentification et des verbes HTTP standard.
 
+## Description OpenAPI
+
+Toute la référence est aussi disponible au format OpenAPI 3 : [openapi.json](/openapi.json). Le fichier s’importe dans
+Postman, Insomnia ou un générateur de client, et se met à jour avec la documentation.
+
 ## Univers
 
 Les ressources mises à disposition par l’API AIMAIRA sont listées dans la présente documentation de référence. 
@@ -29,11 +34,11 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Utilisateur](/reference/ressources/core/utilisateur)
 - [Commentaire](/reference/ressources/core/commentaire)
 
-#### File
+#### Fichiers
 
 - [Description](/reference/ressources/file/description)
-- [Directory](/reference/ressources/file/directory)
-- [File](/reference/ressources/file/file)
+- [Dossier](/reference/ressources/file/directory)
+- [Fichier](/reference/ressources/file/file)
 
 #### Académie
 
@@ -44,7 +49,7 @@ L’univers `Core` est un univers virtuel qui contient toutes les ressources tra
 - [Agent](/reference/ressources/admission/agent)
 - [Canal d’acquisition](/reference/ressources/admission/canal-acquisition)
 - [Candidat](/reference/ressources/admission/candidat)
-- [Dossier](/reference/ressources/admission/dossier)
+- [Dossier de candidature](/reference/ressources/admission/dossier)
 - [État de candidature](/reference/ressources/admission/etat-de-candidature)
 - [Voie d’admission](/reference/ressources/admission/voie-d-admission)
 
