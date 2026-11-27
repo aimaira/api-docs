@@ -100,7 +100,13 @@ curl https://myapi.aimaira.net/GraphV1/Inscription?$filter=ApprenantId eq 225346
 - `RegimeInscriptionId` *(voir [régime de l’apprenant][regime])*
 - `RecrutementId` *(voir [voie d’entrée][voie-entree])*
 - `EtatInscriptionId` *(voir [issue / état d’inscription][etat-inscription])*
-- `DateInscription`, la date d’inscription effective de l’apprenant
+
+::: warning Date d’inscription
+`DateInscription` est facultative. Elle correspond à la date à laquelle l’apprenant a validé son inscription (colonne « Double clic » du suivi des inscriptions dans Manage).
+
+- Pour importer un apprenant déjà inscrit, renseignez sa date d’inscription effective.
+- Si l’apprenant doit encore valider son inscription, n’envoyez pas ce champ : il sera renseigné lorsque l’apprenant effectuera cette action.
+:::
 
 ::: code-group
 
